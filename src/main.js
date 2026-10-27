@@ -276,6 +276,7 @@ function runElection() {
   notice("सिमुलेशन पूरा हुआ। नतीजे सेव कर दिए गए हैं।");
 }
 
+
 app.addEventListener("change", event => {
   if (event.target.id === "stateSelect") {
     const nextSeat = seats.find(
@@ -286,6 +287,11 @@ app.addEventListener("change", event => {
       selectedSeat = nextSeat.id;
       render();
     }
+  }
+
+  if (event.target.id === "seatSelect") {
+    selectedSeat = event.target.value;
+    render();
   }
 });
       
