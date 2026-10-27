@@ -200,8 +200,8 @@ function renderResults() {
       <button id="resetResults">नतीजे हटाकर फिर तैयारी करो</button>
     </div>
     <div class="card">
-      <h2>पहली 20 सीटों के नतीजे</h2>
-      ${results.slice(0, 20).map(r => `
+      <h2>सभी 543 सीटों के नतीजे</h2>
+      ${results.map(r => `
         <p>${escapeHTML(r.name)}: ${escapeHTML(r.winnerName)} — जीत का अंतर ${r.margin} वोट</p>
       `).join("")}
       <p class="muted">कुल ${results.length} सीटों के नतीजे सहेजे गए हैं।</p>
