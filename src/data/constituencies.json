@@ -1,8 +1,8 @@
 [
   {
     "id": "seat-001",
-    "name": "Constituency 001",
-    "state": "State data pending verification",
+    "name": "ANDAMAN AND NICOBAR ISLANDS",
+    "state": "Andaman and Nicobar Islands",
     "candidates": [
       {
         "id": "candidate-001-1",
@@ -27,8 +27,8 @@
   },
   {
     "id": "seat-002",
-    "name": "Constituency 002",
-    "state": "State data pending verification",
+    "name": "AMALAPURAM (SC)",
+    "state": "Andhra Pradesh",
     "candidates": [
       {
         "id": "candidate-002-1",
@@ -53,8 +53,8 @@
   },
   {
     "id": "seat-003",
-    "name": "Constituency 003",
-    "state": "State data pending verification",
+    "name": "ANAKAPALLE",
+    "state": "Andhra Pradesh",
     "candidates": [
       {
         "id": "candidate-003-1",
@@ -79,8 +79,8 @@
   },
   {
     "id": "seat-004",
-    "name": "Constituency 004",
-    "state": "State data pending verification",
+    "name": "ANANTHAPUR",
+    "state": "Andhra Pradesh",
     "candidates": [
       {
         "id": "candidate-004-1",
@@ -105,8 +105,8 @@
   },
   {
     "id": "seat-005",
-    "name": "Constituency 005",
-    "state": "State data pending verification",
+    "name": "ARAKU (ST)",
+    "state": "Andhra Pradesh",
     "candidates": [
       {
         "id": "candidate-005-1",
@@ -131,8 +131,8 @@
   },
   {
     "id": "seat-006",
-    "name": "Constituency 006",
-    "state": "State data pending verification",
+    "name": "BAPATLA (SC)",
+    "state": "Andhra Pradesh",
     "candidates": [
       {
         "id": "candidate-006-1",
@@ -157,8 +157,8 @@
   },
   {
     "id": "seat-007",
-    "name": "Constituency 007",
-    "state": "State data pending verification",
+    "name": "CHITTOOR (SC)",
+    "state": "Andhra Pradesh",
     "candidates": [
       {
         "id": "candidate-007-1",
@@ -183,8 +183,8 @@
   },
   {
     "id": "seat-008",
-    "name": "Constituency 008",
-    "state": "State data pending verification",
+    "name": "ELURU",
+    "state": "Andhra Pradesh",
     "candidates": [
       {
         "id": "candidate-008-1",
@@ -209,8 +209,8 @@
   },
   {
     "id": "seat-009",
-    "name": "Constituency 009",
-    "state": "State data pending verification",
+    "name": "GUNTUR",
+    "state": "Andhra Pradesh",
     "candidates": [
       {
         "id": "candidate-009-1",
@@ -235,8 +235,8 @@
   },
   {
     "id": "seat-010",
-    "name": "Constituency 010",
-    "state": "State data pending verification",
+    "name": "HINDUPUR",
+    "state": "Andhra Pradesh",
     "candidates": [
       {
         "id": "candidate-010-1",
@@ -261,8 +261,8 @@
   },
   {
     "id": "seat-011",
-    "name": "Constituency 011",
-    "state": "State data pending verification",
+    "name": "KADAPA",
+    "state": "Andhra Pradesh",
     "candidates": [
       {
         "id": "candidate-011-1",
@@ -287,8 +287,8 @@
   },
   {
     "id": "seat-012",
-    "name": "Constituency 012",
-    "state": "State data pending verification",
+    "name": "KAKINADA",
+    "state": "Andhra Pradesh",
     "candidates": [
       {
         "id": "candidate-012-1",
@@ -313,8 +313,8 @@
   },
   {
     "id": "seat-013",
-    "name": "Constituency 013",
-    "state": "State data pending verification",
+    "name": "KURNOOL",
+    "state": "Andhra Pradesh",
     "candidates": [
       {
         "id": "candidate-013-1",
@@ -339,8 +339,8 @@
   },
   {
     "id": "seat-014",
-    "name": "Constituency 014",
-    "state": "State data pending verification",
+    "name": "MACHILIPATNAM",
+    "state": "Andhra Pradesh",
     "candidates": [
       {
         "id": "candidate-014-1",
@@ -365,8 +365,8 @@
   },
   {
     "id": "seat-015",
-    "name": "Constituency 015",
-    "state": "State data pending verification",
+    "name": "NANDYAL",
+    "state": "Andhra Pradesh",
     "candidates": [
       {
         "id": "candidate-015-1",
@@ -391,8 +391,8 @@
   },
   {
     "id": "seat-016",
-    "name": "Constituency 016",
-    "state": "State data pending verification",
+    "name": "NARSAPURAM",
+    "state": "Andhra Pradesh",
     "candidates": [
       {
         "id": "candidate-016-1",
@@ -417,8 +417,8 @@
   },
   {
     "id": "seat-017",
-    "name": "Constituency 017",
-    "state": "State data pending verification",
+    "name": "NARSARAOPET",
+    "state": "Andhra Pradesh",
     "candidates": [
       {
         "id": "candidate-017-1",
@@ -443,8 +443,8 @@
   },
   {
     "id": "seat-018",
-    "name": "Constituency 018",
-    "state": "State data pending verification",
+    "name": "NELLORE",
+    "state": "Andhra Pradesh",
     "candidates": [
       {
         "id": "candidate-018-1",
@@ -469,8 +469,8 @@
   },
   {
     "id": "seat-019",
-    "name": "Constituency 019",
-    "state": "State data pending verification",
+    "name": "ONGOLE",
+    "state": "Andhra Pradesh",
     "candidates": [
       {
         "id": "candidate-019-1",
@@ -495,8 +495,8 @@
   },
   {
     "id": "seat-020",
-    "name": "Constituency 020",
-    "state": "State data pending verification",
+    "name": "RAJAHMUNDRY",
+    "state": "Andhra Pradesh",
     "candidates": [
       {
         "id": "candidate-020-1",
@@ -521,8 +521,8 @@
   },
   {
     "id": "seat-021",
-    "name": "Constituency 021",
-    "state": "State data pending verification",
+    "name": "RAJAMPET",
+    "state": "Andhra Pradesh",
     "candidates": [
       {
         "id": "candidate-021-1",
@@ -547,8 +547,8 @@
   },
   {
     "id": "seat-022",
-    "name": "Constituency 022",
-    "state": "State data pending verification",
+    "name": "SRIKAKULAM",
+    "state": "Andhra Pradesh",
     "candidates": [
       {
         "id": "candidate-022-1",
@@ -573,8 +573,8 @@
   },
   {
     "id": "seat-023",
-    "name": "Constituency 023",
-    "state": "State data pending verification",
+    "name": "THIRUPATHI (SC)",
+    "state": "Andhra Pradesh",
     "candidates": [
       {
         "id": "candidate-023-1",
@@ -599,8 +599,8 @@
   },
   {
     "id": "seat-024",
-    "name": "Constituency 024",
-    "state": "State data pending verification",
+    "name": "VIJAYAWADA",
+    "state": "Andhra Pradesh",
     "candidates": [
       {
         "id": "candidate-024-1",
@@ -625,8 +625,8 @@
   },
   {
     "id": "seat-025",
-    "name": "Constituency 025",
-    "state": "State data pending verification",
+    "name": "VISAKHAPATNAM",
+    "state": "Andhra Pradesh",
     "candidates": [
       {
         "id": "candidate-025-1",
@@ -651,8 +651,8 @@
   },
   {
     "id": "seat-026",
-    "name": "Constituency 026",
-    "state": "State data pending verification",
+    "name": "VIZIANAGARAM",
+    "state": "Andhra Pradesh",
     "candidates": [
       {
         "id": "candidate-026-1",
@@ -677,8 +677,8 @@
   },
   {
     "id": "seat-027",
-    "name": "Constituency 027",
-    "state": "State data pending verification",
+    "name": "ARUNACHAL EAST",
+    "state": "Arunachal Pradesh",
     "candidates": [
       {
         "id": "candidate-027-1",
@@ -703,8 +703,8 @@
   },
   {
     "id": "seat-028",
-    "name": "Constituency 028",
-    "state": "State data pending verification",
+    "name": "ARUNACHAL WEST",
+    "state": "Arunachal Pradesh",
     "candidates": [
       {
         "id": "candidate-028-1",
@@ -729,8 +729,8 @@
   },
   {
     "id": "seat-029",
-    "name": "Constituency 029",
-    "state": "State data pending verification",
+    "name": "BARPETA",
+    "state": "Assam",
     "candidates": [
       {
         "id": "candidate-029-1",
@@ -755,8 +755,8 @@
   },
   {
     "id": "seat-030",
-    "name": "Constituency 030",
-    "state": "State data pending verification",
+    "name": "DARRANG-UDALGURI",
+    "state": "Assam",
     "candidates": [
       {
         "id": "candidate-030-1",
@@ -781,8 +781,8 @@
   },
   {
     "id": "seat-031",
-    "name": "Constituency 031",
-    "state": "State data pending verification",
+    "name": "DHUBRI",
+    "state": "Assam",
     "candidates": [
       {
         "id": "candidate-031-1",
@@ -807,8 +807,8 @@
   },
   {
     "id": "seat-032",
-    "name": "Constituency 032",
-    "state": "State data pending verification",
+    "name": "DIBRUGARH",
+    "state": "Assam",
     "candidates": [
       {
         "id": "candidate-032-1",
@@ -833,8 +833,8 @@
   },
   {
     "id": "seat-033",
-    "name": "Constituency 033",
-    "state": "State data pending verification",
+    "name": "DIPHU (ST)",
+    "state": "Assam",
     "candidates": [
       {
         "id": "candidate-033-1",
@@ -859,8 +859,8 @@
   },
   {
     "id": "seat-034",
-    "name": "Constituency 034",
-    "state": "State data pending verification",
+    "name": "GUWAHATI",
+    "state": "Assam",
     "candidates": [
       {
         "id": "candidate-034-1",
@@ -885,8 +885,8 @@
   },
   {
     "id": "seat-035",
-    "name": "Constituency 035",
-    "state": "State data pending verification",
+    "name": "JORHAT",
+    "state": "Assam",
     "candidates": [
       {
         "id": "candidate-035-1",
@@ -911,8 +911,8 @@
   },
   {
     "id": "seat-036",
-    "name": "Constituency 036",
-    "state": "State data pending verification",
+    "name": "KARIMGANJ (SC)",
+    "state": "Assam",
     "candidates": [
       {
         "id": "candidate-036-1",
@@ -937,8 +937,8 @@
   },
   {
     "id": "seat-037",
-    "name": "Constituency 037",
-    "state": "State data pending verification",
+    "name": "KAZIRANGA",
+    "state": "Assam",
     "candidates": [
       {
         "id": "candidate-037-1",
@@ -963,8 +963,8 @@
   },
   {
     "id": "seat-038",
-    "name": "Constituency 038",
-    "state": "State data pending verification",
+    "name": "KOKRAJHAR (ST)",
+    "state": "Assam",
     "candidates": [
       {
         "id": "candidate-038-1",
@@ -989,8 +989,8 @@
   },
   {
     "id": "seat-039",
-    "name": "Constituency 039",
-    "state": "State data pending verification",
+    "name": "LAKHIMPUR",
+    "state": "Assam",
     "candidates": [
       {
         "id": "candidate-039-1",
@@ -1015,8 +1015,8 @@
   },
   {
     "id": "seat-040",
-    "name": "Constituency 040",
-    "state": "State data pending verification",
+    "name": "NAGAON",
+    "state": "Assam",
     "candidates": [
       {
         "id": "candidate-040-1",
@@ -1041,8 +1041,8 @@
   },
   {
     "id": "seat-041",
-    "name": "Constituency 041",
-    "state": "State data pending verification",
+    "name": "SILCHAR",
+    "state": "Assam",
     "candidates": [
       {
         "id": "candidate-041-1",
@@ -1067,8 +1067,8 @@
   },
   {
     "id": "seat-042",
-    "name": "Constituency 042",
-    "state": "State data pending verification",
+    "name": "SONITPUR",
+    "state": "Assam",
     "candidates": [
       {
         "id": "candidate-042-1",
@@ -1093,8 +1093,8 @@
   },
   {
     "id": "seat-043",
-    "name": "Constituency 043",
-    "state": "State data pending verification",
+    "name": "ARARIA",
+    "state": "Bihar",
     "candidates": [
       {
         "id": "candidate-043-1",
@@ -1119,8 +1119,8 @@
   },
   {
     "id": "seat-044",
-    "name": "Constituency 044",
-    "state": "State data pending verification",
+    "name": "ARRAH",
+    "state": "Bihar",
     "candidates": [
       {
         "id": "candidate-044-1",
@@ -1145,8 +1145,8 @@
   },
   {
     "id": "seat-045",
-    "name": "Constituency 045",
-    "state": "State data pending verification",
+    "name": "AURANGABAD",
+    "state": "Bihar",
     "candidates": [
       {
         "id": "candidate-045-1",
@@ -1171,8 +1171,8 @@
   },
   {
     "id": "seat-046",
-    "name": "Constituency 046",
-    "state": "State data pending verification",
+    "name": "BANKA",
+    "state": "Bihar",
     "candidates": [
       {
         "id": "candidate-046-1",
@@ -1197,8 +1197,8 @@
   },
   {
     "id": "seat-047",
-    "name": "Constituency 047",
-    "state": "State data pending verification",
+    "name": "BEGUSARAI",
+    "state": "Bihar",
     "candidates": [
       {
         "id": "candidate-047-1",
@@ -1223,8 +1223,8 @@
   },
   {
     "id": "seat-048",
-    "name": "Constituency 048",
-    "state": "State data pending verification",
+    "name": "BHAGALPUR",
+    "state": "Bihar",
     "candidates": [
       {
         "id": "candidate-048-1",
@@ -1249,8 +1249,8 @@
   },
   {
     "id": "seat-049",
-    "name": "Constituency 049",
-    "state": "State data pending verification",
+    "name": "BUXAR",
+    "state": "Bihar",
     "candidates": [
       {
         "id": "candidate-049-1",
@@ -1275,8 +1275,8 @@
   },
   {
     "id": "seat-050",
-    "name": "Constituency 050",
-    "state": "State data pending verification",
+    "name": "DARBHANGA",
+    "state": "Bihar",
     "candidates": [
       {
         "id": "candidate-050-1",
@@ -1301,8 +1301,8 @@
   },
   {
     "id": "seat-051",
-    "name": "Constituency 051",
-    "state": "State data pending verification",
+    "name": "GAYA (SC)",
+    "state": "Bihar",
     "candidates": [
       {
         "id": "candidate-051-1",
@@ -1327,8 +1327,8 @@
   },
   {
     "id": "seat-052",
-    "name": "Constituency 052",
-    "state": "State data pending verification",
+    "name": "GOPALGANJ (SC)",
+    "state": "Bihar",
     "candidates": [
       {
         "id": "candidate-052-1",
@@ -1353,8 +1353,8 @@
   },
   {
     "id": "seat-053",
-    "name": "Constituency 053",
-    "state": "State data pending verification",
+    "name": "HAJIPUR (SC)",
+    "state": "Bihar",
     "candidates": [
       {
         "id": "candidate-053-1",
@@ -1379,8 +1379,8 @@
   },
   {
     "id": "seat-054",
-    "name": "Constituency 054",
-    "state": "State data pending verification",
+    "name": "JAHANABAD",
+    "state": "Bihar",
     "candidates": [
       {
         "id": "candidate-054-1",
@@ -1405,8 +1405,8 @@
   },
   {
     "id": "seat-055",
-    "name": "Constituency 055",
-    "state": "State data pending verification",
+    "name": "JAMUI (SC)",
+    "state": "Bihar",
     "candidates": [
       {
         "id": "candidate-055-1",
@@ -1431,8 +1431,8 @@
   },
   {
     "id": "seat-056",
-    "name": "Constituency 056",
-    "state": "State data pending verification",
+    "name": "JHANJHARPUR",
+    "state": "Bihar",
     "candidates": [
       {
         "id": "candidate-056-1",
@@ -1457,8 +1457,8 @@
   },
   {
     "id": "seat-057",
-    "name": "Constituency 057",
-    "state": "State data pending verification",
+    "name": "KARAKAT",
+    "state": "Bihar",
     "candidates": [
       {
         "id": "candidate-057-1",
@@ -1483,8 +1483,8 @@
   },
   {
     "id": "seat-058",
-    "name": "Constituency 058",
-    "state": "State data pending verification",
+    "name": "KATIHAR",
+    "state": "Bihar",
     "candidates": [
       {
         "id": "candidate-058-1",
@@ -1509,8 +1509,8 @@
   },
   {
     "id": "seat-059",
-    "name": "Constituency 059",
-    "state": "State data pending verification",
+    "name": "KHAGARIA",
+    "state": "Bihar",
     "candidates": [
       {
         "id": "candidate-059-1",
@@ -1535,8 +1535,8 @@
   },
   {
     "id": "seat-060",
-    "name": "Constituency 060",
-    "state": "State data pending verification",
+    "name": "KISHANGANJ",
+    "state": "Bihar",
     "candidates": [
       {
         "id": "candidate-060-1",
@@ -1561,8 +1561,8 @@
   },
   {
     "id": "seat-061",
-    "name": "Constituency 061",
-    "state": "State data pending verification",
+    "name": "MADHEPURA",
+    "state": "Bihar",
     "candidates": [
       {
         "id": "candidate-061-1",
@@ -1587,8 +1587,8 @@
   },
   {
     "id": "seat-062",
-    "name": "Constituency 062",
-    "state": "State data pending verification",
+    "name": "MADHUBANI",
+    "state": "Bihar",
     "candidates": [
       {
         "id": "candidate-062-1",
@@ -1613,8 +1613,8 @@
   },
   {
     "id": "seat-063",
-    "name": "Constituency 063",
-    "state": "State data pending verification",
+    "name": "MAHARAJGANJ",
+    "state": "Bihar",
     "candidates": [
       {
         "id": "candidate-063-1",
@@ -1639,8 +1639,8 @@
   },
   {
     "id": "seat-064",
-    "name": "Constituency 064",
-    "state": "State data pending verification",
+    "name": "MUNGER",
+    "state": "Bihar",
     "candidates": [
       {
         "id": "candidate-064-1",
@@ -1665,8 +1665,8 @@
   },
   {
     "id": "seat-065",
-    "name": "Constituency 065",
-    "state": "State data pending verification",
+    "name": "MUZAFFARPUR",
+    "state": "Bihar",
     "candidates": [
       {
         "id": "candidate-065-1",
@@ -1691,8 +1691,8 @@
   },
   {
     "id": "seat-066",
-    "name": "Constituency 066",
-    "state": "State data pending verification",
+    "name": "NALANDA",
+    "state": "Bihar",
     "candidates": [
       {
         "id": "candidate-066-1",
@@ -1717,8 +1717,8 @@
   },
   {
     "id": "seat-067",
-    "name": "Constituency 067",
-    "state": "State data pending verification",
+    "name": "NAWADA",
+    "state": "Bihar",
     "candidates": [
       {
         "id": "candidate-067-1",
@@ -1743,8 +1743,8 @@
   },
   {
     "id": "seat-068",
-    "name": "Constituency 068",
-    "state": "State data pending verification",
+    "name": "PASCHIM CHAMPARAN",
+    "state": "Bihar",
     "candidates": [
       {
         "id": "candidate-068-1",
@@ -1769,8 +1769,8 @@
   },
   {
     "id": "seat-069",
-    "name": "Constituency 069",
-    "state": "State data pending verification",
+    "name": "PATALIPUTRA",
+    "state": "Bihar",
     "candidates": [
       {
         "id": "candidate-069-1",
@@ -1795,8 +1795,8 @@
   },
   {
     "id": "seat-070",
-    "name": "Constituency 070",
-    "state": "State data pending verification",
+    "name": "PATNA SAHIB",
+    "state": "Bihar",
     "candidates": [
       {
         "id": "candidate-070-1",
@@ -1821,8 +1821,8 @@
   },
   {
     "id": "seat-071",
-    "name": "Constituency 071",
-    "state": "State data pending verification",
+    "name": "PURNIA",
+    "state": "Bihar",
     "candidates": [
       {
         "id": "candidate-071-1",
@@ -1847,8 +1847,8 @@
   },
   {
     "id": "seat-072",
-    "name": "Constituency 072",
-    "state": "State data pending verification",
+    "name": "PURVI CHAMPARAN",
+    "state": "Bihar",
     "candidates": [
       {
         "id": "candidate-072-1",
@@ -1873,8 +1873,8 @@
   },
   {
     "id": "seat-073",
-    "name": "Constituency 073",
-    "state": "State data pending verification",
+    "name": "SAMASTIPUR (SC)",
+    "state": "Bihar",
     "candidates": [
       {
         "id": "candidate-073-1",
@@ -1899,8 +1899,8 @@
   },
   {
     "id": "seat-074",
-    "name": "Constituency 074",
-    "state": "State data pending verification",
+    "name": "SARAN",
+    "state": "Bihar",
     "candidates": [
       {
         "id": "candidate-074-1",
@@ -1925,8 +1925,8 @@
   },
   {
     "id": "seat-075",
-    "name": "Constituency 075",
-    "state": "State data pending verification",
+    "name": "SASARAM (SC)",
+    "state": "Bihar",
     "candidates": [
       {
         "id": "candidate-075-1",
@@ -1951,8 +1951,8 @@
   },
   {
     "id": "seat-076",
-    "name": "Constituency 076",
-    "state": "State data pending verification",
+    "name": "SHEOHAR",
+    "state": "Bihar",
     "candidates": [
       {
         "id": "candidate-076-1",
@@ -1977,8 +1977,8 @@
   },
   {
     "id": "seat-077",
-    "name": "Constituency 077",
-    "state": "State data pending verification",
+    "name": "SITAMARHI",
+    "state": "Bihar",
     "candidates": [
       {
         "id": "candidate-077-1",
@@ -2003,8 +2003,8 @@
   },
   {
     "id": "seat-078",
-    "name": "Constituency 078",
-    "state": "State data pending verification",
+    "name": "SIWAN",
+    "state": "Bihar",
     "candidates": [
       {
         "id": "candidate-078-1",
@@ -2029,8 +2029,8 @@
   },
   {
     "id": "seat-079",
-    "name": "Constituency 079",
-    "state": "State data pending verification",
+    "name": "SUPAUL",
+    "state": "Bihar",
     "candidates": [
       {
         "id": "candidate-079-1",
@@ -2055,8 +2055,8 @@
   },
   {
     "id": "seat-080",
-    "name": "Constituency 080",
-    "state": "State data pending verification",
+    "name": "UJIARPUR",
+    "state": "Bihar",
     "candidates": [
       {
         "id": "candidate-080-1",
@@ -2081,8 +2081,8 @@
   },
   {
     "id": "seat-081",
-    "name": "Constituency 081",
-    "state": "State data pending verification",
+    "name": "VAISHALI",
+    "state": "Bihar",
     "candidates": [
       {
         "id": "candidate-081-1",
@@ -2107,8 +2107,8 @@
   },
   {
     "id": "seat-082",
-    "name": "Constituency 082",
-    "state": "State data pending verification",
+    "name": "VALMIKI NAGAR",
+    "state": "Bihar",
     "candidates": [
       {
         "id": "candidate-082-1",
@@ -2133,8 +2133,8 @@
   },
   {
     "id": "seat-083",
-    "name": "Constituency 083",
-    "state": "State data pending verification",
+    "name": "CHANDIGARH",
+    "state": "Chandigarh",
     "candidates": [
       {
         "id": "candidate-083-1",
@@ -2159,8 +2159,8 @@
   },
   {
     "id": "seat-084",
-    "name": "Constituency 084",
-    "state": "State data pending verification",
+    "name": "BASTAR (ST)",
+    "state": "Chhattisgarh",
     "candidates": [
       {
         "id": "candidate-084-1",
@@ -2185,8 +2185,8 @@
   },
   {
     "id": "seat-085",
-    "name": "Constituency 085",
-    "state": "State data pending verification",
+    "name": "BILASPUR",
+    "state": "Chhattisgarh",
     "candidates": [
       {
         "id": "candidate-085-1",
@@ -2211,8 +2211,8 @@
   },
   {
     "id": "seat-086",
-    "name": "Constituency 086",
-    "state": "State data pending verification",
+    "name": "DURG",
+    "state": "Chhattisgarh",
     "candidates": [
       {
         "id": "candidate-086-1",
@@ -2237,8 +2237,8 @@
   },
   {
     "id": "seat-087",
-    "name": "Constituency 087",
-    "state": "State data pending verification",
+    "name": "JANJGIR-CHAMPA (SC)",
+    "state": "Chhattisgarh",
     "candidates": [
       {
         "id": "candidate-087-1",
@@ -2263,8 +2263,8 @@
   },
   {
     "id": "seat-088",
-    "name": "Constituency 088",
-    "state": "State data pending verification",
+    "name": "KANKER (ST)",
+    "state": "Chhattisgarh",
     "candidates": [
       {
         "id": "candidate-088-1",
@@ -2289,8 +2289,8 @@
   },
   {
     "id": "seat-089",
-    "name": "Constituency 089",
-    "state": "State data pending verification",
+    "name": "KORBA",
+    "state": "Chhattisgarh",
     "candidates": [
       {
         "id": "candidate-089-1",
@@ -2315,8 +2315,8 @@
   },
   {
     "id": "seat-090",
-    "name": "Constituency 090",
-    "state": "State data pending verification",
+    "name": "MAHASAMUND",
+    "state": "Chhattisgarh",
     "candidates": [
       {
         "id": "candidate-090-1",
@@ -2341,8 +2341,8 @@
   },
   {
     "id": "seat-091",
-    "name": "Constituency 091",
-    "state": "State data pending verification",
+    "name": "RAIGARH (ST)",
+    "state": "Chhattisgarh",
     "candidates": [
       {
         "id": "candidate-091-1",
@@ -2367,8 +2367,8 @@
   },
   {
     "id": "seat-092",
-    "name": "Constituency 092",
-    "state": "State data pending verification",
+    "name": "RAIPUR",
+    "state": "Chhattisgarh",
     "candidates": [
       {
         "id": "candidate-092-1",
@@ -2393,8 +2393,8 @@
   },
   {
     "id": "seat-093",
-    "name": "Constituency 093",
-    "state": "State data pending verification",
+    "name": "RAJNANDGAON",
+    "state": "Chhattisgarh",
     "candidates": [
       {
         "id": "candidate-093-1",
@@ -2419,8 +2419,8 @@
   },
   {
     "id": "seat-094",
-    "name": "Constituency 094",
-    "state": "State data pending verification",
+    "name": "SURGUJA (ST)",
+    "state": "Chhattisgarh",
     "candidates": [
       {
         "id": "candidate-094-1",
@@ -2445,8 +2445,8 @@
   },
   {
     "id": "seat-095",
-    "name": "Constituency 095",
-    "state": "State data pending verification",
+    "name": "DADAR & NAGAR HAVELI (ST)",
+    "state": "Dadra and Nagar Haveli and Daman and Diu",
     "candidates": [
       {
         "id": "candidate-095-1",
@@ -2471,8 +2471,8 @@
   },
   {
     "id": "seat-096",
-    "name": "Constituency 096",
-    "state": "State data pending verification",
+    "name": "DAMAN & DIU",
+    "state": "Dadra and Nagar Haveli and Daman and Diu",
     "candidates": [
       {
         "id": "candidate-096-1",
@@ -2497,8 +2497,8 @@
   },
   {
     "id": "seat-097",
-    "name": "Constituency 097",
-    "state": "State data pending verification",
+    "name": "CHANDNI CHOWK",
+    "state": "Delhi",
     "candidates": [
       {
         "id": "candidate-097-1",
@@ -2523,8 +2523,8 @@
   },
   {
     "id": "seat-098",
-    "name": "Constituency 098",
-    "state": "State data pending verification",
+    "name": "EAST DELHI",
+    "state": "Delhi",
     "candidates": [
       {
         "id": "candidate-098-1",
@@ -2549,8 +2549,8 @@
   },
   {
     "id": "seat-099",
-    "name": "Constituency 099",
-    "state": "State data pending verification",
+    "name": "NEW DELHI",
+    "state": "Delhi",
     "candidates": [
       {
         "id": "candidate-099-1",
@@ -2575,8 +2575,8 @@
   },
   {
     "id": "seat-100",
-    "name": "Constituency 100",
-    "state": "State data pending verification",
+    "name": "NORTH EAST DELHI",
+    "state": "Delhi",
     "candidates": [
       {
         "id": "candidate-100-1",
@@ -2601,8 +2601,8 @@
   },
   {
     "id": "seat-101",
-    "name": "Constituency 101",
-    "state": "State data pending verification",
+    "name": "NORTH WEST DELHI (SC)",
+    "state": "Delhi",
     "candidates": [
       {
         "id": "candidate-101-1",
@@ -2627,8 +2627,8 @@
   },
   {
     "id": "seat-102",
-    "name": "Constituency 102",
-    "state": "State data pending verification",
+    "name": "SOUTH DELHI",
+    "state": "Delhi",
     "candidates": [
       {
         "id": "candidate-102-1",
@@ -2653,8 +2653,8 @@
   },
   {
     "id": "seat-103",
-    "name": "Constituency 103",
-    "state": "State data pending verification",
+    "name": "WEST DELHI",
+    "state": "Delhi",
     "candidates": [
       {
         "id": "candidate-103-1",
@@ -2679,8 +2679,8 @@
   },
   {
     "id": "seat-104",
-    "name": "Constituency 104",
-    "state": "State data pending verification",
+    "name": "NORTH GOA",
+    "state": "Goa",
     "candidates": [
       {
         "id": "candidate-104-1",
@@ -2705,8 +2705,8 @@
   },
   {
     "id": "seat-105",
-    "name": "Constituency 105",
-    "state": "State data pending verification",
+    "name": "SOUTH GOA",
+    "state": "Goa",
     "candidates": [
       {
         "id": "candidate-105-1",
@@ -2731,8 +2731,8 @@
   },
   {
     "id": "seat-106",
-    "name": "Constituency 106",
-    "state": "State data pending verification",
+    "name": "AHMEDABAD EAST",
+    "state": "Gujarat",
     "candidates": [
       {
         "id": "candidate-106-1",
@@ -2757,8 +2757,8 @@
   },
   {
     "id": "seat-107",
-    "name": "Constituency 107",
-    "state": "State data pending verification",
+    "name": "AHMEDABAD WEST (SC)",
+    "state": "Gujarat",
     "candidates": [
       {
         "id": "candidate-107-1",
@@ -2783,8 +2783,8 @@
   },
   {
     "id": "seat-108",
-    "name": "Constituency 108",
-    "state": "State data pending verification",
+    "name": "AMRELI",
+    "state": "Gujarat",
     "candidates": [
       {
         "id": "candidate-108-1",
@@ -2809,8 +2809,8 @@
   },
   {
     "id": "seat-109",
-    "name": "Constituency 109",
-    "state": "State data pending verification",
+    "name": "ANAND",
+    "state": "Gujarat",
     "candidates": [
       {
         "id": "candidate-109-1",
@@ -2835,8 +2835,8 @@
   },
   {
     "id": "seat-110",
-    "name": "Constituency 110",
-    "state": "State data pending verification",
+    "name": "BANASKANTHA",
+    "state": "Gujarat",
     "candidates": [
       {
         "id": "candidate-110-1",
@@ -2861,8 +2861,8 @@
   },
   {
     "id": "seat-111",
-    "name": "Constituency 111",
-    "state": "State data pending verification",
+    "name": "BARDOLI (ST)",
+    "state": "Gujarat",
     "candidates": [
       {
         "id": "candidate-111-1",
@@ -2887,8 +2887,8 @@
   },
   {
     "id": "seat-112",
-    "name": "Constituency 112",
-    "state": "State data pending verification",
+    "name": "BHARUCH",
+    "state": "Gujarat",
     "candidates": [
       {
         "id": "candidate-112-1",
@@ -2913,8 +2913,8 @@
   },
   {
     "id": "seat-113",
-    "name": "Constituency 113",
-    "state": "State data pending verification",
+    "name": "BHAVNAGAR",
+    "state": "Gujarat",
     "candidates": [
       {
         "id": "candidate-113-1",
@@ -2939,8 +2939,8 @@
   },
   {
     "id": "seat-114",
-    "name": "Constituency 114",
-    "state": "State data pending verification",
+    "name": "CHHOTA UDAIPUR (ST)",
+    "state": "Gujarat",
     "candidates": [
       {
         "id": "candidate-114-1",
@@ -2965,8 +2965,8 @@
   },
   {
     "id": "seat-115",
-    "name": "Constituency 115",
-    "state": "State data pending verification",
+    "name": "DAHOD (ST)",
+    "state": "Gujarat",
     "candidates": [
       {
         "id": "candidate-115-1",
@@ -2991,8 +2991,8 @@
   },
   {
     "id": "seat-116",
-    "name": "Constituency 116",
-    "state": "State data pending verification",
+    "name": "GANDHINAGAR",
+    "state": "Gujarat",
     "candidates": [
       {
         "id": "candidate-116-1",
@@ -3017,8 +3017,8 @@
   },
   {
     "id": "seat-117",
-    "name": "Constituency 117",
-    "state": "State data pending verification",
+    "name": "JAMNAGAR",
+    "state": "Gujarat",
     "candidates": [
       {
         "id": "candidate-117-1",
@@ -3043,8 +3043,8 @@
   },
   {
     "id": "seat-118",
-    "name": "Constituency 118",
-    "state": "State data pending verification",
+    "name": "JUNAGADH",
+    "state": "Gujarat",
     "candidates": [
       {
         "id": "candidate-118-1",
@@ -3069,8 +3069,8 @@
   },
   {
     "id": "seat-119",
-    "name": "Constituency 119",
-    "state": "State data pending verification",
+    "name": "KACHCHH (SC)",
+    "state": "Gujarat",
     "candidates": [
       {
         "id": "candidate-119-1",
@@ -3095,8 +3095,8 @@
   },
   {
     "id": "seat-120",
-    "name": "Constituency 120",
-    "state": "State data pending verification",
+    "name": "KHEDA",
+    "state": "Gujarat",
     "candidates": [
       {
         "id": "candidate-120-1",
@@ -3121,8 +3121,8 @@
   },
   {
     "id": "seat-121",
-    "name": "Constituency 121",
-    "state": "State data pending verification",
+    "name": "MAHESANA",
+    "state": "Gujarat",
     "candidates": [
       {
         "id": "candidate-121-1",
@@ -3147,8 +3147,8 @@
   },
   {
     "id": "seat-122",
-    "name": "Constituency 122",
-    "state": "State data pending verification",
+    "name": "NAVSARI",
+    "state": "Gujarat",
     "candidates": [
       {
         "id": "candidate-122-1",
@@ -3173,8 +3173,8 @@
   },
   {
     "id": "seat-123",
-    "name": "Constituency 123",
-    "state": "State data pending verification",
+    "name": "PANCHMAHAL",
+    "state": "Gujarat",
     "candidates": [
       {
         "id": "candidate-123-1",
@@ -3199,8 +3199,8 @@
   },
   {
     "id": "seat-124",
-    "name": "Constituency 124",
-    "state": "State data pending verification",
+    "name": "PATAN",
+    "state": "Gujarat",
     "candidates": [
       {
         "id": "candidate-124-1",
@@ -3225,8 +3225,8 @@
   },
   {
     "id": "seat-125",
-    "name": "Constituency 125",
-    "state": "State data pending verification",
+    "name": "PORBANDAR",
+    "state": "Gujarat",
     "candidates": [
       {
         "id": "candidate-125-1",
@@ -3251,8 +3251,8 @@
   },
   {
     "id": "seat-126",
-    "name": "Constituency 126",
-    "state": "State data pending verification",
+    "name": "RAJKOT",
+    "state": "Gujarat",
     "candidates": [
       {
         "id": "candidate-126-1",
@@ -3277,8 +3277,8 @@
   },
   {
     "id": "seat-127",
-    "name": "Constituency 127",
-    "state": "State data pending verification",
+    "name": "SABARKANTHA",
+    "state": "Gujarat",
     "candidates": [
       {
         "id": "candidate-127-1",
@@ -3303,8 +3303,8 @@
   },
   {
     "id": "seat-128",
-    "name": "Constituency 128",
-    "state": "State data pending verification",
+    "name": "SURAT",
+    "state": "Gujarat",
     "candidates": [
       {
         "id": "candidate-128-1",
@@ -3329,8 +3329,8 @@
   },
   {
     "id": "seat-129",
-    "name": "Constituency 129",
-    "state": "State data pending verification",
+    "name": "SURENDRANAGAR",
+    "state": "Gujarat",
     "candidates": [
       {
         "id": "candidate-129-1",
@@ -3355,8 +3355,8 @@
   },
   {
     "id": "seat-130",
-    "name": "Constituency 130",
-    "state": "State data pending verification",
+    "name": "VADODARA",
+    "state": "Gujarat",
     "candidates": [
       {
         "id": "candidate-130-1",
@@ -3381,8 +3381,8 @@
   },
   {
     "id": "seat-131",
-    "name": "Constituency 131",
-    "state": "State data pending verification",
+    "name": "VALSAD (ST)",
+    "state": "Gujarat",
     "candidates": [
       {
         "id": "candidate-131-1",
@@ -3407,8 +3407,8 @@
   },
   {
     "id": "seat-132",
-    "name": "Constituency 132",
-    "state": "State data pending verification",
+    "name": "AMBALA (SC)",
+    "state": "Haryana",
     "candidates": [
       {
         "id": "candidate-132-1",
@@ -3433,8 +3433,8 @@
   },
   {
     "id": "seat-133",
-    "name": "Constituency 133",
-    "state": "State data pending verification",
+    "name": "BHIWANI-MAHENDRAGARH",
+    "state": "Haryana",
     "candidates": [
       {
         "id": "candidate-133-1",
@@ -3459,8 +3459,8 @@
   },
   {
     "id": "seat-134",
-    "name": "Constituency 134",
-    "state": "State data pending verification",
+    "name": "FARIDABAD",
+    "state": "Haryana",
     "candidates": [
       {
         "id": "candidate-134-1",
@@ -3485,8 +3485,8 @@
   },
   {
     "id": "seat-135",
-    "name": "Constituency 135",
-    "state": "State data pending verification",
+    "name": "GURGAON",
+    "state": "Haryana",
     "candidates": [
       {
         "id": "candidate-135-1",
@@ -3511,8 +3511,8 @@
   },
   {
     "id": "seat-136",
-    "name": "Constituency 136",
-    "state": "State data pending verification",
+    "name": "HISAR",
+    "state": "Haryana",
     "candidates": [
       {
         "id": "candidate-136-1",
@@ -3537,8 +3537,8 @@
   },
   {
     "id": "seat-137",
-    "name": "Constituency 137",
-    "state": "State data pending verification",
+    "name": "KARNAL",
+    "state": "Haryana",
     "candidates": [
       {
         "id": "candidate-137-1",
@@ -3563,8 +3563,8 @@
   },
   {
     "id": "seat-138",
-    "name": "Constituency 138",
-    "state": "State data pending verification",
+    "name": "KURUKSHETRA",
+    "state": "Haryana",
     "candidates": [
       {
         "id": "candidate-138-1",
@@ -3589,8 +3589,8 @@
   },
   {
     "id": "seat-139",
-    "name": "Constituency 139",
-    "state": "State data pending verification",
+    "name": "ROHTAK",
+    "state": "Haryana",
     "candidates": [
       {
         "id": "candidate-139-1",
@@ -3615,8 +3615,8 @@
   },
   {
     "id": "seat-140",
-    "name": "Constituency 140",
-    "state": "State data pending verification",
+    "name": "SIRSA (SC)",
+    "state": "Haryana",
     "candidates": [
       {
         "id": "candidate-140-1",
@@ -3641,8 +3641,8 @@
   },
   {
     "id": "seat-141",
-    "name": "Constituency 141",
-    "state": "State data pending verification",
+    "name": "SONIPAT",
+    "state": "Haryana",
     "candidates": [
       {
         "id": "candidate-141-1",
@@ -3667,8 +3667,8 @@
   },
   {
     "id": "seat-142",
-    "name": "Constituency 142",
-    "state": "State data pending verification",
+    "name": "HAMIRPUR",
+    "state": "Himachal Pradesh",
     "candidates": [
       {
         "id": "candidate-142-1",
@@ -3693,8 +3693,8 @@
   },
   {
     "id": "seat-143",
-    "name": "Constituency 143",
-    "state": "State data pending verification",
+    "name": "KANGRA",
+    "state": "Himachal Pradesh",
     "candidates": [
       {
         "id": "candidate-143-1",
@@ -3719,8 +3719,8 @@
   },
   {
     "id": "seat-144",
-    "name": "Constituency 144",
-    "state": "State data pending verification",
+    "name": "MANDI",
+    "state": "Himachal Pradesh",
     "candidates": [
       {
         "id": "candidate-144-1",
@@ -3745,8 +3745,8 @@
   },
   {
     "id": "seat-145",
-    "name": "Constituency 145",
-    "state": "State data pending verification",
+    "name": "SHIMLA (SC)",
+    "state": "Himachal Pradesh",
     "candidates": [
       {
         "id": "candidate-145-1",
@@ -3771,8 +3771,8 @@
   },
   {
     "id": "seat-146",
-    "name": "Constituency 146",
-    "state": "State data pending verification",
+    "name": "ANANTNAG-RAJOURI",
+    "state": "Jammu and Kashmir",
     "candidates": [
       {
         "id": "candidate-146-1",
@@ -3797,8 +3797,8 @@
   },
   {
     "id": "seat-147",
-    "name": "Constituency 147",
-    "state": "State data pending verification",
+    "name": "BARAMULLA",
+    "state": "Jammu and Kashmir",
     "candidates": [
       {
         "id": "candidate-147-1",
@@ -3823,8 +3823,8 @@
   },
   {
     "id": "seat-148",
-    "name": "Constituency 148",
-    "state": "State data pending verification",
+    "name": "JAMMU",
+    "state": "Jammu and Kashmir",
     "candidates": [
       {
         "id": "candidate-148-1",
@@ -3849,8 +3849,8 @@
   },
   {
     "id": "seat-149",
-    "name": "Constituency 149",
-    "state": "State data pending verification",
+    "name": "SRINAGAR",
+    "state": "Jammu and Kashmir",
     "candidates": [
       {
         "id": "candidate-149-1",
@@ -3875,8 +3875,8 @@
   },
   {
     "id": "seat-150",
-    "name": "Constituency 150",
-    "state": "State data pending verification",
+    "name": "UDHAMPUR",
+    "state": "Jammu and Kashmir",
     "candidates": [
       {
         "id": "candidate-150-1",
@@ -3901,8 +3901,8 @@
   },
   {
     "id": "seat-151",
-    "name": "Constituency 151",
-    "state": "State data pending verification",
+    "name": "CHATRA",
+    "state": "Jharkhand",
     "candidates": [
       {
         "id": "candidate-151-1",
@@ -3927,8 +3927,8 @@
   },
   {
     "id": "seat-152",
-    "name": "Constituency 152",
-    "state": "State data pending verification",
+    "name": "DHANBAD",
+    "state": "Jharkhand",
     "candidates": [
       {
         "id": "candidate-152-1",
@@ -3953,8 +3953,8 @@
   },
   {
     "id": "seat-153",
-    "name": "Constituency 153",
-    "state": "State data pending verification",
+    "name": "DUMKA (ST)",
+    "state": "Jharkhand",
     "candidates": [
       {
         "id": "candidate-153-1",
@@ -3979,8 +3979,8 @@
   },
   {
     "id": "seat-154",
-    "name": "Constituency 154",
-    "state": "State data pending verification",
+    "name": "GIRIDIH",
+    "state": "Jharkhand",
     "candidates": [
       {
         "id": "candidate-154-1",
@@ -4005,8 +4005,8 @@
   },
   {
     "id": "seat-155",
-    "name": "Constituency 155",
-    "state": "State data pending verification",
+    "name": "GODDA",
+    "state": "Jharkhand",
     "candidates": [
       {
         "id": "candidate-155-1",
@@ -4031,8 +4031,8 @@
   },
   {
     "id": "seat-156",
-    "name": "Constituency 156",
-    "state": "State data pending verification",
+    "name": "HAZARIBAGH",
+    "state": "Jharkhand",
     "candidates": [
       {
         "id": "candidate-156-1",
@@ -4057,8 +4057,8 @@
   },
   {
     "id": "seat-157",
-    "name": "Constituency 157",
-    "state": "State data pending verification",
+    "name": "JAMSHEDPUR",
+    "state": "Jharkhand",
     "candidates": [
       {
         "id": "candidate-157-1",
@@ -4083,8 +4083,8 @@
   },
   {
     "id": "seat-158",
-    "name": "Constituency 158",
-    "state": "State data pending verification",
+    "name": "KHUNTI (ST)",
+    "state": "Jharkhand",
     "candidates": [
       {
         "id": "candidate-158-1",
@@ -4109,8 +4109,8 @@
   },
   {
     "id": "seat-159",
-    "name": "Constituency 159",
-    "state": "State data pending verification",
+    "name": "KODARMA",
+    "state": "Jharkhand",
     "candidates": [
       {
         "id": "candidate-159-1",
@@ -4135,8 +4135,8 @@
   },
   {
     "id": "seat-160",
-    "name": "Constituency 160",
-    "state": "State data pending verification",
+    "name": "LOHARDAGA (ST)",
+    "state": "Jharkhand",
     "candidates": [
       {
         "id": "candidate-160-1",
@@ -4161,8 +4161,8 @@
   },
   {
     "id": "seat-161",
-    "name": "Constituency 161",
-    "state": "State data pending verification",
+    "name": "PALAMU (SC)",
+    "state": "Jharkhand",
     "candidates": [
       {
         "id": "candidate-161-1",
@@ -4187,8 +4187,8 @@
   },
   {
     "id": "seat-162",
-    "name": "Constituency 162",
-    "state": "State data pending verification",
+    "name": "RAJMAHAL (ST)",
+    "state": "Jharkhand",
     "candidates": [
       {
         "id": "candidate-162-1",
@@ -4213,8 +4213,8 @@
   },
   {
     "id": "seat-163",
-    "name": "Constituency 163",
-    "state": "State data pending verification",
+    "name": "RANCHI",
+    "state": "Jharkhand",
     "candidates": [
       {
         "id": "candidate-163-1",
@@ -4239,8 +4239,8 @@
   },
   {
     "id": "seat-164",
-    "name": "Constituency 164",
-    "state": "State data pending verification",
+    "name": "SINGHBHUM (ST)",
+    "state": "Jharkhand",
     "candidates": [
       {
         "id": "candidate-164-1",
@@ -4265,8 +4265,8 @@
   },
   {
     "id": "seat-165",
-    "name": "Constituency 165",
-    "state": "State data pending verification",
+    "name": "BAGALKOT",
+    "state": "Karnataka",
     "candidates": [
       {
         "id": "candidate-165-1",
@@ -4291,8 +4291,8 @@
   },
   {
     "id": "seat-166",
-    "name": "Constituency 166",
-    "state": "State data pending verification",
+    "name": "BANGALORE CENTRAL",
+    "state": "Karnataka",
     "candidates": [
       {
         "id": "candidate-166-1",
@@ -4317,8 +4317,8 @@
   },
   {
     "id": "seat-167",
-    "name": "Constituency 167",
-    "state": "State data pending verification",
+    "name": "BANGALORE NORTH",
+    "state": "Karnataka",
     "candidates": [
       {
         "id": "candidate-167-1",
@@ -4343,8 +4343,8 @@
   },
   {
     "id": "seat-168",
-    "name": "Constituency 168",
-    "state": "State data pending verification",
+    "name": "BANGALORE RURAL",
+    "state": "Karnataka",
     "candidates": [
       {
         "id": "candidate-168-1",
@@ -4369,8 +4369,8 @@
   },
   {
     "id": "seat-169",
-    "name": "Constituency 169",
-    "state": "State data pending verification",
+    "name": "BANGALORE SOUTH",
+    "state": "Karnataka",
     "candidates": [
       {
         "id": "candidate-169-1",
@@ -4395,8 +4395,8 @@
   },
   {
     "id": "seat-170",
-    "name": "Constituency 170",
-    "state": "State data pending verification",
+    "name": "BELGAUM",
+    "state": "Karnataka",
     "candidates": [
       {
         "id": "candidate-170-1",
@@ -4421,8 +4421,8 @@
   },
   {
     "id": "seat-171",
-    "name": "Constituency 171",
-    "state": "State data pending verification",
+    "name": "BELLARY (ST)",
+    "state": "Karnataka",
     "candidates": [
       {
         "id": "candidate-171-1",
@@ -4447,8 +4447,8 @@
   },
   {
     "id": "seat-172",
-    "name": "Constituency 172",
-    "state": "State data pending verification",
+    "name": "BIDAR",
+    "state": "Karnataka",
     "candidates": [
       {
         "id": "candidate-172-1",
@@ -4473,8 +4473,8 @@
   },
   {
     "id": "seat-173",
-    "name": "Constituency 173",
-    "state": "State data pending verification",
+    "name": "BIJAPUR (SC)",
+    "state": "Karnataka",
     "candidates": [
       {
         "id": "candidate-173-1",
@@ -4499,8 +4499,8 @@
   },
   {
     "id": "seat-174",
-    "name": "Constituency 174",
-    "state": "State data pending verification",
+    "name": "CHAMARAJANAGAR (SC)",
+    "state": "Karnataka",
     "candidates": [
       {
         "id": "candidate-174-1",
@@ -4525,8 +4525,8 @@
   },
   {
     "id": "seat-175",
-    "name": "Constituency 175",
-    "state": "State data pending verification",
+    "name": "CHIKKBALLAPUR",
+    "state": "Karnataka",
     "candidates": [
       {
         "id": "candidate-175-1",
@@ -4551,8 +4551,8 @@
   },
   {
     "id": "seat-176",
-    "name": "Constituency 176",
-    "state": "State data pending verification",
+    "name": "CHIKKODI",
+    "state": "Karnataka",
     "candidates": [
       {
         "id": "candidate-176-1",
@@ -4577,8 +4577,8 @@
   },
   {
     "id": "seat-177",
-    "name": "Constituency 177",
-    "state": "State data pending verification",
+    "name": "CHITRADURGA (SC)",
+    "state": "Karnataka",
     "candidates": [
       {
         "id": "candidate-177-1",
@@ -4603,8 +4603,8 @@
   },
   {
     "id": "seat-178",
-    "name": "Constituency 178",
-    "state": "State data pending verification",
+    "name": "DAKSHINA KANNADA",
+    "state": "Karnataka",
     "candidates": [
       {
         "id": "candidate-178-1",
@@ -4629,8 +4629,8 @@
   },
   {
     "id": "seat-179",
-    "name": "Constituency 179",
-    "state": "State data pending verification",
+    "name": "DAVANAGERE",
+    "state": "Karnataka",
     "candidates": [
       {
         "id": "candidate-179-1",
@@ -4655,8 +4655,8 @@
   },
   {
     "id": "seat-180",
-    "name": "Constituency 180",
-    "state": "State data pending verification",
+    "name": "DHARWAD",
+    "state": "Karnataka",
     "candidates": [
       {
         "id": "candidate-180-1",
@@ -4681,8 +4681,8 @@
   },
   {
     "id": "seat-181",
-    "name": "Constituency 181",
-    "state": "State data pending verification",
+    "name": "GULBARGA (SC)",
+    "state": "Karnataka",
     "candidates": [
       {
         "id": "candidate-181-1",
@@ -4707,8 +4707,8 @@
   },
   {
     "id": "seat-182",
-    "name": "Constituency 182",
-    "state": "State data pending verification",
+    "name": "HASSAN",
+    "state": "Karnataka",
     "candidates": [
       {
         "id": "candidate-182-1",
@@ -4733,8 +4733,8 @@
   },
   {
     "id": "seat-183",
-    "name": "Constituency 183",
-    "state": "State data pending verification",
+    "name": "HAVERI",
+    "state": "Karnataka",
     "candidates": [
       {
         "id": "candidate-183-1",
@@ -4759,8 +4759,8 @@
   },
   {
     "id": "seat-184",
-    "name": "Constituency 184",
-    "state": "State data pending verification",
+    "name": "KOLAR (SC)",
+    "state": "Karnataka",
     "candidates": [
       {
         "id": "candidate-184-1",
@@ -4785,8 +4785,8 @@
   },
   {
     "id": "seat-185",
-    "name": "Constituency 185",
-    "state": "State data pending verification",
+    "name": "KOPPAL",
+    "state": "Karnataka",
     "candidates": [
       {
         "id": "candidate-185-1",
@@ -4811,8 +4811,8 @@
   },
   {
     "id": "seat-186",
-    "name": "Constituency 186",
-    "state": "State data pending verification",
+    "name": "MANDYA",
+    "state": "Karnataka",
     "candidates": [
       {
         "id": "candidate-186-1",
@@ -4837,8 +4837,8 @@
   },
   {
     "id": "seat-187",
-    "name": "Constituency 187",
-    "state": "State data pending verification",
+    "name": "MYSORE",
+    "state": "Karnataka",
     "candidates": [
       {
         "id": "candidate-187-1",
@@ -4863,8 +4863,8 @@
   },
   {
     "id": "seat-188",
-    "name": "Constituency 188",
-    "state": "State data pending verification",
+    "name": "RAICHUR (ST)",
+    "state": "Karnataka",
     "candidates": [
       {
         "id": "candidate-188-1",
@@ -4889,8 +4889,8 @@
   },
   {
     "id": "seat-189",
-    "name": "Constituency 189",
-    "state": "State data pending verification",
+    "name": "SHIMOGA",
+    "state": "Karnataka",
     "candidates": [
       {
         "id": "candidate-189-1",
@@ -4915,8 +4915,8 @@
   },
   {
     "id": "seat-190",
-    "name": "Constituency 190",
-    "state": "State data pending verification",
+    "name": "TUMKUR",
+    "state": "Karnataka",
     "candidates": [
       {
         "id": "candidate-190-1",
@@ -4941,8 +4941,8 @@
   },
   {
     "id": "seat-191",
-    "name": "Constituency 191",
-    "state": "State data pending verification",
+    "name": "UDUPI CHIKMAGALUR",
+    "state": "Karnataka",
     "candidates": [
       {
         "id": "candidate-191-1",
@@ -4967,8 +4967,8 @@
   },
   {
     "id": "seat-192",
-    "name": "Constituency 192",
-    "state": "State data pending verification",
+    "name": "UTTARA KANNADA",
+    "state": "Karnataka",
     "candidates": [
       {
         "id": "candidate-192-1",
@@ -4993,8 +4993,8 @@
   },
   {
     "id": "seat-193",
-    "name": "Constituency 193",
-    "state": "State data pending verification",
+    "name": "ALAPPUZHA",
+    "state": "Kerala",
     "candidates": [
       {
         "id": "candidate-193-1",
@@ -5019,8 +5019,8 @@
   },
   {
     "id": "seat-194",
-    "name": "Constituency 194",
-    "state": "State data pending verification",
+    "name": "ALATHUR (SC)",
+    "state": "Kerala",
     "candidates": [
       {
         "id": "candidate-194-1",
@@ -5045,8 +5045,8 @@
   },
   {
     "id": "seat-195",
-    "name": "Constituency 195",
-    "state": "State data pending verification",
+    "name": "ATTINGAL",
+    "state": "Kerala",
     "candidates": [
       {
         "id": "candidate-195-1",
@@ -5071,8 +5071,8 @@
   },
   {
     "id": "seat-196",
-    "name": "Constituency 196",
-    "state": "State data pending verification",
+    "name": "CHALAKUDY",
+    "state": "Kerala",
     "candidates": [
       {
         "id": "candidate-196-1",
@@ -5097,8 +5097,8 @@
   },
   {
     "id": "seat-197",
-    "name": "Constituency 197",
-    "state": "State data pending verification",
+    "name": "ERNAKULAM",
+    "state": "Kerala",
     "candidates": [
       {
         "id": "candidate-197-1",
@@ -5123,8 +5123,8 @@
   },
   {
     "id": "seat-198",
-    "name": "Constituency 198",
-    "state": "State data pending verification",
+    "name": "IDUKKI",
+    "state": "Kerala",
     "candidates": [
       {
         "id": "candidate-198-1",
@@ -5149,8 +5149,8 @@
   },
   {
     "id": "seat-199",
-    "name": "Constituency 199",
-    "state": "State data pending verification",
+    "name": "KANNUR",
+    "state": "Kerala",
     "candidates": [
       {
         "id": "candidate-199-1",
@@ -5175,8 +5175,8 @@
   },
   {
     "id": "seat-200",
-    "name": "Constituency 200",
-    "state": "State data pending verification",
+    "name": "KASARAGOD",
+    "state": "Kerala",
     "candidates": [
       {
         "id": "candidate-200-1",
@@ -5201,8 +5201,8 @@
   },
   {
     "id": "seat-201",
-    "name": "Constituency 201",
-    "state": "State data pending verification",
+    "name": "KOLLAM",
+    "state": "Kerala",
     "candidates": [
       {
         "id": "candidate-201-1",
@@ -5227,8 +5227,8 @@
   },
   {
     "id": "seat-202",
-    "name": "Constituency 202",
-    "state": "State data pending verification",
+    "name": "KOTTAYAM",
+    "state": "Kerala",
     "candidates": [
       {
         "id": "candidate-202-1",
@@ -5253,8 +5253,8 @@
   },
   {
     "id": "seat-203",
-    "name": "Constituency 203",
-    "state": "State data pending verification",
+    "name": "KOZHIKODE",
+    "state": "Kerala",
     "candidates": [
       {
         "id": "candidate-203-1",
@@ -5279,8 +5279,8 @@
   },
   {
     "id": "seat-204",
-    "name": "Constituency 204",
-    "state": "State data pending verification",
+    "name": "MALAPPURAM",
+    "state": "Kerala",
     "candidates": [
       {
         "id": "candidate-204-1",
@@ -5305,8 +5305,8 @@
   },
   {
     "id": "seat-205",
-    "name": "Constituency 205",
-    "state": "State data pending verification",
+    "name": "MAVELIKKARA (SC)",
+    "state": "Kerala",
     "candidates": [
       {
         "id": "candidate-205-1",
@@ -5331,8 +5331,8 @@
   },
   {
     "id": "seat-206",
-    "name": "Constituency 206",
-    "state": "State data pending verification",
+    "name": "PALAKKAD",
+    "state": "Kerala",
     "candidates": [
       {
         "id": "candidate-206-1",
@@ -5357,8 +5357,8 @@
   },
   {
     "id": "seat-207",
-    "name": "Constituency 207",
-    "state": "State data pending verification",
+    "name": "PATHANAMTHITTA",
+    "state": "Kerala",
     "candidates": [
       {
         "id": "candidate-207-1",
@@ -5383,8 +5383,8 @@
   },
   {
     "id": "seat-208",
-    "name": "Constituency 208",
-    "state": "State data pending verification",
+    "name": "PONNANI",
+    "state": "Kerala",
     "candidates": [
       {
         "id": "candidate-208-1",
@@ -5409,8 +5409,8 @@
   },
   {
     "id": "seat-209",
-    "name": "Constituency 209",
-    "state": "State data pending verification",
+    "name": "THIRUVANANTHAPURAM",
+    "state": "Kerala",
     "candidates": [
       {
         "id": "candidate-209-1",
@@ -5435,8 +5435,8 @@
   },
   {
     "id": "seat-210",
-    "name": "Constituency 210",
-    "state": "State data pending verification",
+    "name": "THRISSUR",
+    "state": "Kerala",
     "candidates": [
       {
         "id": "candidate-210-1",
@@ -5461,8 +5461,8 @@
   },
   {
     "id": "seat-211",
-    "name": "Constituency 211",
-    "state": "State data pending verification",
+    "name": "VADAKARA",
+    "state": "Kerala",
     "candidates": [
       {
         "id": "candidate-211-1",
@@ -5487,8 +5487,8 @@
   },
   {
     "id": "seat-212",
-    "name": "Constituency 212",
-    "state": "State data pending verification",
+    "name": "WAYANAD",
+    "state": "Kerala",
     "candidates": [
       {
         "id": "candidate-212-1",
@@ -5513,8 +5513,8 @@
   },
   {
     "id": "seat-213",
-    "name": "Constituency 213",
-    "state": "State data pending verification",
+    "name": "LADAKH",
+    "state": "Ladakh",
     "candidates": [
       {
         "id": "candidate-213-1",
@@ -5539,8 +5539,8 @@
   },
   {
     "id": "seat-214",
-    "name": "Constituency 214",
-    "state": "State data pending verification",
+    "name": "LAKSHADWEEP (ST)",
+    "state": "Lakshadweep",
     "candidates": [
       {
         "id": "candidate-214-1",
@@ -5565,8 +5565,8 @@
   },
   {
     "id": "seat-215",
-    "name": "Constituency 215",
-    "state": "State data pending verification",
+    "name": "BALAGHAT",
+    "state": "Madhya Pradesh",
     "candidates": [
       {
         "id": "candidate-215-1",
@@ -5591,8 +5591,8 @@
   },
   {
     "id": "seat-216",
-    "name": "Constituency 216",
-    "state": "State data pending verification",
+    "name": "BETUL (ST)",
+    "state": "Madhya Pradesh",
     "candidates": [
       {
         "id": "candidate-216-1",
@@ -5617,8 +5617,8 @@
   },
   {
     "id": "seat-217",
-    "name": "Constituency 217",
-    "state": "State data pending verification",
+    "name": "BHIND (SC)",
+    "state": "Madhya Pradesh",
     "candidates": [
       {
         "id": "candidate-217-1",
@@ -5643,8 +5643,8 @@
   },
   {
     "id": "seat-218",
-    "name": "Constituency 218",
-    "state": "State data pending verification",
+    "name": "BHOPAL",
+    "state": "Madhya Pradesh",
     "candidates": [
       {
         "id": "candidate-218-1",
@@ -5669,8 +5669,8 @@
   },
   {
     "id": "seat-219",
-    "name": "Constituency 219",
-    "state": "State data pending verification",
+    "name": "CHHINDWARA",
+    "state": "Madhya Pradesh",
     "candidates": [
       {
         "id": "candidate-219-1",
@@ -5695,8 +5695,8 @@
   },
   {
     "id": "seat-220",
-    "name": "Constituency 220",
-    "state": "State data pending verification",
+    "name": "DAMOH",
+    "state": "Madhya Pradesh",
     "candidates": [
       {
         "id": "candidate-220-1",
@@ -5721,8 +5721,8 @@
   },
   {
     "id": "seat-221",
-    "name": "Constituency 221",
-    "state": "State data pending verification",
+    "name": "DEWAS (SC)",
+    "state": "Madhya Pradesh",
     "candidates": [
       {
         "id": "candidate-221-1",
@@ -5747,8 +5747,8 @@
   },
   {
     "id": "seat-222",
-    "name": "Constituency 222",
-    "state": "State data pending verification",
+    "name": "DHAR (ST)",
+    "state": "Madhya Pradesh",
     "candidates": [
       {
         "id": "candidate-222-1",
@@ -5773,8 +5773,8 @@
   },
   {
     "id": "seat-223",
-    "name": "Constituency 223",
-    "state": "State data pending verification",
+    "name": "GUNA",
+    "state": "Madhya Pradesh",
     "candidates": [
       {
         "id": "candidate-223-1",
@@ -5799,8 +5799,8 @@
   },
   {
     "id": "seat-224",
-    "name": "Constituency 224",
-    "state": "State data pending verification",
+    "name": "GWALIOR",
+    "state": "Madhya Pradesh",
     "candidates": [
       {
         "id": "candidate-224-1",
@@ -5825,8 +5825,8 @@
   },
   {
     "id": "seat-225",
-    "name": "Constituency 225",
-    "state": "State data pending verification",
+    "name": "HOSHANGABAD",
+    "state": "Madhya Pradesh",
     "candidates": [
       {
         "id": "candidate-225-1",
@@ -5851,8 +5851,8 @@
   },
   {
     "id": "seat-226",
-    "name": "Constituency 226",
-    "state": "State data pending verification",
+    "name": "INDORE",
+    "state": "Madhya Pradesh",
     "candidates": [
       {
         "id": "candidate-226-1",
@@ -5877,8 +5877,8 @@
   },
   {
     "id": "seat-227",
-    "name": "Constituency 227",
-    "state": "State data pending verification",
+    "name": "JABALPUR",
+    "state": "Madhya Pradesh",
     "candidates": [
       {
         "id": "candidate-227-1",
@@ -5903,8 +5903,8 @@
   },
   {
     "id": "seat-228",
-    "name": "Constituency 228",
-    "state": "State data pending verification",
+    "name": "KHAJURAHO",
+    "state": "Madhya Pradesh",
     "candidates": [
       {
         "id": "candidate-228-1",
@@ -5929,8 +5929,8 @@
   },
   {
     "id": "seat-229",
-    "name": "Constituency 229",
-    "state": "State data pending verification",
+    "name": "KHANDWA",
+    "state": "Madhya Pradesh",
     "candidates": [
       {
         "id": "candidate-229-1",
@@ -5955,8 +5955,8 @@
   },
   {
     "id": "seat-230",
-    "name": "Constituency 230",
-    "state": "State data pending verification",
+    "name": "KHARGONE (ST)",
+    "state": "Madhya Pradesh",
     "candidates": [
       {
         "id": "candidate-230-1",
@@ -5981,8 +5981,8 @@
   },
   {
     "id": "seat-231",
-    "name": "Constituency 231",
-    "state": "State data pending verification",
+    "name": "MANDLA (ST)",
+    "state": "Madhya Pradesh",
     "candidates": [
       {
         "id": "candidate-231-1",
@@ -6007,8 +6007,8 @@
   },
   {
     "id": "seat-232",
-    "name": "Constituency 232",
-    "state": "State data pending verification",
+    "name": "MANDSOUR",
+    "state": "Madhya Pradesh",
     "candidates": [
       {
         "id": "candidate-232-1",
@@ -6033,8 +6033,8 @@
   },
   {
     "id": "seat-233",
-    "name": "Constituency 233",
-    "state": "State data pending verification",
+    "name": "MORENA",
+    "state": "Madhya Pradesh",
     "candidates": [
       {
         "id": "candidate-233-1",
@@ -6059,8 +6059,8 @@
   },
   {
     "id": "seat-234",
-    "name": "Constituency 234",
-    "state": "State data pending verification",
+    "name": "RAJGARH",
+    "state": "Madhya Pradesh",
     "candidates": [
       {
         "id": "candidate-234-1",
@@ -6085,8 +6085,8 @@
   },
   {
     "id": "seat-235",
-    "name": "Constituency 235",
-    "state": "State data pending verification",
+    "name": "RATLAM (ST)",
+    "state": "Madhya Pradesh",
     "candidates": [
       {
         "id": "candidate-235-1",
@@ -6111,8 +6111,8 @@
   },
   {
     "id": "seat-236",
-    "name": "Constituency 236",
-    "state": "State data pending verification",
+    "name": "REWA",
+    "state": "Madhya Pradesh",
     "candidates": [
       {
         "id": "candidate-236-1",
@@ -6137,8 +6137,8 @@
   },
   {
     "id": "seat-237",
-    "name": "Constituency 237",
-    "state": "State data pending verification",
+    "name": "SAGAR",
+    "state": "Madhya Pradesh",
     "candidates": [
       {
         "id": "candidate-237-1",
@@ -6163,8 +6163,8 @@
   },
   {
     "id": "seat-238",
-    "name": "Constituency 238",
-    "state": "State data pending verification",
+    "name": "SATNA",
+    "state": "Madhya Pradesh",
     "candidates": [
       {
         "id": "candidate-238-1",
@@ -6189,8 +6189,8 @@
   },
   {
     "id": "seat-239",
-    "name": "Constituency 239",
-    "state": "State data pending verification",
+    "name": "SHAHDOL (ST)",
+    "state": "Madhya Pradesh",
     "candidates": [
       {
         "id": "candidate-239-1",
@@ -6215,8 +6215,8 @@
   },
   {
     "id": "seat-240",
-    "name": "Constituency 240",
-    "state": "State data pending verification",
+    "name": "SIDHI",
+    "state": "Madhya Pradesh",
     "candidates": [
       {
         "id": "candidate-240-1",
@@ -6241,8 +6241,8 @@
   },
   {
     "id": "seat-241",
-    "name": "Constituency 241",
-    "state": "State data pending verification",
+    "name": "TIKAMGARH (SC)",
+    "state": "Madhya Pradesh",
     "candidates": [
       {
         "id": "candidate-241-1",
@@ -6267,8 +6267,8 @@
   },
   {
     "id": "seat-242",
-    "name": "Constituency 242",
-    "state": "State data pending verification",
+    "name": "UJJAIN (SC)",
+    "state": "Madhya Pradesh",
     "candidates": [
       {
         "id": "candidate-242-1",
@@ -6293,8 +6293,8 @@
   },
   {
     "id": "seat-243",
-    "name": "Constituency 243",
-    "state": "State data pending verification",
+    "name": "VIDISHA",
+    "state": "Madhya Pradesh",
     "candidates": [
       {
         "id": "candidate-243-1",
@@ -6319,8 +6319,8 @@
   },
   {
     "id": "seat-244",
-    "name": "Constituency 244",
-    "state": "State data pending verification",
+    "name": "AHMEDNAGAR",
+    "state": "Maharashtra",
     "candidates": [
       {
         "id": "candidate-244-1",
@@ -6345,8 +6345,8 @@
   },
   {
     "id": "seat-245",
-    "name": "Constituency 245",
-    "state": "State data pending verification",
+    "name": "AKOLA",
+    "state": "Maharashtra",
     "candidates": [
       {
         "id": "candidate-245-1",
@@ -6371,8 +6371,8 @@
   },
   {
     "id": "seat-246",
-    "name": "Constituency 246",
-    "state": "State data pending verification",
+    "name": "AMRAVATI (SC)",
+    "state": "Maharashtra",
     "candidates": [
       {
         "id": "candidate-246-1",
@@ -6397,8 +6397,8 @@
   },
   {
     "id": "seat-247",
-    "name": "Constituency 247",
-    "state": "State data pending verification",
+    "name": "AURANGABAD",
+    "state": "Maharashtra",
     "candidates": [
       {
         "id": "candidate-247-1",
@@ -6423,8 +6423,8 @@
   },
   {
     "id": "seat-248",
-    "name": "Constituency 248",
-    "state": "State data pending verification",
+    "name": "BARAMATI",
+    "state": "Maharashtra",
     "candidates": [
       {
         "id": "candidate-248-1",
@@ -6449,8 +6449,8 @@
   },
   {
     "id": "seat-249",
-    "name": "Constituency 249",
-    "state": "State data pending verification",
+    "name": "BEED",
+    "state": "Maharashtra",
     "candidates": [
       {
         "id": "candidate-249-1",
@@ -6475,8 +6475,8 @@
   },
   {
     "id": "seat-250",
-    "name": "Constituency 250",
-    "state": "State data pending verification",
+    "name": "BHANDARA GONDIYA",
+    "state": "Maharashtra",
     "candidates": [
       {
         "id": "candidate-250-1",
@@ -6501,8 +6501,8 @@
   },
   {
     "id": "seat-251",
-    "name": "Constituency 251",
-    "state": "State data pending verification",
+    "name": "BHIWANDI",
+    "state": "Maharashtra",
     "candidates": [
       {
         "id": "candidate-251-1",
@@ -6527,8 +6527,8 @@
   },
   {
     "id": "seat-252",
-    "name": "Constituency 252",
-    "state": "State data pending verification",
+    "name": "BULDHANA",
+    "state": "Maharashtra",
     "candidates": [
       {
         "id": "candidate-252-1",
@@ -6553,8 +6553,8 @@
   },
   {
     "id": "seat-253",
-    "name": "Constituency 253",
-    "state": "State data pending verification",
+    "name": "CHANDRAPUR",
+    "state": "Maharashtra",
     "candidates": [
       {
         "id": "candidate-253-1",
@@ -6579,8 +6579,8 @@
   },
   {
     "id": "seat-254",
-    "name": "Constituency 254",
-    "state": "State data pending verification",
+    "name": "DHULE",
+    "state": "Maharashtra",
     "candidates": [
       {
         "id": "candidate-254-1",
@@ -6605,8 +6605,8 @@
   },
   {
     "id": "seat-255",
-    "name": "Constituency 255",
-    "state": "State data pending verification",
+    "name": "DINDORI (ST)",
+    "state": "Maharashtra",
     "candidates": [
       {
         "id": "candidate-255-1",
@@ -6631,8 +6631,8 @@
   },
   {
     "id": "seat-256",
-    "name": "Constituency 256",
-    "state": "State data pending verification",
+    "name": "GADCHIROLI - CHIMUR (ST)",
+    "state": "Maharashtra",
     "candidates": [
       {
         "id": "candidate-256-1",
@@ -6657,8 +6657,8 @@
   },
   {
     "id": "seat-257",
-    "name": "Constituency 257",
-    "state": "State data pending verification",
+    "name": "HATKANANGALE",
+    "state": "Maharashtra",
     "candidates": [
       {
         "id": "candidate-257-1",
@@ -6683,8 +6683,8 @@
   },
   {
     "id": "seat-258",
-    "name": "Constituency 258",
-    "state": "State data pending verification",
+    "name": "HINGOLI",
+    "state": "Maharashtra",
     "candidates": [
       {
         "id": "candidate-258-1",
@@ -6709,8 +6709,8 @@
   },
   {
     "id": "seat-259",
-    "name": "Constituency 259",
-    "state": "State data pending verification",
+    "name": "JALGAON",
+    "state": "Maharashtra",
     "candidates": [
       {
         "id": "candidate-259-1",
@@ -6735,8 +6735,8 @@
   },
   {
     "id": "seat-260",
-    "name": "Constituency 260",
-    "state": "State data pending verification",
+    "name": "JALNA",
+    "state": "Maharashtra",
     "candidates": [
       {
         "id": "candidate-260-1",
@@ -6761,8 +6761,8 @@
   },
   {
     "id": "seat-261",
-    "name": "Constituency 261",
-    "state": "State data pending verification",
+    "name": "KALYAN",
+    "state": "Maharashtra",
     "candidates": [
       {
         "id": "candidate-261-1",
@@ -6787,8 +6787,8 @@
   },
   {
     "id": "seat-262",
-    "name": "Constituency 262",
-    "state": "State data pending verification",
+    "name": "KOLHAPUR",
+    "state": "Maharashtra",
     "candidates": [
       {
         "id": "candidate-262-1",
@@ -6813,8 +6813,8 @@
   },
   {
     "id": "seat-263",
-    "name": "Constituency 263",
-    "state": "State data pending verification",
+    "name": "LATUR (SC)",
+    "state": "Maharashtra",
     "candidates": [
       {
         "id": "candidate-263-1",
@@ -6839,8 +6839,8 @@
   },
   {
     "id": "seat-264",
-    "name": "Constituency 264",
-    "state": "State data pending verification",
+    "name": "MADHA",
+    "state": "Maharashtra",
     "candidates": [
       {
         "id": "candidate-264-1",
@@ -6865,8 +6865,8 @@
   },
   {
     "id": "seat-265",
-    "name": "Constituency 265",
-    "state": "State data pending verification",
+    "name": "MAVAL",
+    "state": "Maharashtra",
     "candidates": [
       {
         "id": "candidate-265-1",
@@ -6891,8 +6891,8 @@
   },
   {
     "id": "seat-266",
-    "name": "Constituency 266",
-    "state": "State data pending verification",
+    "name": "MUMBAI NORTH",
+    "state": "Maharashtra",
     "candidates": [
       {
         "id": "candidate-266-1",
@@ -6917,8 +6917,8 @@
   },
   {
     "id": "seat-267",
-    "name": "Constituency 267",
-    "state": "State data pending verification",
+    "name": "MUMBAI NORTH - CENTRAL",
+    "state": "Maharashtra",
     "candidates": [
       {
         "id": "candidate-267-1",
@@ -6943,8 +6943,8 @@
   },
   {
     "id": "seat-268",
-    "name": "Constituency 268",
-    "state": "State data pending verification",
+    "name": "MUMBAI NORTH - EAST",
+    "state": "Maharashtra",
     "candidates": [
       {
         "id": "candidate-268-1",
@@ -6969,8 +6969,8 @@
   },
   {
     "id": "seat-269",
-    "name": "Constituency 269",
-    "state": "State data pending verification",
+    "name": "MUMBAI NORTH - WEST",
+    "state": "Maharashtra",
     "candidates": [
       {
         "id": "candidate-269-1",
@@ -6995,8 +6995,8 @@
   },
   {
     "id": "seat-270",
-    "name": "Constituency 270",
-    "state": "State data pending verification",
+    "name": "MUMBAI SOUTH",
+    "state": "Maharashtra",
     "candidates": [
       {
         "id": "candidate-270-1",
@@ -7021,8 +7021,8 @@
   },
   {
     "id": "seat-271",
-    "name": "Constituency 271",
-    "state": "State data pending verification",
+    "name": "MUMBAI SOUTH - CENTRAL",
+    "state": "Maharashtra",
     "candidates": [
       {
         "id": "candidate-271-1",
@@ -7047,8 +7047,8 @@
   },
   {
     "id": "seat-272",
-    "name": "Constituency 272",
-    "state": "State data pending verification",
+    "name": "NAGPUR",
+    "state": "Maharashtra",
     "candidates": [
       {
         "id": "candidate-272-1",
@@ -7073,8 +7073,8 @@
   },
   {
     "id": "seat-273",
-    "name": "Constituency 273",
-    "state": "State data pending verification",
+    "name": "NANDED",
+    "state": "Maharashtra",
     "candidates": [
       {
         "id": "candidate-273-1",
@@ -7099,8 +7099,8 @@
   },
   {
     "id": "seat-274",
-    "name": "Constituency 274",
-    "state": "State data pending verification",
+    "name": "NANDURBAR (ST)",
+    "state": "Maharashtra",
     "candidates": [
       {
         "id": "candidate-274-1",
@@ -7125,8 +7125,8 @@
   },
   {
     "id": "seat-275",
-    "name": "Constituency 275",
-    "state": "State data pending verification",
+    "name": "NASHIK",
+    "state": "Maharashtra",
     "candidates": [
       {
         "id": "candidate-275-1",
@@ -7151,8 +7151,8 @@
   },
   {
     "id": "seat-276",
-    "name": "Constituency 276",
-    "state": "State data pending verification",
+    "name": "OSMANABAD",
+    "state": "Maharashtra",
     "candidates": [
       {
         "id": "candidate-276-1",
@@ -7177,8 +7177,8 @@
   },
   {
     "id": "seat-277",
-    "name": "Constituency 277",
-    "state": "State data pending verification",
+    "name": "PALGHAR (ST)",
+    "state": "Maharashtra",
     "candidates": [
       {
         "id": "candidate-277-1",
@@ -7203,8 +7203,8 @@
   },
   {
     "id": "seat-278",
-    "name": "Constituency 278",
-    "state": "State data pending verification",
+    "name": "PARBHANI",
+    "state": "Maharashtra",
     "candidates": [
       {
         "id": "candidate-278-1",
@@ -7229,8 +7229,8 @@
   },
   {
     "id": "seat-279",
-    "name": "Constituency 279",
-    "state": "State data pending verification",
+    "name": "PUNE",
+    "state": "Maharashtra",
     "candidates": [
       {
         "id": "candidate-279-1",
@@ -7255,8 +7255,8 @@
   },
   {
     "id": "seat-280",
-    "name": "Constituency 280",
-    "state": "State data pending verification",
+    "name": "RAIGAD",
+    "state": "Maharashtra",
     "candidates": [
       {
         "id": "candidate-280-1",
@@ -7281,8 +7281,8 @@
   },
   {
     "id": "seat-281",
-    "name": "Constituency 281",
-    "state": "State data pending verification",
+    "name": "RAMTEK (SC)",
+    "state": "Maharashtra",
     "candidates": [
       {
         "id": "candidate-281-1",
@@ -7307,8 +7307,8 @@
   },
   {
     "id": "seat-282",
-    "name": "Constituency 282",
-    "state": "State data pending verification",
+    "name": "RATNAGIRI - SINDHUDURG",
+    "state": "Maharashtra",
     "candidates": [
       {
         "id": "candidate-282-1",
@@ -7333,8 +7333,8 @@
   },
   {
     "id": "seat-283",
-    "name": "Constituency 283",
-    "state": "State data pending verification",
+    "name": "RAVER",
+    "state": "Maharashtra",
     "candidates": [
       {
         "id": "candidate-283-1",
@@ -7359,8 +7359,8 @@
   },
   {
     "id": "seat-284",
-    "name": "Constituency 284",
-    "state": "State data pending verification",
+    "name": "SANGLI",
+    "state": "Maharashtra",
     "candidates": [
       {
         "id": "candidate-284-1",
@@ -7385,8 +7385,8 @@
   },
   {
     "id": "seat-285",
-    "name": "Constituency 285",
-    "state": "State data pending verification",
+    "name": "SATARA",
+    "state": "Maharashtra",
     "candidates": [
       {
         "id": "candidate-285-1",
@@ -7411,8 +7411,8 @@
   },
   {
     "id": "seat-286",
-    "name": "Constituency 286",
-    "state": "State data pending verification",
+    "name": "SHIRDI (SC)",
+    "state": "Maharashtra",
     "candidates": [
       {
         "id": "candidate-286-1",
@@ -7437,8 +7437,8 @@
   },
   {
     "id": "seat-287",
-    "name": "Constituency 287",
-    "state": "State data pending verification",
+    "name": "SHIRUR",
+    "state": "Maharashtra",
     "candidates": [
       {
         "id": "candidate-287-1",
@@ -7463,8 +7463,8 @@
   },
   {
     "id": "seat-288",
-    "name": "Constituency 288",
-    "state": "State data pending verification",
+    "name": "SOLAPUR (SC)",
+    "state": "Maharashtra",
     "candidates": [
       {
         "id": "candidate-288-1",
@@ -7489,8 +7489,8 @@
   },
   {
     "id": "seat-289",
-    "name": "Constituency 289",
-    "state": "State data pending verification",
+    "name": "THANE",
+    "state": "Maharashtra",
     "candidates": [
       {
         "id": "candidate-289-1",
@@ -7515,8 +7515,8 @@
   },
   {
     "id": "seat-290",
-    "name": "Constituency 290",
-    "state": "State data pending verification",
+    "name": "WARDHA",
+    "state": "Maharashtra",
     "candidates": [
       {
         "id": "candidate-290-1",
@@ -7541,8 +7541,8 @@
   },
   {
     "id": "seat-291",
-    "name": "Constituency 291",
-    "state": "State data pending verification",
+    "name": "YAVATMAL - WASHIM",
+    "state": "Maharashtra",
     "candidates": [
       {
         "id": "candidate-291-1",
@@ -7567,8 +7567,8 @@
   },
   {
     "id": "seat-292",
-    "name": "Constituency 292",
-    "state": "State data pending verification",
+    "name": "INNER MANIPUR",
+    "state": "Manipur",
     "candidates": [
       {
         "id": "candidate-292-1",
@@ -7593,8 +7593,8 @@
   },
   {
     "id": "seat-293",
-    "name": "Constituency 293",
-    "state": "State data pending verification",
+    "name": "OUTER MANIPUR (ST)",
+    "state": "Manipur",
     "candidates": [
       {
         "id": "candidate-293-1",
@@ -7619,8 +7619,8 @@
   },
   {
     "id": "seat-294",
-    "name": "Constituency 294",
-    "state": "State data pending verification",
+    "name": "SHILLONG (ST)",
+    "state": "Meghalaya",
     "candidates": [
       {
         "id": "candidate-294-1",
@@ -7645,8 +7645,8 @@
   },
   {
     "id": "seat-295",
-    "name": "Constituency 295",
-    "state": "State data pending verification",
+    "name": "TURA (ST)",
+    "state": "Meghalaya",
     "candidates": [
       {
         "id": "candidate-295-1",
@@ -7671,8 +7671,8 @@
   },
   {
     "id": "seat-296",
-    "name": "Constituency 296",
-    "state": "State data pending verification",
+    "name": "MIZORAM (ST)",
+    "state": "Mizoram",
     "candidates": [
       {
         "id": "candidate-296-1",
@@ -7697,8 +7697,8 @@
   },
   {
     "id": "seat-297",
-    "name": "Constituency 297",
-    "state": "State data pending verification",
+    "name": "NAGALAND",
+    "state": "Nagaland",
     "candidates": [
       {
         "id": "candidate-297-1",
@@ -7723,8 +7723,8 @@
   },
   {
     "id": "seat-298",
-    "name": "Constituency 298",
-    "state": "State data pending verification",
+    "name": "ASKA",
+    "state": "Odisha",
     "candidates": [
       {
         "id": "candidate-298-1",
@@ -7749,8 +7749,8 @@
   },
   {
     "id": "seat-299",
-    "name": "Constituency 299",
-    "state": "State data pending verification",
+    "name": "BALASORE",
+    "state": "Odisha",
     "candidates": [
       {
         "id": "candidate-299-1",
@@ -7775,8 +7775,8 @@
   },
   {
     "id": "seat-300",
-    "name": "Constituency 300",
-    "state": "State data pending verification",
+    "name": "BARGARH",
+    "state": "Odisha",
     "candidates": [
       {
         "id": "candidate-300-1",
@@ -7801,8 +7801,8 @@
   },
   {
     "id": "seat-301",
-    "name": "Constituency 301",
-    "state": "State data pending verification",
+    "name": "BERHAMPUR",
+    "state": "Odisha",
     "candidates": [
       {
         "id": "candidate-301-1",
@@ -7827,8 +7827,8 @@
   },
   {
     "id": "seat-302",
-    "name": "Constituency 302",
-    "state": "State data pending verification",
+    "name": "BHADRAK (SC)",
+    "state": "Odisha",
     "candidates": [
       {
         "id": "candidate-302-1",
@@ -7853,8 +7853,8 @@
   },
   {
     "id": "seat-303",
-    "name": "Constituency 303",
-    "state": "State data pending verification",
+    "name": "BHUBANESWAR",
+    "state": "Odisha",
     "candidates": [
       {
         "id": "candidate-303-1",
@@ -7879,8 +7879,8 @@
   },
   {
     "id": "seat-304",
-    "name": "Constituency 304",
-    "state": "State data pending verification",
+    "name": "BOLANGIR",
+    "state": "Odisha",
     "candidates": [
       {
         "id": "candidate-304-1",
@@ -7905,8 +7905,8 @@
   },
   {
     "id": "seat-305",
-    "name": "Constituency 305",
-    "state": "State data pending verification",
+    "name": "CUTTACK",
+    "state": "Odisha",
     "candidates": [
       {
         "id": "candidate-305-1",
@@ -7931,8 +7931,8 @@
   },
   {
     "id": "seat-306",
-    "name": "Constituency 306",
-    "state": "State data pending verification",
+    "name": "DHENKANAL",
+    "state": "Odisha",
     "candidates": [
       {
         "id": "candidate-306-1",
@@ -7957,8 +7957,8 @@
   },
   {
     "id": "seat-307",
-    "name": "Constituency 307",
-    "state": "State data pending verification",
+    "name": "JAGATSINGHPUR (SC)",
+    "state": "Odisha",
     "candidates": [
       {
         "id": "candidate-307-1",
@@ -7983,8 +7983,8 @@
   },
   {
     "id": "seat-308",
-    "name": "Constituency 308",
-    "state": "State data pending verification",
+    "name": "JAJPUR (SC)",
+    "state": "Odisha",
     "candidates": [
       {
         "id": "candidate-308-1",
@@ -8009,8 +8009,8 @@
   },
   {
     "id": "seat-309",
-    "name": "Constituency 309",
-    "state": "State data pending verification",
+    "name": "KALAHANDI",
+    "state": "Odisha",
     "candidates": [
       {
         "id": "candidate-309-1",
@@ -8035,8 +8035,8 @@
   },
   {
     "id": "seat-310",
-    "name": "Constituency 310",
-    "state": "State data pending verification",
+    "name": "KANDHAMAL",
+    "state": "Odisha",
     "candidates": [
       {
         "id": "candidate-310-1",
@@ -8061,8 +8061,8 @@
   },
   {
     "id": "seat-311",
-    "name": "Constituency 311",
-    "state": "State data pending verification",
+    "name": "KENDRAPARA",
+    "state": "Odisha",
     "candidates": [
       {
         "id": "candidate-311-1",
@@ -8087,8 +8087,8 @@
   },
   {
     "id": "seat-312",
-    "name": "Constituency 312",
-    "state": "State data pending verification",
+    "name": "KEONJHAR (ST)",
+    "state": "Odisha",
     "candidates": [
       {
         "id": "candidate-312-1",
@@ -8113,8 +8113,8 @@
   },
   {
     "id": "seat-313",
-    "name": "Constituency 313",
-    "state": "State data pending verification",
+    "name": "KORAPUT (ST)",
+    "state": "Odisha",
     "candidates": [
       {
         "id": "candidate-313-1",
@@ -8139,8 +8139,8 @@
   },
   {
     "id": "seat-314",
-    "name": "Constituency 314",
-    "state": "State data pending verification",
+    "name": "MAYURBHANJ (ST)",
+    "state": "Odisha",
     "candidates": [
       {
         "id": "candidate-314-1",
@@ -8165,8 +8165,8 @@
   },
   {
     "id": "seat-315",
-    "name": "Constituency 315",
-    "state": "State data pending verification",
+    "name": "NABARANGPUR (ST)",
+    "state": "Odisha",
     "candidates": [
       {
         "id": "candidate-315-1",
@@ -8191,8 +8191,8 @@
   },
   {
     "id": "seat-316",
-    "name": "Constituency 316",
-    "state": "State data pending verification",
+    "name": "PURI",
+    "state": "Odisha",
     "candidates": [
       {
         "id": "candidate-316-1",
@@ -8217,8 +8217,8 @@
   },
   {
     "id": "seat-317",
-    "name": "Constituency 317",
-    "state": "State data pending verification",
+    "name": "SAMBALPUR",
+    "state": "Odisha",
     "candidates": [
       {
         "id": "candidate-317-1",
@@ -8243,8 +8243,8 @@
   },
   {
     "id": "seat-318",
-    "name": "Constituency 318",
-    "state": "State data pending verification",
+    "name": "SUNDARGARH (ST)",
+    "state": "Odisha",
     "candidates": [
       {
         "id": "candidate-318-1",
@@ -8269,8 +8269,8 @@
   },
   {
     "id": "seat-319",
-    "name": "Constituency 319",
-    "state": "State data pending verification",
+    "name": "PUDUCHERRY",
+    "state": "Puducherry",
     "candidates": [
       {
         "id": "candidate-319-1",
@@ -8295,8 +8295,8 @@
   },
   {
     "id": "seat-320",
-    "name": "Constituency 320",
-    "state": "State data pending verification",
+    "name": "AMRITSAR",
+    "state": "Punjab",
     "candidates": [
       {
         "id": "candidate-320-1",
@@ -8321,8 +8321,8 @@
   },
   {
     "id": "seat-321",
-    "name": "Constituency 321",
-    "state": "State data pending verification",
+    "name": "ANANDPUR SAHIB",
+    "state": "Punjab",
     "candidates": [
       {
         "id": "candidate-321-1",
@@ -8347,8 +8347,8 @@
   },
   {
     "id": "seat-322",
-    "name": "Constituency 322",
-    "state": "State data pending verification",
+    "name": "BATHINDA",
+    "state": "Punjab",
     "candidates": [
       {
         "id": "candidate-322-1",
@@ -8373,8 +8373,8 @@
   },
   {
     "id": "seat-323",
-    "name": "Constituency 323",
-    "state": "State data pending verification",
+    "name": "FARIDKOT (SC)",
+    "state": "Punjab",
     "candidates": [
       {
         "id": "candidate-323-1",
@@ -8399,8 +8399,8 @@
   },
   {
     "id": "seat-324",
-    "name": "Constituency 324",
-    "state": "State data pending verification",
+    "name": "FATEHGARH SAHIB (SC)",
+    "state": "Punjab",
     "candidates": [
       {
         "id": "candidate-324-1",
@@ -8425,8 +8425,8 @@
   },
   {
     "id": "seat-325",
-    "name": "Constituency 325",
-    "state": "State data pending verification",
+    "name": "FIROZPUR",
+    "state": "Punjab",
     "candidates": [
       {
         "id": "candidate-325-1",
@@ -8451,8 +8451,8 @@
   },
   {
     "id": "seat-326",
-    "name": "Constituency 326",
-    "state": "State data pending verification",
+    "name": "GURDASPUR",
+    "state": "Punjab",
     "candidates": [
       {
         "id": "candidate-326-1",
@@ -8477,8 +8477,8 @@
   },
   {
     "id": "seat-327",
-    "name": "Constituency 327",
-    "state": "State data pending verification",
+    "name": "HOSHIARPUR (SC)",
+    "state": "Punjab",
     "candidates": [
       {
         "id": "candidate-327-1",
@@ -8503,8 +8503,8 @@
   },
   {
     "id": "seat-328",
-    "name": "Constituency 328",
-    "state": "State data pending verification",
+    "name": "JALANDHAR (SC)",
+    "state": "Punjab",
     "candidates": [
       {
         "id": "candidate-328-1",
@@ -8529,8 +8529,8 @@
   },
   {
     "id": "seat-329",
-    "name": "Constituency 329",
-    "state": "State data pending verification",
+    "name": "KHADOOR SAHIB",
+    "state": "Punjab",
     "candidates": [
       {
         "id": "candidate-329-1",
@@ -8555,8 +8555,8 @@
   },
   {
     "id": "seat-330",
-    "name": "Constituency 330",
-    "state": "State data pending verification",
+    "name": "LUDHIANA",
+    "state": "Punjab",
     "candidates": [
       {
         "id": "candidate-330-1",
@@ -8581,8 +8581,8 @@
   },
   {
     "id": "seat-331",
-    "name": "Constituency 331",
-    "state": "State data pending verification",
+    "name": "PATIALA",
+    "state": "Punjab",
     "candidates": [
       {
         "id": "candidate-331-1",
@@ -8607,8 +8607,8 @@
   },
   {
     "id": "seat-332",
-    "name": "Constituency 332",
-    "state": "State data pending verification",
+    "name": "SANGRUR",
+    "state": "Punjab",
     "candidates": [
       {
         "id": "candidate-332-1",
@@ -8633,8 +8633,8 @@
   },
   {
     "id": "seat-333",
-    "name": "Constituency 333",
-    "state": "State data pending verification",
+    "name": "AJMER",
+    "state": "Rajasthan",
     "candidates": [
       {
         "id": "candidate-333-1",
@@ -8659,8 +8659,8 @@
   },
   {
     "id": "seat-334",
-    "name": "Constituency 334",
-    "state": "State data pending verification",
+    "name": "ALWAR",
+    "state": "Rajasthan",
     "candidates": [
       {
         "id": "candidate-334-1",
@@ -8685,8 +8685,8 @@
   },
   {
     "id": "seat-335",
-    "name": "Constituency 335",
-    "state": "State data pending verification",
+    "name": "BANSWARA (ST)",
+    "state": "Rajasthan",
     "candidates": [
       {
         "id": "candidate-335-1",
@@ -8711,8 +8711,8 @@
   },
   {
     "id": "seat-336",
-    "name": "Constituency 336",
-    "state": "State data pending verification",
+    "name": "BARMER",
+    "state": "Rajasthan",
     "candidates": [
       {
         "id": "candidate-336-1",
@@ -8737,8 +8737,8 @@
   },
   {
     "id": "seat-337",
-    "name": "Constituency 337",
-    "state": "State data pending verification",
+    "name": "BHARATPUR (SC)",
+    "state": "Rajasthan",
     "candidates": [
       {
         "id": "candidate-337-1",
@@ -8763,8 +8763,8 @@
   },
   {
     "id": "seat-338",
-    "name": "Constituency 338",
-    "state": "State data pending verification",
+    "name": "BHILWARA",
+    "state": "Rajasthan",
     "candidates": [
       {
         "id": "candidate-338-1",
@@ -8789,8 +8789,8 @@
   },
   {
     "id": "seat-339",
-    "name": "Constituency 339",
-    "state": "State data pending verification",
+    "name": "BIKANER (SC)",
+    "state": "Rajasthan",
     "candidates": [
       {
         "id": "candidate-339-1",
@@ -8815,8 +8815,8 @@
   },
   {
     "id": "seat-340",
-    "name": "Constituency 340",
-    "state": "State data pending verification",
+    "name": "CHITTORGARH",
+    "state": "Rajasthan",
     "candidates": [
       {
         "id": "candidate-340-1",
@@ -8841,8 +8841,8 @@
   },
   {
     "id": "seat-341",
-    "name": "Constituency 341",
-    "state": "State data pending verification",
+    "name": "CHURU",
+    "state": "Rajasthan",
     "candidates": [
       {
         "id": "candidate-341-1",
@@ -8867,8 +8867,8 @@
   },
   {
     "id": "seat-342",
-    "name": "Constituency 342",
-    "state": "State data pending verification",
+    "name": "DAUSA (ST)",
+    "state": "Rajasthan",
     "candidates": [
       {
         "id": "candidate-342-1",
@@ -8893,8 +8893,8 @@
   },
   {
     "id": "seat-343",
-    "name": "Constituency 343",
-    "state": "State data pending verification",
+    "name": "GANGANAGAR (SC)",
+    "state": "Rajasthan",
     "candidates": [
       {
         "id": "candidate-343-1",
@@ -8919,8 +8919,8 @@
   },
   {
     "id": "seat-344",
-    "name": "Constituency 344",
-    "state": "State data pending verification",
+    "name": "JAIPUR",
+    "state": "Rajasthan",
     "candidates": [
       {
         "id": "candidate-344-1",
@@ -8945,8 +8945,8 @@
   },
   {
     "id": "seat-345",
-    "name": "Constituency 345",
-    "state": "State data pending verification",
+    "name": "JAIPUR RURAL",
+    "state": "Rajasthan",
     "candidates": [
       {
         "id": "candidate-345-1",
@@ -8971,8 +8971,8 @@
   },
   {
     "id": "seat-346",
-    "name": "Constituency 346",
-    "state": "State data pending verification",
+    "name": "JALORE",
+    "state": "Rajasthan",
     "candidates": [
       {
         "id": "candidate-346-1",
@@ -8997,8 +8997,8 @@
   },
   {
     "id": "seat-347",
-    "name": "Constituency 347",
-    "state": "State data pending verification",
+    "name": "JHALAWAR-BARAN",
+    "state": "Rajasthan",
     "candidates": [
       {
         "id": "candidate-347-1",
@@ -9023,8 +9023,8 @@
   },
   {
     "id": "seat-348",
-    "name": "Constituency 348",
-    "state": "State data pending verification",
+    "name": "JHUNJHUNU",
+    "state": "Rajasthan",
     "candidates": [
       {
         "id": "candidate-348-1",
@@ -9049,8 +9049,8 @@
   },
   {
     "id": "seat-349",
-    "name": "Constituency 349",
-    "state": "State data pending verification",
+    "name": "JODHPUR",
+    "state": "Rajasthan",
     "candidates": [
       {
         "id": "candidate-349-1",
@@ -9075,8 +9075,8 @@
   },
   {
     "id": "seat-350",
-    "name": "Constituency 350",
-    "state": "State data pending verification",
+    "name": "KARAULI-DHOLPUR (SC)",
+    "state": "Rajasthan",
     "candidates": [
       {
         "id": "candidate-350-1",
@@ -9101,8 +9101,8 @@
   },
   {
     "id": "seat-351",
-    "name": "Constituency 351",
-    "state": "State data pending verification",
+    "name": "KOTA",
+    "state": "Rajasthan",
     "candidates": [
       {
         "id": "candidate-351-1",
@@ -9127,8 +9127,8 @@
   },
   {
     "id": "seat-352",
-    "name": "Constituency 352",
-    "state": "State data pending verification",
+    "name": "NAGAUR",
+    "state": "Rajasthan",
     "candidates": [
       {
         "id": "candidate-352-1",
@@ -9153,8 +9153,8 @@
   },
   {
     "id": "seat-353",
-    "name": "Constituency 353",
-    "state": "State data pending verification",
+    "name": "PALI",
+    "state": "Rajasthan",
     "candidates": [
       {
         "id": "candidate-353-1",
@@ -9179,8 +9179,8 @@
   },
   {
     "id": "seat-354",
-    "name": "Constituency 354",
-    "state": "State data pending verification",
+    "name": "RAJSAMAND",
+    "state": "Rajasthan",
     "candidates": [
       {
         "id": "candidate-354-1",
@@ -9205,8 +9205,8 @@
   },
   {
     "id": "seat-355",
-    "name": "Constituency 355",
-    "state": "State data pending verification",
+    "name": "SIKAR",
+    "state": "Rajasthan",
     "candidates": [
       {
         "id": "candidate-355-1",
@@ -9231,8 +9231,8 @@
   },
   {
     "id": "seat-356",
-    "name": "Constituency 356",
-    "state": "State data pending verification",
+    "name": "TONK-SAWAI MADHOPUR",
+    "state": "Rajasthan",
     "candidates": [
       {
         "id": "candidate-356-1",
@@ -9257,8 +9257,8 @@
   },
   {
     "id": "seat-357",
-    "name": "Constituency 357",
-    "state": "State data pending verification",
+    "name": "UDAIPUR (ST)",
+    "state": "Rajasthan",
     "candidates": [
       {
         "id": "candidate-357-1",
@@ -9283,8 +9283,8 @@
   },
   {
     "id": "seat-358",
-    "name": "Constituency 358",
-    "state": "State data pending verification",
+    "name": "SIKKIM",
+    "state": "Sikkim",
     "candidates": [
       {
         "id": "candidate-358-1",
@@ -9309,8 +9309,8 @@
   },
   {
     "id": "seat-359",
-    "name": "Constituency 359",
-    "state": "State data pending verification",
+    "name": "ARAKKONAM",
+    "state": "Tamil Nadu",
     "candidates": [
       {
         "id": "candidate-359-1",
@@ -9335,8 +9335,8 @@
   },
   {
     "id": "seat-360",
-    "name": "Constituency 360",
-    "state": "State data pending verification",
+    "name": "ARANI",
+    "state": "Tamil Nadu",
     "candidates": [
       {
         "id": "candidate-360-1",
@@ -9361,8 +9361,8 @@
   },
   {
     "id": "seat-361",
-    "name": "Constituency 361",
-    "state": "State data pending verification",
+    "name": "CHENNAI CENTRAL",
+    "state": "Tamil Nadu",
     "candidates": [
       {
         "id": "candidate-361-1",
@@ -9387,8 +9387,8 @@
   },
   {
     "id": "seat-362",
-    "name": "Constituency 362",
-    "state": "State data pending verification",
+    "name": "CHENNAI NORTH",
+    "state": "Tamil Nadu",
     "candidates": [
       {
         "id": "candidate-362-1",
@@ -9413,8 +9413,8 @@
   },
   {
     "id": "seat-363",
-    "name": "Constituency 363",
-    "state": "State data pending verification",
+    "name": "CHENNAI SOUTH",
+    "state": "Tamil Nadu",
     "candidates": [
       {
         "id": "candidate-363-1",
@@ -9439,8 +9439,8 @@
   },
   {
     "id": "seat-364",
-    "name": "Constituency 364",
-    "state": "State data pending verification",
+    "name": "CHIDAMBARAM (SC)",
+    "state": "Tamil Nadu",
     "candidates": [
       {
         "id": "candidate-364-1",
@@ -9465,8 +9465,8 @@
   },
   {
     "id": "seat-365",
-    "name": "Constituency 365",
-    "state": "State data pending verification",
+    "name": "COIMBATORE",
+    "state": "Tamil Nadu",
     "candidates": [
       {
         "id": "candidate-365-1",
@@ -9491,8 +9491,8 @@
   },
   {
     "id": "seat-366",
-    "name": "Constituency 366",
-    "state": "State data pending verification",
+    "name": "CUDDALORE",
+    "state": "Tamil Nadu",
     "candidates": [
       {
         "id": "candidate-366-1",
@@ -9517,8 +9517,8 @@
   },
   {
     "id": "seat-367",
-    "name": "Constituency 367",
-    "state": "State data pending verification",
+    "name": "DHARMAPURI",
+    "state": "Tamil Nadu",
     "candidates": [
       {
         "id": "candidate-367-1",
@@ -9543,8 +9543,8 @@
   },
   {
     "id": "seat-368",
-    "name": "Constituency 368",
-    "state": "State data pending verification",
+    "name": "DINDIGUL",
+    "state": "Tamil Nadu",
     "candidates": [
       {
         "id": "candidate-368-1",
@@ -9569,8 +9569,8 @@
   },
   {
     "id": "seat-369",
-    "name": "Constituency 369",
-    "state": "State data pending verification",
+    "name": "ERODE",
+    "state": "Tamil Nadu",
     "candidates": [
       {
         "id": "candidate-369-1",
@@ -9595,8 +9595,8 @@
   },
   {
     "id": "seat-370",
-    "name": "Constituency 370",
-    "state": "State data pending verification",
+    "name": "KALLAKURICHI",
+    "state": "Tamil Nadu",
     "candidates": [
       {
         "id": "candidate-370-1",
@@ -9621,8 +9621,8 @@
   },
   {
     "id": "seat-371",
-    "name": "Constituency 371",
-    "state": "State data pending verification",
+    "name": "KANCHEEPURAM (SC)",
+    "state": "Tamil Nadu",
     "candidates": [
       {
         "id": "candidate-371-1",
@@ -9647,8 +9647,8 @@
   },
   {
     "id": "seat-372",
-    "name": "Constituency 372",
-    "state": "State data pending verification",
+    "name": "KANNIYAKUMARI",
+    "state": "Tamil Nadu",
     "candidates": [
       {
         "id": "candidate-372-1",
@@ -9673,8 +9673,8 @@
   },
   {
     "id": "seat-373",
-    "name": "Constituency 373",
-    "state": "State data pending verification",
+    "name": "KARUR",
+    "state": "Tamil Nadu",
     "candidates": [
       {
         "id": "candidate-373-1",
@@ -9699,8 +9699,8 @@
   },
   {
     "id": "seat-374",
-    "name": "Constituency 374",
-    "state": "State data pending verification",
+    "name": "KRISHNAGIRI",
+    "state": "Tamil Nadu",
     "candidates": [
       {
         "id": "candidate-374-1",
@@ -9725,8 +9725,8 @@
   },
   {
     "id": "seat-375",
-    "name": "Constituency 375",
-    "state": "State data pending verification",
+    "name": "MADURAI",
+    "state": "Tamil Nadu",
     "candidates": [
       {
         "id": "candidate-375-1",
@@ -9751,8 +9751,8 @@
   },
   {
     "id": "seat-376",
-    "name": "Constituency 376",
-    "state": "State data pending verification",
+    "name": "MAYILADUTHURAI",
+    "state": "Tamil Nadu",
     "candidates": [
       {
         "id": "candidate-376-1",
@@ -9777,8 +9777,8 @@
   },
   {
     "id": "seat-377",
-    "name": "Constituency 377",
-    "state": "State data pending verification",
+    "name": "NAGAPATTINAM (SC)",
+    "state": "Tamil Nadu",
     "candidates": [
       {
         "id": "candidate-377-1",
@@ -9803,8 +9803,8 @@
   },
   {
     "id": "seat-378",
-    "name": "Constituency 378",
-    "state": "State data pending verification",
+    "name": "NAMAKKAL",
+    "state": "Tamil Nadu",
     "candidates": [
       {
         "id": "candidate-378-1",
@@ -9829,8 +9829,8 @@
   },
   {
     "id": "seat-379",
-    "name": "Constituency 379",
-    "state": "State data pending verification",
+    "name": "NILGIRIS (SC)",
+    "state": "Tamil Nadu",
     "candidates": [
       {
         "id": "candidate-379-1",
@@ -9855,8 +9855,8 @@
   },
   {
     "id": "seat-380",
-    "name": "Constituency 380",
-    "state": "State data pending verification",
+    "name": "PERAMBALUR",
+    "state": "Tamil Nadu",
     "candidates": [
       {
         "id": "candidate-380-1",
@@ -9881,8 +9881,8 @@
   },
   {
     "id": "seat-381",
-    "name": "Constituency 381",
-    "state": "State data pending verification",
+    "name": "POLLACHI",
+    "state": "Tamil Nadu",
     "candidates": [
       {
         "id": "candidate-381-1",
@@ -9907,8 +9907,8 @@
   },
   {
     "id": "seat-382",
-    "name": "Constituency 382",
-    "state": "State data pending verification",
+    "name": "RAMANATHAPURAM",
+    "state": "Tamil Nadu",
     "candidates": [
       {
         "id": "candidate-382-1",
@@ -9933,8 +9933,8 @@
   },
   {
     "id": "seat-383",
-    "name": "Constituency 383",
-    "state": "State data pending verification",
+    "name": "SALEM",
+    "state": "Tamil Nadu",
     "candidates": [
       {
         "id": "candidate-383-1",
@@ -9959,8 +9959,8 @@
   },
   {
     "id": "seat-384",
-    "name": "Constituency 384",
-    "state": "State data pending verification",
+    "name": "SIVAGANGA",
+    "state": "Tamil Nadu",
     "candidates": [
       {
         "id": "candidate-384-1",
@@ -9985,8 +9985,8 @@
   },
   {
     "id": "seat-385",
-    "name": "Constituency 385",
-    "state": "State data pending verification",
+    "name": "SRIPERUMBUDUR",
+    "state": "Tamil Nadu",
     "candidates": [
       {
         "id": "candidate-385-1",
@@ -10011,8 +10011,8 @@
   },
   {
     "id": "seat-386",
-    "name": "Constituency 386",
-    "state": "State data pending verification",
+    "name": "TENKASI (SC)",
+    "state": "Tamil Nadu",
     "candidates": [
       {
         "id": "candidate-386-1",
@@ -10037,8 +10037,8 @@
   },
   {
     "id": "seat-387",
-    "name": "Constituency 387",
-    "state": "State data pending verification",
+    "name": "THANJAVUR",
+    "state": "Tamil Nadu",
     "candidates": [
       {
         "id": "candidate-387-1",
@@ -10063,8 +10063,8 @@
   },
   {
     "id": "seat-388",
-    "name": "Constituency 388",
-    "state": "State data pending verification",
+    "name": "THENI",
+    "state": "Tamil Nadu",
     "candidates": [
       {
         "id": "candidate-388-1",
@@ -10089,8 +10089,8 @@
   },
   {
     "id": "seat-389",
-    "name": "Constituency 389",
-    "state": "State data pending verification",
+    "name": "THOOTHUKKUDI",
+    "state": "Tamil Nadu",
     "candidates": [
       {
         "id": "candidate-389-1",
@@ -10115,8 +10115,8 @@
   },
   {
     "id": "seat-390",
-    "name": "Constituency 390",
-    "state": "State data pending verification",
+    "name": "TIRUCHIRAPPALLI",
+    "state": "Tamil Nadu",
     "candidates": [
       {
         "id": "candidate-390-1",
@@ -10141,8 +10141,8 @@
   },
   {
     "id": "seat-391",
-    "name": "Constituency 391",
-    "state": "State data pending verification",
+    "name": "TIRUNELVELI",
+    "state": "Tamil Nadu",
     "candidates": [
       {
         "id": "candidate-391-1",
@@ -10167,8 +10167,8 @@
   },
   {
     "id": "seat-392",
-    "name": "Constituency 392",
-    "state": "State data pending verification",
+    "name": "TIRUPPUR",
+    "state": "Tamil Nadu",
     "candidates": [
       {
         "id": "candidate-392-1",
@@ -10193,8 +10193,8 @@
   },
   {
     "id": "seat-393",
-    "name": "Constituency 393",
-    "state": "State data pending verification",
+    "name": "TIRUVALLUR (SC)",
+    "state": "Tamil Nadu",
     "candidates": [
       {
         "id": "candidate-393-1",
@@ -10219,8 +10219,8 @@
   },
   {
     "id": "seat-394",
-    "name": "Constituency 394",
-    "state": "State data pending verification",
+    "name": "TIRUVANNAMALAI",
+    "state": "Tamil Nadu",
     "candidates": [
       {
         "id": "candidate-394-1",
@@ -10245,8 +10245,8 @@
   },
   {
     "id": "seat-395",
-    "name": "Constituency 395",
-    "state": "State data pending verification",
+    "name": "VELLORE",
+    "state": "Tamil Nadu",
     "candidates": [
       {
         "id": "candidate-395-1",
@@ -10271,8 +10271,8 @@
   },
   {
     "id": "seat-396",
-    "name": "Constituency 396",
-    "state": "State data pending verification",
+    "name": "VILUPPURAM (SC)",
+    "state": "Tamil Nadu",
     "candidates": [
       {
         "id": "candidate-396-1",
@@ -10297,8 +10297,8 @@
   },
   {
     "id": "seat-397",
-    "name": "Constituency 397",
-    "state": "State data pending verification",
+    "name": "VIRUDHUNAGAR",
+    "state": "Tamil Nadu",
     "candidates": [
       {
         "id": "candidate-397-1",
@@ -10323,8 +10323,8 @@
   },
   {
     "id": "seat-398",
-    "name": "Constituency 398",
-    "state": "State data pending verification",
+    "name": "ADILABAD (ST)",
+    "state": "Telangana",
     "candidates": [
       {
         "id": "candidate-398-1",
@@ -10349,8 +10349,8 @@
   },
   {
     "id": "seat-399",
-    "name": "Constituency 399",
-    "state": "State data pending verification",
+    "name": "BHONGIR",
+    "state": "Telangana",
     "candidates": [
       {
         "id": "candidate-399-1",
@@ -10375,8 +10375,8 @@
   },
   {
     "id": "seat-400",
-    "name": "Constituency 400",
-    "state": "State data pending verification",
+    "name": "CHEVELLA",
+    "state": "Telangana",
     "candidates": [
       {
         "id": "candidate-400-1",
@@ -10401,8 +10401,8 @@
   },
   {
     "id": "seat-401",
-    "name": "Constituency 401",
-    "state": "State data pending verification",
+    "name": "HYDERABAD",
+    "state": "Telangana",
     "candidates": [
       {
         "id": "candidate-401-1",
@@ -10427,8 +10427,8 @@
   },
   {
     "id": "seat-402",
-    "name": "Constituency 402",
-    "state": "State data pending verification",
+    "name": "KARIMNAGAR",
+    "state": "Telangana",
     "candidates": [
       {
         "id": "candidate-402-1",
@@ -10453,8 +10453,8 @@
   },
   {
     "id": "seat-403",
-    "name": "Constituency 403",
-    "state": "State data pending verification",
+    "name": "KHAMMAM",
+    "state": "Telangana",
     "candidates": [
       {
         "id": "candidate-403-1",
@@ -10479,8 +10479,8 @@
   },
   {
     "id": "seat-404",
-    "name": "Constituency 404",
-    "state": "State data pending verification",
+    "name": "MAHABUBABAD (ST)",
+    "state": "Telangana",
     "candidates": [
       {
         "id": "candidate-404-1",
@@ -10505,8 +10505,8 @@
   },
   {
     "id": "seat-405",
-    "name": "Constituency 405",
-    "state": "State data pending verification",
+    "name": "MAHBUBNAGAR",
+    "state": "Telangana",
     "candidates": [
       {
         "id": "candidate-405-1",
@@ -10531,8 +10531,8 @@
   },
   {
     "id": "seat-406",
-    "name": "Constituency 406",
-    "state": "State data pending verification",
+    "name": "MALKAJGIRI",
+    "state": "Telangana",
     "candidates": [
       {
         "id": "candidate-406-1",
@@ -10557,8 +10557,8 @@
   },
   {
     "id": "seat-407",
-    "name": "Constituency 407",
-    "state": "State data pending verification",
+    "name": "MEDAK",
+    "state": "Telangana",
     "candidates": [
       {
         "id": "candidate-407-1",
@@ -10583,8 +10583,8 @@
   },
   {
     "id": "seat-408",
-    "name": "Constituency 408",
-    "state": "State data pending verification",
+    "name": "NAGARKURNOOL (SC)",
+    "state": "Telangana",
     "candidates": [
       {
         "id": "candidate-408-1",
@@ -10609,8 +10609,8 @@
   },
   {
     "id": "seat-409",
-    "name": "Constituency 409",
-    "state": "State data pending verification",
+    "name": "NALGONDA",
+    "state": "Telangana",
     "candidates": [
       {
         "id": "candidate-409-1",
@@ -10635,8 +10635,8 @@
   },
   {
     "id": "seat-410",
-    "name": "Constituency 410",
-    "state": "State data pending verification",
+    "name": "NIZAMABAD",
+    "state": "Telangana",
     "candidates": [
       {
         "id": "candidate-410-1",
@@ -10661,8 +10661,8 @@
   },
   {
     "id": "seat-411",
-    "name": "Constituency 411",
-    "state": "State data pending verification",
+    "name": "PEDDAPALLE (SC)",
+    "state": "Telangana",
     "candidates": [
       {
         "id": "candidate-411-1",
@@ -10687,8 +10687,8 @@
   },
   {
     "id": "seat-412",
-    "name": "Constituency 412",
-    "state": "State data pending verification",
+    "name": "SECUNDERABAD",
+    "state": "Telangana",
     "candidates": [
       {
         "id": "candidate-412-1",
@@ -10713,8 +10713,8 @@
   },
   {
     "id": "seat-413",
-    "name": "Constituency 413",
-    "state": "State data pending verification",
+    "name": "WARANGAL (SC)",
+    "state": "Telangana",
     "candidates": [
       {
         "id": "candidate-413-1",
@@ -10739,8 +10739,8 @@
   },
   {
     "id": "seat-414",
-    "name": "Constituency 414",
-    "state": "State data pending verification",
+    "name": "ZAHIRABAD",
+    "state": "Telangana",
     "candidates": [
       {
         "id": "candidate-414-1",
@@ -10765,8 +10765,8 @@
   },
   {
     "id": "seat-415",
-    "name": "Constituency 415",
-    "state": "State data pending verification",
+    "name": "TRIPURA EAST (ST)",
+    "state": "Tripura",
     "candidates": [
       {
         "id": "candidate-415-1",
@@ -10791,8 +10791,8 @@
   },
   {
     "id": "seat-416",
-    "name": "Constituency 416",
-    "state": "State data pending verification",
+    "name": "TRIPURA WEST",
+    "state": "Tripura",
     "candidates": [
       {
         "id": "candidate-416-1",
@@ -10817,8 +10817,8 @@
   },
   {
     "id": "seat-417",
-    "name": "Constituency 417",
-    "state": "State data pending verification",
+    "name": "AGRA (SC)",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-417-1",
@@ -10843,8 +10843,8 @@
   },
   {
     "id": "seat-418",
-    "name": "Constituency 418",
-    "state": "State data pending verification",
+    "name": "AKBARPUR",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-418-1",
@@ -10869,8 +10869,8 @@
   },
   {
     "id": "seat-419",
-    "name": "Constituency 419",
-    "state": "State data pending verification",
+    "name": "ALIGARH",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-419-1",
@@ -10895,8 +10895,8 @@
   },
   {
     "id": "seat-420",
-    "name": "Constituency 420",
-    "state": "State data pending verification",
+    "name": "ALLAHABAD",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-420-1",
@@ -10921,8 +10921,8 @@
   },
   {
     "id": "seat-421",
-    "name": "Constituency 421",
-    "state": "State data pending verification",
+    "name": "AMBEDKAR NAGAR",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-421-1",
@@ -10947,8 +10947,8 @@
   },
   {
     "id": "seat-422",
-    "name": "Constituency 422",
-    "state": "State data pending verification",
+    "name": "AMETHI",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-422-1",
@@ -10973,8 +10973,8 @@
   },
   {
     "id": "seat-423",
-    "name": "Constituency 423",
-    "state": "State data pending verification",
+    "name": "AMROHA",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-423-1",
@@ -10999,8 +10999,8 @@
   },
   {
     "id": "seat-424",
-    "name": "Constituency 424",
-    "state": "State data pending verification",
+    "name": "AONLA",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-424-1",
@@ -11025,8 +11025,8 @@
   },
   {
     "id": "seat-425",
-    "name": "Constituency 425",
-    "state": "State data pending verification",
+    "name": "AZAMGARH",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-425-1",
@@ -11051,8 +11051,8 @@
   },
   {
     "id": "seat-426",
-    "name": "Constituency 426",
-    "state": "State data pending verification",
+    "name": "BADAUN",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-426-1",
@@ -11077,8 +11077,8 @@
   },
   {
     "id": "seat-427",
-    "name": "Constituency 427",
-    "state": "State data pending verification",
+    "name": "BAGHPAT",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-427-1",
@@ -11103,8 +11103,8 @@
   },
   {
     "id": "seat-428",
-    "name": "Constituency 428",
-    "state": "State data pending verification",
+    "name": "BAHRAICH (SC)",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-428-1",
@@ -11129,8 +11129,8 @@
   },
   {
     "id": "seat-429",
-    "name": "Constituency 429",
-    "state": "State data pending verification",
+    "name": "BALLIA",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-429-1",
@@ -11155,8 +11155,8 @@
   },
   {
     "id": "seat-430",
-    "name": "Constituency 430",
-    "state": "State data pending verification",
+    "name": "BANDA",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-430-1",
@@ -11181,8 +11181,8 @@
   },
   {
     "id": "seat-431",
-    "name": "Constituency 431",
-    "state": "State data pending verification",
+    "name": "BANSGAON (SC)",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-431-1",
@@ -11207,8 +11207,8 @@
   },
   {
     "id": "seat-432",
-    "name": "Constituency 432",
-    "state": "State data pending verification",
+    "name": "BARABANKI (SC)",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-432-1",
@@ -11233,8 +11233,8 @@
   },
   {
     "id": "seat-433",
-    "name": "Constituency 433",
-    "state": "State data pending verification",
+    "name": "BAREILLY",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-433-1",
@@ -11259,8 +11259,8 @@
   },
   {
     "id": "seat-434",
-    "name": "Constituency 434",
-    "state": "State data pending verification",
+    "name": "BASTI",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-434-1",
@@ -11285,8 +11285,8 @@
   },
   {
     "id": "seat-435",
-    "name": "Constituency 435",
-    "state": "State data pending verification",
+    "name": "BHADOHI",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-435-1",
@@ -11311,8 +11311,8 @@
   },
   {
     "id": "seat-436",
-    "name": "Constituency 436",
-    "state": "State data pending verification",
+    "name": "BIJNOR",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-436-1",
@@ -11337,8 +11337,8 @@
   },
   {
     "id": "seat-437",
-    "name": "Constituency 437",
-    "state": "State data pending verification",
+    "name": "BULANDSHAHR (SC)",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-437-1",
@@ -11363,8 +11363,8 @@
   },
   {
     "id": "seat-438",
-    "name": "Constituency 438",
-    "state": "State data pending verification",
+    "name": "CHANDAULI",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-438-1",
@@ -11389,8 +11389,8 @@
   },
   {
     "id": "seat-439",
-    "name": "Constituency 439",
-    "state": "State data pending verification",
+    "name": "DEORIA",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-439-1",
@@ -11415,8 +11415,8 @@
   },
   {
     "id": "seat-440",
-    "name": "Constituency 440",
-    "state": "State data pending verification",
+    "name": "DHAURAHRA",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-440-1",
@@ -11441,8 +11441,8 @@
   },
   {
     "id": "seat-441",
-    "name": "Constituency 441",
-    "state": "State data pending verification",
+    "name": "DOMARIYAGANJ",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-441-1",
@@ -11467,8 +11467,8 @@
   },
   {
     "id": "seat-442",
-    "name": "Constituency 442",
-    "state": "State data pending verification",
+    "name": "ETAH",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-442-1",
@@ -11493,8 +11493,8 @@
   },
   {
     "id": "seat-443",
-    "name": "Constituency 443",
-    "state": "State data pending verification",
+    "name": "ETAWAH (SC)",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-443-1",
@@ -11519,8 +11519,8 @@
   },
   {
     "id": "seat-444",
-    "name": "Constituency 444",
-    "state": "State data pending verification",
+    "name": "FAIZABAD",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-444-1",
@@ -11545,8 +11545,8 @@
   },
   {
     "id": "seat-445",
-    "name": "Constituency 445",
-    "state": "State data pending verification",
+    "name": "FARRUKHABAD",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-445-1",
@@ -11571,8 +11571,8 @@
   },
   {
     "id": "seat-446",
-    "name": "Constituency 446",
-    "state": "State data pending verification",
+    "name": "FATEHPUR",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-446-1",
@@ -11597,8 +11597,8 @@
   },
   {
     "id": "seat-447",
-    "name": "Constituency 447",
-    "state": "State data pending verification",
+    "name": "FATEHPUR SIKRI",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-447-1",
@@ -11623,8 +11623,8 @@
   },
   {
     "id": "seat-448",
-    "name": "Constituency 448",
-    "state": "State data pending verification",
+    "name": "FIROZABAD",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-448-1",
@@ -11649,8 +11649,8 @@
   },
   {
     "id": "seat-449",
-    "name": "Constituency 449",
-    "state": "State data pending verification",
+    "name": "GAUTAM BUDDHA NAGAR",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-449-1",
@@ -11675,8 +11675,8 @@
   },
   {
     "id": "seat-450",
-    "name": "Constituency 450",
-    "state": "State data pending verification",
+    "name": "GHAZIABAD",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-450-1",
@@ -11701,8 +11701,8 @@
   },
   {
     "id": "seat-451",
-    "name": "Constituency 451",
-    "state": "State data pending verification",
+    "name": "GHAZIPUR",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-451-1",
@@ -11727,8 +11727,8 @@
   },
   {
     "id": "seat-452",
-    "name": "Constituency 452",
-    "state": "State data pending verification",
+    "name": "GHOSI",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-452-1",
@@ -11753,8 +11753,8 @@
   },
   {
     "id": "seat-453",
-    "name": "Constituency 453",
-    "state": "State data pending verification",
+    "name": "GONDA",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-453-1",
@@ -11779,8 +11779,8 @@
   },
   {
     "id": "seat-454",
-    "name": "Constituency 454",
-    "state": "State data pending verification",
+    "name": "GORAKHPUR",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-454-1",
@@ -11805,8 +11805,8 @@
   },
   {
     "id": "seat-455",
-    "name": "Constituency 455",
-    "state": "State data pending verification",
+    "name": "HAMIRPUR",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-455-1",
@@ -11831,8 +11831,8 @@
   },
   {
     "id": "seat-456",
-    "name": "Constituency 456",
-    "state": "State data pending verification",
+    "name": "HARDOI (SC)",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-456-1",
@@ -11857,8 +11857,8 @@
   },
   {
     "id": "seat-457",
-    "name": "Constituency 457",
-    "state": "State data pending verification",
+    "name": "HATHRAS (SC)",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-457-1",
@@ -11883,8 +11883,8 @@
   },
   {
     "id": "seat-458",
-    "name": "Constituency 458",
-    "state": "State data pending verification",
+    "name": "JALAUN (SC)",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-458-1",
@@ -11909,8 +11909,8 @@
   },
   {
     "id": "seat-459",
-    "name": "Constituency 459",
-    "state": "State data pending verification",
+    "name": "JAUNPUR",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-459-1",
@@ -11935,8 +11935,8 @@
   },
   {
     "id": "seat-460",
-    "name": "Constituency 460",
-    "state": "State data pending verification",
+    "name": "JHANSI",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-460-1",
@@ -11961,8 +11961,8 @@
   },
   {
     "id": "seat-461",
-    "name": "Constituency 461",
-    "state": "State data pending verification",
+    "name": "KAIRANA",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-461-1",
@@ -11987,8 +11987,8 @@
   },
   {
     "id": "seat-462",
-    "name": "Constituency 462",
-    "state": "State data pending verification",
+    "name": "KAISERGANJ",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-462-1",
@@ -12013,8 +12013,8 @@
   },
   {
     "id": "seat-463",
-    "name": "Constituency 463",
-    "state": "State data pending verification",
+    "name": "KANNAUJ",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-463-1",
@@ -12039,8 +12039,8 @@
   },
   {
     "id": "seat-464",
-    "name": "Constituency 464",
-    "state": "State data pending verification",
+    "name": "KANPUR",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-464-1",
@@ -12065,8 +12065,8 @@
   },
   {
     "id": "seat-465",
-    "name": "Constituency 465",
-    "state": "State data pending verification",
+    "name": "KAUSHAMBI (SC)",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-465-1",
@@ -12091,8 +12091,8 @@
   },
   {
     "id": "seat-466",
-    "name": "Constituency 466",
-    "state": "State data pending verification",
+    "name": "KHERI",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-466-1",
@@ -12117,8 +12117,8 @@
   },
   {
     "id": "seat-467",
-    "name": "Constituency 467",
-    "state": "State data pending verification",
+    "name": "KUSHI NAGAR",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-467-1",
@@ -12143,8 +12143,8 @@
   },
   {
     "id": "seat-468",
-    "name": "Constituency 468",
-    "state": "State data pending verification",
+    "name": "LALGANJ (SC)",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-468-1",
@@ -12169,8 +12169,8 @@
   },
   {
     "id": "seat-469",
-    "name": "Constituency 469",
-    "state": "State data pending verification",
+    "name": "LUCKNOW",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-469-1",
@@ -12195,8 +12195,8 @@
   },
   {
     "id": "seat-470",
-    "name": "Constituency 470",
-    "state": "State data pending verification",
+    "name": "MACHHLISHAHR (SC)",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-470-1",
@@ -12221,8 +12221,8 @@
   },
   {
     "id": "seat-471",
-    "name": "Constituency 471",
-    "state": "State data pending verification",
+    "name": "MAHARAJGANJ",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-471-1",
@@ -12247,8 +12247,8 @@
   },
   {
     "id": "seat-472",
-    "name": "Constituency 472",
-    "state": "State data pending verification",
+    "name": "MAINPURI",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-472-1",
@@ -12273,8 +12273,8 @@
   },
   {
     "id": "seat-473",
-    "name": "Constituency 473",
-    "state": "State data pending verification",
+    "name": "MATHURA",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-473-1",
@@ -12299,8 +12299,8 @@
   },
   {
     "id": "seat-474",
-    "name": "Constituency 474",
-    "state": "State data pending verification",
+    "name": "MEERUT",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-474-1",
@@ -12325,8 +12325,8 @@
   },
   {
     "id": "seat-475",
-    "name": "Constituency 475",
-    "state": "State data pending verification",
+    "name": "MIRZAPUR",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-475-1",
@@ -12351,8 +12351,8 @@
   },
   {
     "id": "seat-476",
-    "name": "Constituency 476",
-    "state": "State data pending verification",
+    "name": "MISRIKH (SC)",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-476-1",
@@ -12377,8 +12377,8 @@
   },
   {
     "id": "seat-477",
-    "name": "Constituency 477",
-    "state": "State data pending verification",
+    "name": "MOHANLALGANJ (SC)",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-477-1",
@@ -12403,8 +12403,8 @@
   },
   {
     "id": "seat-478",
-    "name": "Constituency 478",
-    "state": "State data pending verification",
+    "name": "MORADABAD",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-478-1",
@@ -12429,8 +12429,8 @@
   },
   {
     "id": "seat-479",
-    "name": "Constituency 479",
-    "state": "State data pending verification",
+    "name": "MUZAFFARNAGAR",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-479-1",
@@ -12455,8 +12455,8 @@
   },
   {
     "id": "seat-480",
-    "name": "Constituency 480",
-    "state": "State data pending verification",
+    "name": "NAGINA (SC)",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-480-1",
@@ -12481,8 +12481,8 @@
   },
   {
     "id": "seat-481",
-    "name": "Constituency 481",
-    "state": "State data pending verification",
+    "name": "PHULPUR",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-481-1",
@@ -12507,8 +12507,8 @@
   },
   {
     "id": "seat-482",
-    "name": "Constituency 482",
-    "state": "State data pending verification",
+    "name": "PILIBHIT",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-482-1",
@@ -12533,8 +12533,8 @@
   },
   {
     "id": "seat-483",
-    "name": "Constituency 483",
-    "state": "State data pending verification",
+    "name": "PRATAPGARH",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-483-1",
@@ -12559,8 +12559,8 @@
   },
   {
     "id": "seat-484",
-    "name": "Constituency 484",
-    "state": "State data pending verification",
+    "name": "RAE BARELI",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-484-1",
@@ -12585,8 +12585,8 @@
   },
   {
     "id": "seat-485",
-    "name": "Constituency 485",
-    "state": "State data pending verification",
+    "name": "RAMPUR",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-485-1",
@@ -12611,8 +12611,8 @@
   },
   {
     "id": "seat-486",
-    "name": "Constituency 486",
-    "state": "State data pending verification",
+    "name": "ROBERTSGANJ (SC)",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-486-1",
@@ -12637,8 +12637,8 @@
   },
   {
     "id": "seat-487",
-    "name": "Constituency 487",
-    "state": "State data pending verification",
+    "name": "SAHARANPUR",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-487-1",
@@ -12663,8 +12663,8 @@
   },
   {
     "id": "seat-488",
-    "name": "Constituency 488",
-    "state": "State data pending verification",
+    "name": "SALEMPUR",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-488-1",
@@ -12689,8 +12689,8 @@
   },
   {
     "id": "seat-489",
-    "name": "Constituency 489",
-    "state": "State data pending verification",
+    "name": "SAMBHAL",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-489-1",
@@ -12715,8 +12715,8 @@
   },
   {
     "id": "seat-490",
-    "name": "Constituency 490",
-    "state": "State data pending verification",
+    "name": "SANT KABIR NAGAR",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-490-1",
@@ -12741,8 +12741,8 @@
   },
   {
     "id": "seat-491",
-    "name": "Constituency 491",
-    "state": "State data pending verification",
+    "name": "SHAHJAHANPUR (SC)",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-491-1",
@@ -12767,8 +12767,8 @@
   },
   {
     "id": "seat-492",
-    "name": "Constituency 492",
-    "state": "State data pending verification",
+    "name": "SHRAWASTI",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-492-1",
@@ -12793,8 +12793,8 @@
   },
   {
     "id": "seat-493",
-    "name": "Constituency 493",
-    "state": "State data pending verification",
+    "name": "SITAPUR",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-493-1",
@@ -12819,8 +12819,8 @@
   },
   {
     "id": "seat-494",
-    "name": "Constituency 494",
-    "state": "State data pending verification",
+    "name": "SULTANPUR",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-494-1",
@@ -12845,8 +12845,8 @@
   },
   {
     "id": "seat-495",
-    "name": "Constituency 495",
-    "state": "State data pending verification",
+    "name": "UNNAO",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-495-1",
@@ -12871,8 +12871,8 @@
   },
   {
     "id": "seat-496",
-    "name": "Constituency 496",
-    "state": "State data pending verification",
+    "name": "VARANASI",
+    "state": "Uttar Pradesh",
     "candidates": [
       {
         "id": "candidate-496-1",
@@ -12897,8 +12897,8 @@
   },
   {
     "id": "seat-497",
-    "name": "Constituency 497",
-    "state": "State data pending verification",
+    "name": "ALMORA (SC)",
+    "state": "Uttarakhand",
     "candidates": [
       {
         "id": "candidate-497-1",
@@ -12923,8 +12923,8 @@
   },
   {
     "id": "seat-498",
-    "name": "Constituency 498",
-    "state": "State data pending verification",
+    "name": "GARHWAL",
+    "state": "Uttarakhand",
     "candidates": [
       {
         "id": "candidate-498-1",
@@ -12949,8 +12949,8 @@
   },
   {
     "id": "seat-499",
-    "name": "Constituency 499",
-    "state": "State data pending verification",
+    "name": "HARIDWAR",
+    "state": "Uttarakhand",
     "candidates": [
       {
         "id": "candidate-499-1",
@@ -12975,8 +12975,8 @@
   },
   {
     "id": "seat-500",
-    "name": "Constituency 500",
-    "state": "State data pending verification",
+    "name": "NAINITAL-UDHAM SINGH NAGAR",
+    "state": "Uttarakhand",
     "candidates": [
       {
         "id": "candidate-500-1",
@@ -13001,8 +13001,8 @@
   },
   {
     "id": "seat-501",
-    "name": "Constituency 501",
-    "state": "State data pending verification",
+    "name": "TEHRI GARHWAL",
+    "state": "Uttarakhand",
     "candidates": [
       {
         "id": "candidate-501-1",
@@ -13027,8 +13027,8 @@
   },
   {
     "id": "seat-502",
-    "name": "Constituency 502",
-    "state": "State data pending verification",
+    "name": "ALIPURDUARS (ST)",
+    "state": "West Bengal",
     "candidates": [
       {
         "id": "candidate-502-1",
@@ -13053,8 +13053,8 @@
   },
   {
     "id": "seat-503",
-    "name": "Constituency 503",
-    "state": "State data pending verification",
+    "name": "ARAMBAG (SC)",
+    "state": "West Bengal",
     "candidates": [
       {
         "id": "candidate-503-1",
@@ -13079,8 +13079,8 @@
   },
   {
     "id": "seat-504",
-    "name": "Constituency 504",
-    "state": "State data pending verification",
+    "name": "ASANSOL",
+    "state": "West Bengal",
     "candidates": [
       {
         "id": "candidate-504-1",
@@ -13105,8 +13105,8 @@
   },
   {
     "id": "seat-505",
-    "name": "Constituency 505",
-    "state": "State data pending verification",
+    "name": "BAHARAMPUR",
+    "state": "West Bengal",
     "candidates": [
       {
         "id": "candidate-505-1",
@@ -13131,8 +13131,8 @@
   },
   {
     "id": "seat-506",
-    "name": "Constituency 506",
-    "state": "State data pending verification",
+    "name": "BALURGHAT",
+    "state": "West Bengal",
     "candidates": [
       {
         "id": "candidate-506-1",
@@ -13157,8 +13157,8 @@
   },
   {
     "id": "seat-507",
-    "name": "Constituency 507",
-    "state": "State data pending verification",
+    "name": "BANGAON (SC)",
+    "state": "West Bengal",
     "candidates": [
       {
         "id": "candidate-507-1",
@@ -13183,8 +13183,8 @@
   },
   {
     "id": "seat-508",
-    "name": "Constituency 508",
-    "state": "State data pending verification",
+    "name": "BANKURA",
+    "state": "West Bengal",
     "candidates": [
       {
         "id": "candidate-508-1",
@@ -13209,8 +13209,8 @@
   },
   {
     "id": "seat-509",
-    "name": "Constituency 509",
-    "state": "State data pending verification",
+    "name": "BARASAT",
+    "state": "West Bengal",
     "candidates": [
       {
         "id": "candidate-509-1",
@@ -13235,8 +13235,8 @@
   },
   {
     "id": "seat-510",
-    "name": "Constituency 510",
-    "state": "State data pending verification",
+    "name": "BARDHAMAN PURBA (SC)",
+    "state": "West Bengal",
     "candidates": [
       {
         "id": "candidate-510-1",
@@ -13261,8 +13261,8 @@
   },
   {
     "id": "seat-511",
-    "name": "Constituency 511",
-    "state": "State data pending verification",
+    "name": "BARRACKPUR",
+    "state": "West Bengal",
     "candidates": [
       {
         "id": "candidate-511-1",
@@ -13287,8 +13287,8 @@
   },
   {
     "id": "seat-512",
-    "name": "Constituency 512",
-    "state": "State data pending verification",
+    "name": "BASIRHAT",
+    "state": "West Bengal",
     "candidates": [
       {
         "id": "candidate-512-1",
@@ -13313,8 +13313,8 @@
   },
   {
     "id": "seat-513",
-    "name": "Constituency 513",
-    "state": "State data pending verification",
+    "name": "BIRBHUM",
+    "state": "West Bengal",
     "candidates": [
       {
         "id": "candidate-513-1",
@@ -13339,8 +13339,8 @@
   },
   {
     "id": "seat-514",
-    "name": "Constituency 514",
-    "state": "State data pending verification",
+    "name": "BISHNUPUR (SC)",
+    "state": "West Bengal",
     "candidates": [
       {
         "id": "candidate-514-1",
@@ -13365,8 +13365,8 @@
   },
   {
     "id": "seat-515",
-    "name": "Constituency 515",
-    "state": "State data pending verification",
+    "name": "BOLPUR (SC)",
+    "state": "West Bengal",
     "candidates": [
       {
         "id": "candidate-515-1",
@@ -13391,8 +13391,8 @@
   },
   {
     "id": "seat-516",
-    "name": "Constituency 516",
-    "state": "State data pending verification",
+    "name": "BURDWAN - DURGAPUR",
+    "state": "West Bengal",
     "candidates": [
       {
         "id": "candidate-516-1",
@@ -13417,8 +13417,8 @@
   },
   {
     "id": "seat-517",
-    "name": "Constituency 517",
-    "state": "State data pending verification",
+    "name": "COOCH BEHAR (SC)",
+    "state": "West Bengal",
     "candidates": [
       {
         "id": "candidate-517-1",
@@ -13443,8 +13443,8 @@
   },
   {
     "id": "seat-518",
-    "name": "Constituency 518",
-    "state": "State data pending verification",
+    "name": "DARJEELING",
+    "state": "West Bengal",
     "candidates": [
       {
         "id": "candidate-518-1",
@@ -13469,8 +13469,8 @@
   },
   {
     "id": "seat-519",
-    "name": "Constituency 519",
-    "state": "State data pending verification",
+    "name": "DIAMOND HARBOUR",
+    "state": "West Bengal",
     "candidates": [
       {
         "id": "candidate-519-1",
@@ -13495,8 +13495,8 @@
   },
   {
     "id": "seat-520",
-    "name": "Constituency 520",
-    "state": "State data pending verification",
+    "name": "DUM DUM",
+    "state": "West Bengal",
     "candidates": [
       {
         "id": "candidate-520-1",
@@ -13521,8 +13521,8 @@
   },
   {
     "id": "seat-521",
-    "name": "Constituency 521",
-    "state": "State data pending verification",
+    "name": "GHATAL",
+    "state": "West Bengal",
     "candidates": [
       {
         "id": "candidate-521-1",
@@ -13547,8 +13547,8 @@
   },
   {
     "id": "seat-522",
-    "name": "Constituency 522",
-    "state": "State data pending verification",
+    "name": "HOOGHLY",
+    "state": "West Bengal",
     "candidates": [
       {
         "id": "candidate-522-1",
@@ -13573,8 +13573,8 @@
   },
   {
     "id": "seat-523",
-    "name": "Constituency 523",
-    "state": "State data pending verification",
+    "name": "HOWRAH",
+    "state": "West Bengal",
     "candidates": [
       {
         "id": "candidate-523-1",
@@ -13599,8 +13599,8 @@
   },
   {
     "id": "seat-524",
-    "name": "Constituency 524",
-    "state": "State data pending verification",
+    "name": "JADAVPUR",
+    "state": "West Bengal",
     "candidates": [
       {
         "id": "candidate-524-1",
@@ -13625,8 +13625,8 @@
   },
   {
     "id": "seat-525",
-    "name": "Constituency 525",
-    "state": "State data pending verification",
+    "name": "JALPAIGURI (SC)",
+    "state": "West Bengal",
     "candidates": [
       {
         "id": "candidate-525-1",
@@ -13651,8 +13651,8 @@
   },
   {
     "id": "seat-526",
-    "name": "Constituency 526",
-    "state": "State data pending verification",
+    "name": "JANGIPUR",
+    "state": "West Bengal",
     "candidates": [
       {
         "id": "candidate-526-1",
@@ -13677,8 +13677,8 @@
   },
   {
     "id": "seat-527",
-    "name": "Constituency 527",
-    "state": "State data pending verification",
+    "name": "JAYNAGAR (SC)",
+    "state": "West Bengal",
     "candidates": [
       {
         "id": "candidate-527-1",
@@ -13703,8 +13703,8 @@
   },
   {
     "id": "seat-528",
-    "name": "Constituency 528",
-    "state": "State data pending verification",
+    "name": "JHARGRAM (ST)",
+    "state": "West Bengal",
     "candidates": [
       {
         "id": "candidate-528-1",
@@ -13729,8 +13729,8 @@
   },
   {
     "id": "seat-529",
-    "name": "Constituency 529",
-    "state": "State data pending verification",
+    "name": "KANTHI",
+    "state": "West Bengal",
     "candidates": [
       {
         "id": "candidate-529-1",
@@ -13755,8 +13755,8 @@
   },
   {
     "id": "seat-530",
-    "name": "Constituency 530",
-    "state": "State data pending verification",
+    "name": "KOLKATA DAKSHIN",
+    "state": "West Bengal",
     "candidates": [
       {
         "id": "candidate-530-1",
@@ -13781,8 +13781,8 @@
   },
   {
     "id": "seat-531",
-    "name": "Constituency 531",
-    "state": "State data pending verification",
+    "name": "KOLKATA UTTAR",
+    "state": "West Bengal",
     "candidates": [
       {
         "id": "candidate-531-1",
@@ -13807,8 +13807,8 @@
   },
   {
     "id": "seat-532",
-    "name": "Constituency 532",
-    "state": "State data pending verification",
+    "name": "KRISHNANAGAR",
+    "state": "West Bengal",
     "candidates": [
       {
         "id": "candidate-532-1",
@@ -13833,8 +13833,8 @@
   },
   {
     "id": "seat-533",
-    "name": "Constituency 533",
-    "state": "State data pending verification",
+    "name": "MALDAHA DAKSHIN",
+    "state": "West Bengal",
     "candidates": [
       {
         "id": "candidate-533-1",
@@ -13859,8 +13859,8 @@
   },
   {
     "id": "seat-534",
-    "name": "Constituency 534",
-    "state": "State data pending verification",
+    "name": "MALDAHA UTTAR",
+    "state": "West Bengal",
     "candidates": [
       {
         "id": "candidate-534-1",
@@ -13885,8 +13885,8 @@
   },
   {
     "id": "seat-535",
-    "name": "Constituency 535",
-    "state": "State data pending verification",
+    "name": "MATHURAPUR (SC)",
+    "state": "West Bengal",
     "candidates": [
       {
         "id": "candidate-535-1",
@@ -13911,8 +13911,8 @@
   },
   {
     "id": "seat-536",
-    "name": "Constituency 536",
-    "state": "State data pending verification",
+    "name": "MEDINIPUR",
+    "state": "West Bengal",
     "candidates": [
       {
         "id": "candidate-536-1",
@@ -13937,8 +13937,8 @@
   },
   {
     "id": "seat-537",
-    "name": "Constituency 537",
-    "state": "State data pending verification",
+    "name": "MURSHIDABAD",
+    "state": "West Bengal",
     "candidates": [
       {
         "id": "candidate-537-1",
@@ -13963,8 +13963,8 @@
   },
   {
     "id": "seat-538",
-    "name": "Constituency 538",
-    "state": "State data pending verification",
+    "name": "PURULIA",
+    "state": "West Bengal",
     "candidates": [
       {
         "id": "candidate-538-1",
@@ -13989,8 +13989,8 @@
   },
   {
     "id": "seat-539",
-    "name": "Constituency 539",
-    "state": "State data pending verification",
+    "name": "RAIGANJ",
+    "state": "West Bengal",
     "candidates": [
       {
         "id": "candidate-539-1",
@@ -14015,8 +14015,8 @@
   },
   {
     "id": "seat-540",
-    "name": "Constituency 540",
-    "state": "State data pending verification",
+    "name": "RANAGHAT (SC)",
+    "state": "West Bengal",
     "candidates": [
       {
         "id": "candidate-540-1",
@@ -14041,8 +14041,8 @@
   },
   {
     "id": "seat-541",
-    "name": "Constituency 541",
-    "state": "State data pending verification",
+    "name": "SREERAMPUR",
+    "state": "West Bengal",
     "candidates": [
       {
         "id": "candidate-541-1",
@@ -14067,8 +14067,8 @@
   },
   {
     "id": "seat-542",
-    "name": "Constituency 542",
-    "state": "State data pending verification",
+    "name": "TAMLUK",
+    "state": "West Bengal",
     "candidates": [
       {
         "id": "candidate-542-1",
@@ -14093,8 +14093,8 @@
   },
   {
     "id": "seat-543",
-    "name": "Constituency 543",
-    "state": "State data pending verification",
+    "name": "ULUBERIA",
+    "state": "West Bengal",
     "candidates": [
       {
         "id": "candidate-543-1",
