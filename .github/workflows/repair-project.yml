@@ -1,0 +1,88 @@
+
+name: Repair Project Workflow Paths
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  repair-workflows:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Repair misplaced workflow files
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import shutil
+
+          root = Path(".github/workflows")
+          misplaced = root / ".github" / "workflows"
+
+          files = [
+              "build-playable-ui.yml",
+              "fix-seats-results.yml",
+          ]
+
+          for name in files:
+              source = misplaced / name
+              target = root / name
+
+              if target.exists():
+                  print(f"Already exists: {target}")
+                  continue
+
+              if not source.is_file():
+                  raise SystemExit(f"Missing source file: {source}")
+
+              shutil.copy2(source, target)
+              print(f"Copied {source} to {target}")
+
+          for name in files:
+              target = root / name
+              if not target.is_file() or target.stat().st_size == 0:
+                  raise SystemExit(f"Verification failed: {target}")
+
+          print("PASS: Workflow files are in the correct directory.")
+          PY
+
+      - name: Validate required workflows
+        run: |
+          test -s .github/workflows/build-game-systems.yml
+          test -s .github/workflows/build-playable-ui.yml
+          test -s .github/workflows/fix-seats-results.yml
+          test -s .github/workflows/repair-project.yml
+
+          echo "PASS: Required workflow files exist."
+
+      - name: Commit repaired workflow files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email \
+            "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add .github/workflows/build-playable-ui.yml
+          git add .github/workflows/fix-seats-results.yml
+
+          if git diff --cached --quiet; then
+            echo "No new path changes to commit."
+            exit 0
+          fi
+
+          git commit -m "Repair misplaced workflow files"
+          git push origin main
+
+      - name: Report next work
+        run: |
+          echo "Workflow path repair completed."
+          echo "State filters and full election results still need a UI update."
+          echo "Validate all 543 constituencies before publishing."
+          
