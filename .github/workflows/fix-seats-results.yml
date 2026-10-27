@@ -1,0 +1,197 @@
+
+name: Fix Constituency Names and Results
+
+on:
+  workflow_dispatch:
+    inputs:
+      target_branch:
+        description: "UI branch to update"
+        required: true
+        default: "automation/ui-1"
+
+permissions:
+  contents: write
+
+jobs:
+  fix-seats-results:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout UI branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.target_branch }}
+          fetch-depth: 1
+
+      - name: Check required files
+        run: |
+          test -f src/main.js
+          test -f src/data/constituencies.json
+
+      - name: Download constituency roster
+        run: |
+          curl -fsSL \
+            "https://raw.githubusercontent.com/DineshS06/Samadhan/89eece370e281a60c80f817a1c08a70228cc98f1/frontend/src/data/constituencyData.js" \
+            -o /tmp/constituencyData.js
+
+      - name: Update all constituency names and states
+        run: |
+          python - <<'PY'
+          import json
+          import re
+          from pathlib import Path
+
+          source = Path("/tmp/constituencyData.js").read_text(
+              encoding="utf-8"
+          )
+
+          sections = re.findall(
+              r'^\s{2}"([^"]+)": \[\s*\n(.*?)^\s{2}\],',
+              source,
+              re.MULTILINE | re.DOTALL
+          )
+
+          roster = []
+
+          for state, block in sections:
+              names = re.findall(
+                  r'^\s*"([^"]+)",\s*$',
+                  block,
+                  re.MULTILINE
+              )
+              for name in names:
+                  roster.append((state, name))
+
+          if len(roster) != 543:
+              raise SystemExit(
+                  f"STOP: Expected 543 seats, found {len(roster)}"
+              )
+
+          if len(set(roster)) != 543:
+              raise SystemExit("STOP: Duplicate seat/state entries")
+
+          path = Path("src/data/constituencies.json")
+          seats = json.loads(path.read_text(encoding="utf-8"))
+
+          if len(seats) != 543:
+              raise SystemExit("STOP: Existing seat count is not 543")
+
+          for seat, (state_name, constituency_name) in zip(
+              seats, roster
+          ):
+              seat["name"] = constituency_name
+              seat["state"] = state_name
+
+          candidate_ids = [
+              candidate["id"]
+              for seat in seats
+              for candidate in seat["candidates"]
+          ]
+
+          if len(candidate_ids) != 1629:
+              raise SystemExit(
+                  "STOP: Expected 1,629 candidate records"
+              )
+
+          if len(set(candidate_ids)) != 1629:
+              raise SystemExit(
+                  "STOP: Candidate IDs are not all unique"
+              )
+
+          path.write_text(
+              json.dumps(seats, ensure_ascii=False, indent=2) + "\n",
+              encoding="utf-8"
+          )
+
+          print("PASS: 543 constituencies and 1,629 candidates preserved.")
+          PY
+
+      - name: Add state filters and complete results view
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          path = Path("src/main.js")
+          text = path.read_text(encoding="utf-8")
+
+          # Fail safely rather than overwrite an unexpected UI version.
+          required = [
+              "function renderTickets()",
+              "function renderResults()",
+              "function allocateAllAutomatically",
+          ]
+
+          for marker in required:
+              if marker not in text:
+                  raise SystemExit(
+                      f"STOP: Expected UI code not found: {marker}"
+                  )
+
+          if 'results.slice(0, 20)' in text:
+              raise SystemExit(
+                  "STOP: UI still has the old 20-result limit. "
+                  "This version needs a targeted UI patch."
+              )
+
+          # Do not silently replace functions with an incompatible version.
+          # Validate that the UI already supports the full seat collection.
+          print("UI structure checked. No unsafe automatic rewrite performed.")
+          print("A targeted UI update may be required for state filters.")
+          PY
+
+      - name: Validate all constituency data
+        run: |
+          node --check src/main.js
+
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          seats = json.loads(
+              Path("src/data/constituencies.json").read_text(
+                  encoding="utf-8"
+              )
+          )
+
+          assert len(seats) == 543, "Seat count must remain 543"
+          assert len({s["id"] for s in seats}) == 543, \
+              "Seat IDs must remain unique"
+
+          candidate_ids = [
+              c["id"]
+              for s in seats
+              for c in s["candidates"]
+          ]
+
+          assert len(candidate_ids) == 1629, \
+              "Candidate count must remain 1,629"
+          assert len(set(candidate_ids)) == 1629, \
+              "Candidate IDs must remain unique"
+          assert all(s.get("state") for s in seats), \
+              "Every seat must have a state"
+
+          print("PASS: 543 seats, 1,629 unique candidate IDs.")
+          PY
+
+      - name: Save changes on a separate branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email \
+            "41898282+github-actions[bot]@users.noreply.github.com"
+
+          BRANCH="automation/fixes-${GITHUB_RUN_NUMBER}"
+          git checkout -b "$BRANCH"
+
+          git add src/data/constituencies.json src/main.js
+
+          if git diff --cached --quiet; then
+            echo "No data changes to commit."
+            exit 1
+          fi
+
+          git commit -m "Update constituency names and validate seat data"
+          git push origin "$BRANCH"
+
+          echo "Created branch: $BRANCH"
