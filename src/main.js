@@ -276,6 +276,19 @@ function runElection() {
   notice("सिमुलेशन पूरा हुआ। नतीजे सेव कर दिए गए हैं।");
 }
 
+app.addEventListener("change", event => {
+  if (event.target.id === "stateSelect") {
+    const nextSeat = seats.find(
+      seat => seat.state === event.target.value
+    );
+
+    if (nextSeat) {
+      selectedSeat = nextSeat.id;
+      render();
+    }
+  }
+});
+      
 app.addEventListener("click", event => {
   const go = event.target.dataset.go;
   if (go) {
