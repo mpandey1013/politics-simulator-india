@@ -119,17 +119,35 @@ function renderParty() {
     </div>`;
 }
 
+function getStates() {
+  return [...new Set(
+    seats.map(seat => seat.state).filter(Boolean)
+  )].sort((a, b) => a.localeCompare(b));
+}
+
+
 function renderTickets() {
   const seat = seats.find(s => s.id === selectedSeat);
   const ticket = state.tickets[selectedSeat];
 
+  const selectedState = seats.find(s => s.id === selectedSeat)?.state || "";
+  const filteredSeats = selectedState
+    ? seats.filter(s => s.state === selectedState)
+    : seats;
+  
   app.innerHTML = `
     <h1>टिकट आवंटन</h1>
     <div class="card">
-      <label for="seatSelect">निर्वाचन क्षेत्र</label>
-      <select id="seatSelect">
-        ${seats.map(s => `<option value="${s.id}" ${s.id === selectedSeat ? "selected" : ""}>${escapeHTML(s.name)} (${s.id})</option>`).join("")}
-      </select>
+      
+<label for="stateSelect">राज्य</label>
+<select id="stateSelect">
+  ${getStates().map(st => `<option value="${escapeHTML(st)}" ${st === selectedState ? "selected" : ""}>${escapeHTML(st)}</option>`).join("")}
+</select>
+
+<label for="seatSelect">निर्वाचन क्षेत्र</label>
+<select id="seatSelect">
+  ${filteredSeats.map(s => `<option value="${s.id}" ${s.id === selectedSeat ? "selected" : ""}>${escapeHTML(s.name)} (${s.id})</option>`).join("")}
+</select>
 
       <p class="muted">यहाँ प्रत्येक सीट के 3 उपलब्ध उम्मीदवारों में से एक चुनो।</p>
       <label for="candidateSelect">उम्मीदवार</label>
