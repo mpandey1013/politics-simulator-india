@@ -1,0 +1,8 @@
+{
+  "name": "politics-simulator-india",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test:systems": "node tests/systems.test.js"
+  }
+}
