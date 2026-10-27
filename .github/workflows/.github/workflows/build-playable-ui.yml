@@ -1,0 +1,559 @@
+
+name: Build Playable Game UI
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout existing systems
+        uses: actions/checkout@v4
+        with:
+          ref: automation/systems-1
+
+      - name: Build playable interface
+        run: |
+          cat > index.html <<'EOF'
+          <!doctype html>
+          <html lang="hi">
+          <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta name="theme-color" content="#101827">
+            <title>Politics Simulator: India</title>
+            <link rel="stylesheet" href="styles.css">
+          </head>
+          <body>
+            <header class="top">
+              <div class="brand">🇮🇳 Politics Simulator: India</div>
+              <div class="sub">लोकसभा चुनाव • प्रारंभिक गेम प्रोटोटाइप</div>
+            </header>
+            <main>
+              <nav id="nav" class="nav">
+                <button data-page="dashboard">डैशबोर्ड</button>
+                <button data-page="party">पार्टी</button>
+                <button data-page="tickets">टिकट</button>
+                <button data-page="fund">फंड</button>
+                <button data-page="results">नतीजे</button>
+              </nav>
+              <div id="status" class="status">गेम लोड हो रहा है...</div>
+              <section id="app"></section>
+              <footer>शुरुआती प्रोटोटाइप • प्रगति इसी ब्राउज़र में सेव होती है।</footer>
+            </main>
+            <script type="module" src="src/main.js"></script>
+          </body>
+          </html>
+          EOF
+
+          cat > styles.css <<'EOF'
+          :root {
+            color-scheme: dark;
+            font-family: system-ui, sans-serif;
+            background: #101827;
+            color: #f3f4f6;
+          }
+          * { box-sizing: border-box; }
+          body { margin: 0; }
+          .top {
+            background: #17243a;
+            padding: 22px 16px;
+            border-bottom: 2px solid #d97706;
+          }
+          .brand { font-size: 23px; font-weight: 800; }
+          .sub { color: #cbd5e1; margin-top: 7px; }
+          main {
+            width: min(100% - 24px, 1000px);
+            margin: 18px auto;
+          }
+          .nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 16px;
+          }
+          button, input, select {
+            font: inherit;
+            border-radius: 9px;
+            padding: 11px;
+          }
+          button {
+            background: #253753;
+            color: white;
+            border: 1px solid #526580;
+            cursor: pointer;
+          }
+          button:disabled { opacity: .5; }
+          button:hover { background: #344b6b; }
+          .card {
+            background: #17243a;
+            border: 1px solid #3b4c65;
+            border-radius: 13px;
+            padding: 16px;
+            margin: 12px 0;
+            overflow-wrap: anywhere;
+          }
+          .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+            gap: 10px;
+          }
+          .metric {
+            background: #22334c;
+            padding: 14px;
+            border-radius: 10px;
+          }
+          .value {
+            font-size: 24px;
+            font-weight: 800;
+            margin-top: 6px;
+          }
+          label { display: block; margin: 12px 0 6px; }
+          input, select {
+            width: 100%;
+            background: #0f1725;
+            color: white;
+            border: 1px solid #526580;
+          }
+          .primary { background: #176b48; }
+          .warning { color: #fbbf24; }
+          .muted { color: #cbd5e1; }
+          .status { margin: 12px 0; min-height: 24px; }
+          .row { display: flex; flex-wrap: wrap; gap: 10px; }
+          .row > * { flex: 1; min-width: 130px; }
+          footer {
+            color: #94a3b8;
+            font-size: 13px;
+            margin: 28px 0;
+          }
+          EOF
+
+          cat > src/main.js <<'EOF'
+          import { createLedger, recordTransaction }
+            from "./core/finance-ledger.js";
+
+          const app = document.querySelector("#app");
+          const statusBox = document.querySelector("#status");
+
+          let seats = [];
+          let page = "dashboard";
+          let selectedSeat = "seat-001";
+          let results = null;
+
+          const defaults = () => ({
+            party: {
+              id: "party-player",
+              name: "नई राजनीतिक पार्टी",
+              ideology: "Unspecified"
+            },
+            ledger: createLedger(1000),
+            tickets: {},
+            campaign: {},
+            results: null
+          });
+
+          let state = defaults();
+
+          function save() {
+            localStorage.setItem(
+              "politics-simulator-india-v1",
+              JSON.stringify(state)
+            );
+          }
+
+          function money(value) {
+            return Number(value).toLocaleString("en-IN", {
+              maximumFractionDigits: 2
+            });
+          }
+
+          function escapeHTML(value) {
+            return String(value).replace(/[&<>"']/g, char => ({
+              "&": "&amp;",
+              "<": "&lt;",
+              ">": "&gt;",
+              '"': "&quot;",
+              "'": "&#39;"
+            })[char]);
+          }
+
+          function notice(message) {
+            statusBox.textContent = message;
+          }
+
+          function metric(label, value) {
+            return `<div class="metric">
+              <div class="muted">${label}</div>
+              <div class="value">${value}</div>
+            </div>`;
+          }
+
+          function render() {
+            if (!seats.length) {
+              app.innerHTML =
+                '<div class="card">सीट डेटा उपलब्ध नहीं है।</div>';
+              return;
+            }
+
+            if (page === "dashboard") renderDashboard();
+            if (page === "party") renderParty();
+            if (page === "tickets") renderTickets();
+            if (page === "fund") renderFund();
+            if (page === "results") renderResults();
+          }
+
+          function renderDashboard() {
+            const assigned = Object.keys(state.tickets).length;
+
+            app.innerHTML = `
+              <h1>गेम डैशबोर्ड</h1>
+              <p class="muted">चुनाव की तैयारी और अपनी राजनीतिक पार्टी प्रबंधित करो।</p>
+              <div class="grid">
+                ${metric("कुल निर्वाचन क्षेत्र", seats.length)}
+                ${metric("टिकट आवंटित", assigned)}
+                ${metric("शेष टिकट", seats.length - assigned)}
+                ${metric("उपलब्ध फंड", "₹" + money(state.ledger.balance) + " करोड़")}
+              </div>
+              <div class="card">
+                <h2>${escapeHTML(state.party.name)}</h2>
+                <p>विचारधारा: ${escapeHTML(state.party.ideology)}</p>
+                <p>चुनाव की स्थिति: ${state.results ? "नतीजे उपलब्ध" : "तैयारी जारी"}</p>
+                <button data-go="party">पार्टी प्रबंधित करो</button>
+                <button data-go="tickets">टिकट बाँटो</button>
+                <button data-go="fund">फंड देखो</button>
+              </div>
+              <div class="card">
+                <h3>अगला लक्ष्य</h3>
+                <p>सभी 543 सीटों के लिए उम्मीदवार चुनो और फिर चुनाव सिमुलेशन चलाओ।</p>
+                <p class="warning">सीटों के नाम और उम्मीदवार फिलहाल अस्थायी डेटा हैं।</p>
+              </div>`;
+          }
+
+          function renderParty() {
+            app.innerHTML = `
+              <h1>पार्टी प्रबंधन</h1>
+              <div class="card">
+                <label for="partyName">पार्टी का नाम</label>
+                <input id="partyName" maxlength="80"
+                  value="${escapeHTML(state.party.name)}">
+                <label for="ideology">विचारधारा</label>
+                <select id="ideology">
+                  ${[
+                    "Unspecified", "Social Democratic", "Liberal",
+                    "Conservative", "Regional", "Green", "Centrist"
+                  ].map(item => `<option ${state.party.ideology === item ? "selected" : ""}>${item}</option>`).join("")}
+                </select>
+                <p>शुरुआती फंड: ₹1,000 करोड़</p>
+                <button class="primary" id="saveParty">पार्टी सेव करो</button>
+              </div>`;
+          }
+
+          function renderTickets() {
+            const seat = seats.find(s => s.id === selectedSeat);
+            const ticket = state.tickets[selectedSeat];
+
+            app.innerHTML = `
+              <h1>टिकट आवंटन</h1>
+              <div class="card">
+                <label for="seatSelect">निर्वाचन क्षेत्र</label>
+                <select id="seatSelect">
+                  ${seats.map(s => `<option value="${s.id}" ${s.id === selectedSeat ? "selected" : ""}>${escapeHTML(s.name)} (${s.id})</option>`).join("")}
+                </select>
+                <p class="muted">इस सीट के 3 उम्मीदवारों में से एक चुनो।</p>
+                <label for="candidateSelect">उम्मीदवार</label>
+                <select id="candidateSelect">
+                  ${seat.candidates.map(c => `<option value="${c.id}" ${ticket === c.id ? "selected" : ""}>${escapeHTML(c.name)} — ${escapeHTML(c.id)}</option>`).join("")}
+                </select>
+                <button class="primary" id="assignTicket">टिकट आवंटित करो</button>
+                <button id="autoTickets">बाकी सभी सीटों पर ऑटो आवंटन</button>
+                <p>अभी आवंटित: ${Object.keys(state.tickets).length} / ${seats.length}</p>
+              </div>
+              <div class="card">
+                <h3>नियम</h3>
+                <p>एक सीट पर तुम्हारी पार्टी का केवल एक उम्मीदवार टिकट पाएगा।</p>
+              </div>`;
+          }
+
+          function renderFund() {
+            app.innerHTML = `
+              <h1>चुनावी फंड</h1>
+              <div class="grid">
+                ${metric("उपलब्ध राशि", "₹" + money(state.ledger.balance) + " करोड़")}
+                ${metric("लेन-देन", state.ledger.transactions.length)}
+              </div>
+              <div class="card">
+                <label for="expense">खर्च (करोड़ रुपये में)</label>
+                <input id="expense" type="number" min="0.01" step="0.01" placeholder="उदाहरण: 5">
+                <label for="description">खर्च का विवरण</label>
+                <input id="description" maxlength="120" placeholder="चुनावी प्रचार">
+                <button class="primary" id="spend">खर्च दर्ज करो</button>
+              </div>
+              <div class="card">
+                <h2>लेन-देन का रिकॉर्ड</h2>
+                ${state.ledger.transactions.slice().reverse().map(t => `
+                  <p>${t.type === "expense" ? "खर्च" : "आय"}: ₹${money(t.amount)} करोड़ —
+                  ${escapeHTML(t.description)} <span class="muted">(${escapeHTML(t.balanceAfter)})</span></p>
+                `).join("") || "<p>अभी कोई लेन-देन नहीं है।</p>"}
+              </div>`;
+          }
+
+          function renderResults() {
+            if (!results) {
+              app.innerHTML = `
+                <h1>लोकसभा चुनाव</h1>
+                <div class="card">
+                  <p>चुनाव सिमुलेशन अभी चलाया नहीं गया है।</p>
+                  <p>यह शुरुआती मॉडल है, वास्तविक चुनाव पूर्वानुमान नहीं।</p>
+                  <button class="primary" id="runElection">चुनाव सिमुलेशन चलाओ</button>
+                </div>`;
+              return;
+            }
+
+            const wins = results.filter(r => r.winnerIsPlayer).length;
+            const majority = Math.floor(seats.length / 2) + 1;
+
+            app.innerHTML = `
+              <h1>चुनाव परिणाम</h1>
+              <div class="grid">
+                ${metric("कुल सीटें", results.length)}
+                ${metric("तुम्हारी पार्टी की सीटें", wins)}
+                ${metric("बहुमत का आँकड़ा", majority)}
+              </div>
+              <div class="card">
+                <h2>${wins >= majority ? "बहुमत का आँकड़ा पूरा" : "बहुमत नहीं मिला"}</h2>
+                <p>यह परिणाम केवल इस प्रोटोटाइप के सिमुलेशन का है।</p>
+                <button id="resetResults">नतीजे हटाकर फिर तैयारी करो</button>
+              </div>
+              <div class="card">
+                <h2>पहली 20 सीटों के नतीजे</h2>
+                ${results.slice(0, 20).map(r => `
+                  <p>${escapeHTML(r.name)}: ${escapeHTML(r.winnerName)} — जीत का अंतर ${r.margin} वोट</p>
+                `).join("")}
+                <p class="muted">कुल ${results.length} सीटों के नतीजे सहेजे गए हैं।</p>
+              </div>`;
+          }
+
+          function allocateAllAutomatically() {
+            const assigned = new Set(Object.values(state.tickets));
+
+            for (const seat of seats) {
+              if (state.tickets[seat.id]) continue;
+              const candidate = seat.candidates.find(c => !assigned.has(c.id));
+              if (!candidate) throw new Error("कोई उम्मीदवार उपलब्ध नहीं: " + seat.id);
+              state.tickets[seat.id] = candidate.id;
+              assigned.add(candidate.id);
+            }
+
+            save();
+            notice("ऑटो आवंटन पूरा हुआ।");
+            render();
+          }
+
+          function runElection() {
+            results = seats.map(seat => {
+              const ticketedId = state.tickets[seat.id];
+              const candidateScores = seat.candidates.map(candidate => {
+                const campaignSpend = Number(state.campaign[seat.id] || 0);
+                const isPlayer = candidate.id === ticketedId;
+                const base = 1000 + Math.floor(Math.random() * 9000);
+                const bonus = isPlayer ? Math.floor(campaignSpend * 20) : 0;
+
+                return {
+                  id: candidate.id,
+                  name: candidate.name,
+                  score: base + bonus,
+                  winnerIsPlayer: isPlayer
+                };
+              }).sort((a, b) => b.score - a.score);
+
+              return {
+                id: seat.id,
+                name: seat.name,
+                winnerName: candidateScores[0].name,
+                winnerIsPlayer: candidateScores[0].winnerIsPlayer,
+                margin: candidateScores[0].score - candidateScores[1].score
+              };
+            });
+
+            state.results = results;
+            save();
+            render();
+            notice("सिमुलेशन पूरा हुआ। नतीजे सेव कर दिए गए हैं।");
+          }
+
+          app.addEventListener("click", event => {
+            const go = event.target.dataset.go;
+            if (go) {
+              page = go;
+              render();
+              return;
+            }
+
+            if (event.target.id === "saveParty") {
+              const name = document.querySelector("#partyName").value.trim();
+              if (!name) return notice("पार्टी का नाम खाली नहीं हो सकता।");
+
+              state.party.name = name;
+              state.party.ideology = document.querySelector("#ideology").value;
+              save();
+              notice("पार्टी सेव हो गई।");
+              render();
+            }
+
+            if (event.target.id === "assignTicket") {
+              const candidateId = document.querySelector("#candidateSelect").value;
+              state.tickets[selectedSeat] = candidateId;
+              save();
+              notice("टिकट आवंटित हो गया।");
+              render();
+            }
+
+            if (event.target.id === "autoTickets") {
+              try {
+                allocateAllAutomatically();
+              } catch (error) {
+                notice(error.message);
+              }
+            }
+
+            if (event.target.id === "spend") {
+              const amount = Number(document.querySelector("#expense").value);
+              const description = document.querySelector("#description").value.trim();
+
+              try {
+                state.ledger = recordTransaction(state.ledger, {
+                  type: "expense",
+                  amount,
+                  description: description || "चुनावी खर्च"
+                });
+                save();
+                notice("खर्च दर्ज हुआ।");
+                render();
+              } catch (error) {
+                notice(error.message);
+              }
+            }
+
+            if (event.target.id === "runElection") runElection();
+
+            if (event.target.id === "resetResults") {
+              results = null;
+              state.results = null;
+              save();
+              render();
+              notice("नतीजे रीसेट हो गए।");
+            }
+          });
+
+          app.addEventListener("change", event => {
+            if (event.target.id === "seatSelect") {
+              selectedSeat = event.target.value;
+              render();
+            }
+          });
+
+          document.querySelector("#nav").addEventListener("click", event => {
+            if (event.target.dataset.page) {
+              page = event.target.dataset.page;
+              render();
+            }
+          });
+
+          async function start() {
+            try {
+              const response = await fetch("./src/data/constituencies.json");
+              if (!response.ok) throw new Error("सीट डेटा लोड नहीं हुआ।");
+
+              seats = await response.json();
+
+              const saved = localStorage.getItem("politics-simulator-india-v1");
+              if (saved) {
+                try {
+                  const parsed = JSON.parse(saved);
+                  if (parsed && parsed.party && parsed.ledger &&
+                      parsed.tickets && Array.isArray(parsed.ledger.transactions)) {
+                    state = parsed;
+                  }
+                } catch {
+                  notice("पुराना सेव डेटा पढ़ नहीं पाए; नया गेम शुरू हुआ।");
+                }
+              }
+
+              results = state.results;
+              if (!Array.isArray(seats) || seats.length !== 543 ||
+                  seats.some(s => !Array.isArray(s.candidates) || s.candidates.length !== 3)) {
+                throw new Error("सीट डेटा की जाँच असफल हुई।");
+              }
+
+              notice("डेटा सफलतापूर्वक लोड हुआ: 543 सीटें।");
+              render();
+            } catch (error) {
+              notice(error.message);
+              app.innerHTML = `<div class="card"><h2>लोडिंग त्रुटि</h2><p>${escapeHTML(error.message)}</p><p>गेम चलाने के लिए index.html और src/data/constituencies.json मौजूद होने चाहिए।</p></div>`;
+            }
+          }
+
+          start();
+          EOF
+
+          cat > README.md <<'EOF'
+          # Politics Simulator: India
+
+          Initial playable browser prototype.
+
+          ## Included
+          - 543 constituency records
+          - Three candidate records per constituency
+          - Party name and ideology configuration
+          - Manual and automatic ticket assignment
+          - INR-crore expense ledger
+          - Prototype election simulation
+          - Browser local save
+
+          ## Limitations
+          Constituency names, state assignments and candidate names are placeholders.
+          Election scores are random prototype values, not predictions.
+          More political systems remain future work.
+
+          Serve the repository root over HTTP or deploy with GitHub Pages.
+          EOF
+
+      - name: Validate JavaScript syntax and data
+        run: |
+          node --check src/main.js
+          node --check src/core/party-manager.js
+          node --check src/core/ticket-allocation.js
+          node --check src/core/finance-ledger.js
+
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+
+          seats = json.loads(
+              Path("src/data/constituencies.json").read_text(encoding="utf-8")
+          )
+
+          assert len(seats) == 543
+          assert all(len(s["candidates"]) == 3 for s in seats)
+
+          ids = [c["id"] for s in seats for c in s["candidates"]]
+          assert len(ids) == 1629
+          assert len(set(ids)) == 1629
+
+          print("PASS: UI files and 543-seat data validation.")
+          PY
+
+      - name: Commit on a new branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          BRANCH="automation/ui-${GITHUB_RUN_NUMBER}"
+          git checkout -b "$BRANCH"
+          git add index.html styles.css src/main.js README.md
+          git commit -m "Add initial playable game interface"
+          git push origin "$BRANCH"
