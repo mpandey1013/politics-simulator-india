@@ -1,33 +1,35 @@
 <!doctype html>
-<html lang="en">
+<html lang="hi">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827">
   <title>Politics Simulator: India</title>
-  <style>
-    body {
-      font-family: system-ui, sans-serif;
-      max-width: 760px;
-      margin: 30px auto;
-      padding: 16px;
-      background: #101827;
-      color: #f3f4f6;
-    }
-    section {
-      padding: 18px;
-      margin: 14px 0;
-      border: 1px solid #475569;
-      border-radius: 12px;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Politics Simulator: India</h1>
-  <section>
-    <h2>Project Foundation</h2>
-    <p>543 constituency records are generated.</p>
-    <p>Each constituency has 3 candidate records.</p>
-    <p>This is the initial foundation, not the finished game.</p>
-  </section>
+  <header class="top">
+    <div class="brand">🇮🇳 Politics Simulator: India</div>
+    <div class="sub">लोकसभा चुनाव • प्रारंभिक गेम प्रोटोटाइप</div>
+  </header>
+
+  <main>
+    <nav id="nav" class="nav">
+      <button data-page="dashboard">डैशबोर्ड</button>
+      <button data-page="party">पार्टी</button>
+      <button data-page="tickets">टिकट</button>
+      <button data-page="fund">फंड</button>
+      <button data-page="results">नतीजे</button>
+    </nav>
+
+    <div id="status" class="status">गेम लोड हो रहा है...</div>
+    <section id="app"></section>
+
+    <footer>
+      शुरुआती प्रोटोटाइप • प्रगति इसी ब्राउज़र में सेव होती है।
+    </footer>
+  </main>
+
+  <script type="module" src="src/main.js"></script>
 </body>
 </html>

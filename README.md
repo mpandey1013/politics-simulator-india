@@ -1,20 +1,22 @@
 # Politics Simulator: India
 
-Android-first political strategy game foundation.
+Initial playable browser prototype.
 
-## Generated foundation
-- 543 constituency records
-- 3 candidate records per constituency
-- 1,629 unique candidate IDs
-- Basic election-result calculation
-- Local save/load module
+## Included
+- 543 placeholder constituency records
+- Three candidate records per constituency
+- Party name and ideology configuration
+- Manual ticket assignment
+- Automatic ticket assignment
+- INR-crore expense ledger with overspending protection
+- Prototype election simulation and results
+- Browser local save
 
-IMPORTANT:
-Constituency names and state assignments are placeholders.
-Replace them with verified official data before release.
-The election engine is an initial foundation, not the
-complete election simulation.
+## Important limitations
+Constituency names, state assignments and candidates are placeholders.
+Election scores are random prototype values and are not predictions.
+The UI is an early prototype; coalition, cabinet, parliament, economy,
+policy, judicial and other systems remain future work.
 
-Next phases: party management, ticket allocation, campaign
-finance, election AI, government formation, cabinet,
-parliament, economy, projects, diplomacy, and security.
+Serve the repository root over HTTP or deploy with GitHub Pages.
+Opening index.html directly as a file may block fetch requests.
