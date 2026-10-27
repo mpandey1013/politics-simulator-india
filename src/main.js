@@ -1,7 +1,8 @@
 import { createParty } from "./core/party-manager.js";
 import { createLedger, recordTransaction }
   from "./core/finance-ledger.js";
-
+import { recordCampaignExpense }
+  from "./core/campaign-finance.js";
 const app = document.querySelector("#app");
 const statusBox = document.querySelector("#status");
 
