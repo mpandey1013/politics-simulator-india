@@ -1,0 +1,7 @@
+{
+  "currency": "INR crore",
+  "startingPartyFund": 1000,
+  "lokSabhaSeats": 543,
+  "candidatesPerSeat": 3,
+  "ticketMode": ["manual", "automatic", "mixed"]
+}
