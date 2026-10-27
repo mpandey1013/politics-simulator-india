@@ -61,4 +61,40 @@ assert.equal(
   2
 );
 
+const campaignResult = recordCampaignExpense(
+  createLedger(1000),
+  {},
+  "seat-001",
+  25,
+  "Campaign advertising"
+);
+
+assert.equal(campaignResult.ledger.balance, 975);
+assert.equal(campaignResult.campaign["seat-001"], 25);
+assert.equal(campaignResult.ledger.transactions.length, 1);
+assert.equal(
+  campaignResult.ledger.transactions[0].type,
+  "expense"
+);
+
+assert.throws(() =>
+  recordCampaignExpense(
+    createLedger(1000),
+    {},
+    "seat-001",
+    2000,
+    "Overspending"
+  )
+);
+
+assert.throws(() =>
+  recordCampaignExpense(
+    createLedger(1000),
+    {},
+    "",
+    25,
+    "Missing constituency"
+  )
+);
+                                      
 console.log("PASS: party, ticket and finance tests");
