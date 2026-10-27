@@ -3,6 +3,10 @@ import { createParty, validateParties }
   from "../src/core/party-manager.js";
 import { createLedger, recordTransaction }
   from "../src/core/finance-ledger.js";
+
+import { recordCampaignExpense }
+  from "../src/core/campaign-finance.js";
+
 import { allocateTicket, autoAllocateTickets }
   from "../src/core/ticket-allocation.js";
 
