@@ -1,0 +1,205 @@
+
+name: Generate Game Foundation
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Generate project foundation
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import json
+
+          root = Path(".")
+          (root / "src/data").mkdir(parents=True, exist_ok=True)
+          (root / "src/core").mkdir(parents=True, exist_ok=True)
+
+          seats = []
+          for n in range(1, 544):
+              seats.append({
+                  "id": f"seat-{n:03}",
+                  "name": f"Constituency {n:03}",
+                  "state": "State data pending verification",
+                  "candidates": [
+                      {
+                          "id": f"candidate-{n:03}-{c}",
+                          "name": f"Candidate {n:03}-{c}",
+                          "party": f"Party {c}",
+                          "votes": 0
+                      }
+                      for c in range(1, 4)
+                  ],
+                  "winnerId": None
+              })
+
+          (root / "src/data/constituencies.json").write_text(
+              json.dumps(seats, ensure_ascii=False, indent=2),
+              encoding="utf-8"
+          )
+
+          engine = r'''
+          export function conductElection(seats) {
+            return seats.map(seat => {
+              const candidates = seat.candidates.map(candidate => ({
+                ...candidate,
+                votes: Math.max(
+                  0,
+                  Math.floor(Number(candidate.votes) || 0)
+                )
+              }));
+
+              candidates.sort((a, b) => b.votes - a.votes);
+
+              const winner = candidates[0];
+              const runnerUp = candidates[1];
+
+              return {
+                ...seat,
+                candidates,
+                winnerId: winner ? winner.id : null,
+                winningVotes: winner ? winner.votes : 0,
+                margin: winner
+                  ? winner.votes - (runnerUp ? runnerUp.votes : 0)
+                  : 0
+              };
+            });
+          }
+          '''
+
+          (root / "src/core/election-engine.js").write_text(
+              engine.strip() + "\n", encoding="utf-8"
+          )
+
+          save_manager = r'''
+          const SAVE_KEY = "politics-simulator-india-v1";
+
+          export function saveGame(state) {
+            localStorage.setItem(SAVE_KEY, JSON.stringify(state));
+          }
+
+          export function loadGame() {
+            const saved = localStorage.getItem(SAVE_KEY);
+            return saved ? JSON.parse(saved) : null;
+          }
+
+          export function deleteSave() {
+            localStorage.removeItem(SAVE_KEY);
+          }
+          '''
+
+          (root / "src/core/save-manager.js").write_text(
+              save_manager.strip() + "\n", encoding="utf-8"
+          )
+
+          readme = """
+          # Politics Simulator: India
+
+          Android-first political strategy game foundation.
+
+          ## Generated foundation
+          - 543 constituency records
+          - 3 candidate records per constituency
+          - 1,629 unique candidate IDs
+          - Basic election-result calculation
+          - Local save/load module
+
+          IMPORTANT:
+          Constituency names and state assignments are placeholders.
+          Replace them with verified official data before release.
+          The election engine is an initial foundation, not the
+          complete election simulation.
+
+          Next phases: party management, ticket allocation, campaign
+          finance, election AI, government formation, cabinet,
+          parliament, economy, projects, diplomacy, and security.
+          """
+
+          (root / "README.md").write_text(
+              readme.strip() + "\n", encoding="utf-8"
+          )
+
+          html = """<!doctype html>
+          <html lang="en">
+          <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width,initial-scale=1">
+            <title>Politics Simulator: India</title>
+            <style>
+              body {
+                font-family: system-ui, sans-serif;
+                max-width: 760px;
+                margin: 30px auto;
+                padding: 16px;
+                background: #101827;
+                color: #f3f4f6;
+              }
+              section {
+                padding: 18px;
+                margin: 14px 0;
+                border: 1px solid #475569;
+                border-radius: 12px;
+              }
+            </style>
+          </head>
+          <body>
+            <h1>Politics Simulator: India</h1>
+            <section>
+              <h2>Project Foundation</h2>
+              <p>543 constituency records are generated.</p>
+              <p>Each constituency has 3 candidate records.</p>
+              <p>This is the initial foundation, not the finished game.</p>
+            </section>
+          </body>
+          </html>
+          """
+
+          (root / "index.html").write_text(html, encoding="utf-8")
+
+          print("Generated 543 seats and 1,629 candidate records.")
+          PY
+
+      - name: Validate generated data
+        run: |
+          python3 - <<'PY'
+          import json
+
+          with open("src/data/constituencies.json",
+                    encoding="utf-8") as f:
+              seats = json.load(f)
+
+          assert len(seats) == 543, "Seat count is incorrect"
+          assert all(len(s["candidates"]) == 3 for s in seats)
+          ids = [
+              c["id"]
+              for s in seats
+              for c in s["candidates"]
+          ]
+          assert len(ids) == 1629
+          assert len(set(ids)) == 1629
+
+          print("PASS: 543 seats, 1,629 unique candidate IDs.")
+          PY
+
+      - name: Commit to a separate branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          BRANCH="automation/foundation-${GITHUB_RUN_NUMBER}"
+          git checkout -b "$BRANCH"
+          git add README.md index.html src/
+          git commit -m "Generate initial game foundation"
+          git push origin "$BRANCH"
+          
