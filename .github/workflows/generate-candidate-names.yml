@@ -1,0 +1,137 @@
+
+name: Generate Traditional Candidate Names
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate-names:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate candidate names
+        run: |
+          python - <<'PY'
+          import json
+          import random
+          import hashlib
+          from pathlib import Path
+
+          path = Path("src/data/constituencies.json")
+
+          if not path.exists():
+              raise SystemExit("ERROR: Constituency data file not found.")
+
+          seats = json.loads(path.read_text(encoding="utf-8"))
+
+          if not isinstance(seats, list) or len(seats) != 543:
+              raise SystemExit("ERROR: Expected exactly 543 constituencies.")
+
+          seat_ids = [seat.get("id") for seat in seats]
+
+          if len(set(seat_ids)) != 543:
+              raise SystemExit("ERROR: Duplicate or missing constituency IDs.")
+
+          male_names = [
+              "Ram Prasad", "Shiv Prasad", "Ramesh Chandra",
+              "Mahendra Singh", "Hari Shankar", "Gopal Das",
+              "Mohan Lal", "Suresh Chandra", "Brij Mohan",
+              "Krishna Prasad", "Jagannath Prasad", "Raghunath Singh",
+              "Vishwanath Sharma", "Devendra Nath", "Kedar Nath",
+              "Baldeo Ram", "Shyam Sunder", "Govind Prasad",
+              "Narayan Das", "Bhagwan Singh", "Raghavendra Rao",
+              "Subramanian Iyer", "Venkata Rao", "Narayana Reddy",
+              "Madhav Menon", "Gopinath Nair", "Krishnamurthy Rao",
+              "Bipin Chandra Das", "Ananda Mohan Sen", "Prabhat Kumar"
+          ]
+
+          female_names = [
+              "Kamla Devi", "Savitri Devi", "Shanti Devi",
+              "Usha Devi", "Saraswati Devi", "Lakshmi Devi",
+              "Sushila Devi", "Vimla Devi", "Leela Devi",
+              "Parvati Devi", "Shakuntala Devi", "Kusum Lata",
+              "Indira Kumari", "Rajeshwari Devi", "Ganga Devi",
+              "Meenakshi Amma", "Janaki Amma", "Lakshmi Amma",
+              "Padmini Rao", "Saroja Devi", "Kalyani Amma",
+              "Basanti Devi", "Chandrakala Devi", "Kamala Rani",
+              "Annapurna Devi", "Madhuri Devi", "Nirmala Devi",
+              "Pramila Devi", "Uma Shankar", "Bhagirathi Devi"
+          ]
+
+          for seat in seats:
+              candidates = seat.get("candidates")
+
+              if not isinstance(candidates, list) or len(candidates) != 3:
+                  raise SystemExit(
+                      f"ERROR: {seat.get('id')} must have exactly 3 candidates."
+                  )
+
+              for candidate in candidates:
+                  if not candidate.get("id"):
+                      raise SystemExit("ERROR: Candidate ID missing.")
+
+                  original_id = candidate["id"]
+                  seed = int(
+                      hashlib.sha256(original_id.encode("utf-8")).hexdigest()[:16],
+                      16
+                  )
+                  rng = random.Random(seed)
+
+                  gender = rng.choice(["male", "female"])
+                  pool = male_names if gender == "male" else female_names
+                  first = rng.choice(pool)
+
+                  surname_pool = [
+                      "Sharma", "Mishra", "Pandey", "Verma", "Singh",
+                      "Yadav", "Tiwari", "Tripathi", "Joshi", "Patel",
+                      "Reddy", "Rao", "Nair", "Menon", "Das", "Sen",
+                      "Choudhary", "Pillai", "Iyer", "Mukherjee"
+                  ]
+
+                  if gender == "female" and first.endswith("Devi"):
+                      name = first
+                  elif gender == "female" and first.endswith("Amma"):
+                      name = first
+                  else:
+                      name = first
+
+                  candidate["name"] = name
+                  candidate["gender"] = gender
+
+          path.write_text(
+              json.dumps(seats, ensure_ascii=False, indent=2) + "\n",
+              encoding="utf-8"
+          )
+
+          check = json.loads(path.read_text(encoding="utf-8"))
+
+          assert len(check) == 543
+          assert len({seat["id"] for seat in check}) == 543
+          assert sum(len(seat["candidates"]) for seat in check) == 1629
+
+          print("SUCCESS: 543 constituencies and 1,629 candidates verified.")
+          PY
+
+      - name: Commit generated names
+        run: |
+          if git diff --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/constituencies.json
+          git commit -m "Generate traditional candidate names"
+          git push
+          
