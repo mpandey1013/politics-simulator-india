@@ -1,8 +1,11 @@
+
 import { createParty } from "./core/party-manager.js";
-import { createLedger, recordTransaction }
-  from "./core/finance-ledger.js";
-import { recordCampaignExpense }
-  from "./core/campaign-finance.js";
+import {
+  createLedger,
+  recordTransaction
+} from "./core/finance-ledger.js";
+import { recordCampaignExpense } from "./core/campaign-finance.js";
+
 const app = document.querySelector("#app");
 const statusBox = document.querySelector("#status");
 
@@ -95,7 +98,7 @@ function renderDashboard() {
     <div class="card">
       <h3>अगला लक्ष्य</h3>
       <p>सभी 543 सीटों के लिए उम्मीदवार चुनो और फिर चुनाव सिमुलेशन चलाओ।</p>
-      <p class="warning">सीटों के नाम और उम्मीदवार फिलहाल अस्थायी डेटा हैं।</p>
+      <p class="warning">सीटों और उम्मीदवारों के डेटा की आधिकारिक पुष्टि अभी बाकी है।</p>
     </div>`;
 }
 
@@ -112,7 +115,9 @@ function renderParty() {
         ${[
           "Unspecified", "Social Democratic", "Liberal",
           "Conservative", "Regional", "Green", "Centrist"
-        ].map(item => `<option ${state.party.ideology === item ? "selected" : ""}>${item}</option>`).join("")}
+        ].map(item => `
+          <option value="${item}" ${state.party.ideology === item ? "selected" : ""}>${item}</option>
+        `).join("")}
       </select>
 
       <p>शुरुआती फंड: ₹1,000 करोड़</p>
@@ -126,40 +131,50 @@ function getStates() {
   )].sort((a, b) => a.localeCompare(b));
 }
 
-
 function renderTickets() {
   const seat = seats.find(s => s.id === selectedSeat);
-  const ticket = state.tickets[selectedSeat];
+  if (!seat) {
+    selectedSeat = seats[0].id;
+    return renderTickets();
+  }
 
-  const selectedState = seats.find(s => s.id === selectedSeat)?.state || "";
+  const ticket = state.tickets[selectedSeat];
+  const selectedState = seat.state || "";
   const filteredSeats = selectedState
     ? seats.filter(s => s.state === selectedState)
     : seats;
-  
+
   app.innerHTML = `
     <h1>टिकट आवंटन</h1>
     <div class="card">
-      
-<label for="stateSelect">राज्य</label>
-<select id="stateSelect">
-  ${getStates().map(st => `<option value="${escapeHTML(st)}" ${st === selectedState ? "selected" : ""}>${escapeHTML(st)}</option>`).join("")}
-</select>
+      <label for="stateSelect">राज्य</label>
+      <select id="stateSelect">
+        ${getStates().map(st => `
+          <option value="${escapeHTML(st)}" ${st === selectedState ? "selected" : ""}>${escapeHTML(st)}</option>
+        `).join("")}
+      </select>
 
-<label for="seatSelect">निर्वाचन क्षेत्र</label>
-<select id="seatSelect">
-  ${filteredSeats.map(s => `<option value="${s.id}" ${s.id === selectedSeat ? "selected" : ""}>${escapeHTML(s.name)} (${s.id})</option>`).join("")}
-</select>
+      <label for="seatSelect">निर्वाचन क्षेत्र</label>
+      <select id="seatSelect">
+        ${filteredSeats.map(s => `
+          <option value="${escapeHTML(s.id)}" ${s.id === selectedSeat ? "selected" : ""}>${escapeHTML(s.name)} (${escapeHTML(s.id)})</option>
+        `).join("")}
+      </select>
 
       <p class="muted">यहाँ प्रत्येक सीट के 3 उपलब्ध उम्मीदवारों में से एक चुनो।</p>
+
       <label for="candidateSelect">उम्मीदवार</label>
       <select id="candidateSelect">
-        ${seat.candidates.map(c => `<option value="${c.id}" ${ticket === c.id ? "selected" : ""}>${escapeHTML(c.name)} — ${escapeHTML(c.id)}</option>`).join("")}
+        ${seat.candidates.map(c => `
+          <option value="${escapeHTML(c.id)}" ${ticket === c.id ? "selected" : ""}>${escapeHTML(c.name)} — ${escapeHTML(c.id)}</option>
+        `).join("")}
       </select>
 
       <button class="primary" id="assignTicket">टिकट आवंटित करो</button>
       <button id="autoTickets">बाकी सभी सीटों पर ऑटो आवंटन</button>
       <p>अभी आवंटित: ${Object.keys(state.tickets).length} / ${seats.length}</p>
     </div>
+
     <div class="card">
       <h3>नियम</h3>
       <p>एक सीट पर तुम्हारी पार्टी का केवल एक उम्मीदवार टिकट पाएगा। सभी उम्मीदवारों के लिए ID अलग है।</p>
@@ -173,20 +188,49 @@ function renderFund() {
       ${metric("उपलब्ध राशि", "₹" + money(state.ledger.balance) + " करोड़")}
       ${metric("लेन-देन", state.ledger.transactions.length)}
     </div>
+
     <div class="card">
+      <h2>सामान्य खर्च</h2>
       <label for="expense">खर्च (करोड़ रुपये में)</label>
       <input id="expense" type="number" min="0.01" step="0.01" placeholder="उदाहरण: 5">
 
       <label for="description">खर्च का विवरण</label>
-      <input id="description" maxlength="120" placeholder="चुनावी प्रचार">
+      <input id="description" maxlength="120" placeholder="चुनावी खर्च">
 
       <button class="primary" id="spend">खर्च दर्ज करो</button>
     </div>
+
+    <div class="card">
+      <h2>चुनावी प्रचार का खर्च</h2>
+
+      <label for="campaignSeat">निर्वाचन क्षेत्र</label>
+      <select id="campaignSeat">
+        ${seats.map(s => `
+          <option value="${escapeHTML(s.id)}">${escapeHTML(s.name)} (${escapeHTML(s.id)})</option>
+        `).join("")}
+      </select>
+
+      <label for="campaignExpense">प्रचार खर्च (करोड़ रुपये में)</label>
+      <input id="campaignExpense" type="number" min="0.01" step="0.01" placeholder="उदाहरण: 2">
+
+      <label for="campaignDescription">खर्च का विवरण</label>
+      <input id="campaignDescription" maxlength="120" placeholder="रैली, पोस्टर आदि">
+
+      <button class="primary" id="spendCampaign">प्रचार खर्च दर्ज करो</button>
+    </div>
+
+    <div class="card">
+      <h2>सीटवार प्रचार खर्च</h2>
+      ${seats.filter(s => Number(state.campaign[s.id] || 0) > 0).map(s => `
+        <p>${escapeHTML(s.name)}: ₹${money(state.campaign[s.id])} करोड़</p>
+      `).join("") || "<p>अभी कोई प्रचार खर्च दर्ज नहीं है।</p>"}
+    </div>
+
     <div class="card">
       <h2>लेन-देन का रिकॉर्ड</h2>
       ${state.ledger.transactions.slice().reverse().map(t => `
         <p>${t.type === "expense" ? "खर्च" : "आय"}: ₹${money(t.amount)} करोड़ —
-        ${escapeHTML(t.description)} <span class="muted">(${escapeHTML(t.balanceAfter)})</span></p>
+        ${escapeHTML(t.description)} <span class="muted">(${money(t.balanceAfter)})</span></p>
       `).join("") || "<p>अभी कोई लेन-देन नहीं है।</p>"}
     </div>`;
 }
@@ -213,11 +257,13 @@ function renderResults() {
       ${metric("तुम्हारी पार्टी की सीटें", wins)}
       ${metric("बहुमत का आँकड़ा", majority)}
     </div>
+
     <div class="card">
       <h2>${wins >= majority ? "बहुमत का आँकड़ा पूरा" : "बहुमत नहीं मिला"}</h2>
       <p>यह परिणाम केवल इस प्रोटोटाइप के सिमुलेशन का है।</p>
       <button id="resetResults">नतीजे हटाकर फिर तैयारी करो</button>
     </div>
+
     <div class="card">
       <h2>सभी 543 सीटों के नतीजे</h2>
       ${results.map(r => `
@@ -232,8 +278,12 @@ function allocateAllAutomatically() {
 
   for (const seat of seats) {
     if (state.tickets[seat.id]) continue;
+
     const candidate = seat.candidates.find(c => !assigned.has(c.id));
-    if (!candidate) throw new Error("कोई उम्मीदवार उपलब्ध नहीं: " + seat.id);
+    if (!candidate) {
+      throw new Error("कोई उम्मीदवार उपलब्ध नहीं: " + seat.id);
+    }
+
     state.tickets[seat.id] = candidate.id;
     assigned.add(candidate.id);
   }
@@ -246,13 +296,16 @@ function allocateAllAutomatically() {
 function runElection() {
   results = seats.map(seat => {
     const ticketedId = state.tickets[seat.id];
-    const candidateScores = seat.candidates.map(candidate => {
-      const campaignSpend = Number(state.campaign[seat.id] || 0);
-      const isPlayer = candidate.id === ticketedId;
+    const campaignSpend = Number(state.campaign?.[seat.id] || 0);
 
-      // Prototype-only simulated scores, not real-world predictions.
+    const candidateScores = seat.candidates.map(candidate => {
+      const isPlayer = candidate.id === ticketedId;
       const base = 1000 + Math.floor(Math.random() * 9000);
-      const bonus = isPlayer ? Math.floor(campaignSpend * 20) : 0;
+
+      // Prototype-only effect. This is not a real-world prediction.
+      const bonus = isPlayer
+        ? Math.min(3000, Math.floor(campaignSpend * 5))
+        : 0;
 
       return {
         id: candidate.id,
@@ -277,7 +330,6 @@ function runElection() {
   notice("सिमुलेशन पूरा हुआ। नतीजे सेव कर दिए गए हैं।");
 }
 
-
 app.addEventListener("change", event => {
   if (event.target.id === "stateSelect") {
     const nextSeat = seats.find(
@@ -295,9 +347,10 @@ app.addEventListener("change", event => {
     render();
   }
 });
-      
+
 app.addEventListener("click", event => {
   const go = event.target.dataset.go;
+
   if (go) {
     page = go;
     render();
@@ -310,6 +363,7 @@ app.addEventListener("click", event => {
 
     state.party.name = name;
     state.party.ideology = document.querySelector("#ideology").value;
+
     save();
     notice("पार्टी सेव हो गई।");
     render();
@@ -317,7 +371,9 @@ app.addEventListener("click", event => {
 
   if (event.target.id === "assignTicket") {
     const candidateId = document.querySelector("#candidateSelect").value;
+
     state.tickets[selectedSeat] = candidateId;
+
     save();
     notice("टिकट आवंटित हो गया।");
     render();
@@ -341,9 +397,42 @@ app.addEventListener("click", event => {
         amount,
         description: description || "चुनावी खर्च"
       });
+
       save();
       notice("खर्च दर्ज हुआ।");
       render();
+    } catch (error) {
+      notice(error.message);
+    }
+  }
+
+  if (event.target.id === "spendCampaign") {
+    const seatId = document.querySelector("#campaignSeat").value;
+    const amount = Number(document.querySelector("#campaignExpense").value);
+    const description = document.querySelector("#campaignDescription").value.trim();
+    const seat = seats.find(s => s.id === seatId);
+
+    if (!seat) {
+      return notice("निर्वाचन क्षेत्र नहीं मिला।");
+    }
+
+    try {
+      const updated = recordCampaignExpense(
+        state.ledger,
+        state.campaign || {},
+        seatId,
+        amount,
+        description
+          ? `प्रचार - ${seat.name}: ${description}`
+          : `प्रचार - ${seat.name}`
+      );
+
+      state.ledger = updated.ledger;
+      state.campaign = updated.campaign;
+
+      save();
+      render();
+      notice("प्रचार खर्च दर्ज हुआ: " + seat.name);
     } catch (error) {
       notice(error.message);
     }
@@ -356,16 +445,10 @@ app.addEventListener("click", event => {
   if (event.target.id === "resetResults") {
     results = null;
     state.results = null;
+
     save();
     render();
     notice("नतीजे रीसेट हो गए।");
-  }
-});
-
-app.addEventListener("change", event => {
-  if (event.target.id === "seatSelect") {
-    selectedSeat = event.target.value;
-    render();
   }
 });
 
@@ -384,12 +467,24 @@ async function start() {
     seats = await response.json();
 
     const saved = localStorage.getItem("politics-simulator-india-v1");
+
     if (saved) {
       try {
         const parsed = JSON.parse(saved);
-        if (parsed && parsed.party && parsed.ledger &&
-            parsed.tickets && Array.isArray(parsed.ledger.transactions)) {
-          state = parsed;
+
+        if (
+          parsed &&
+          parsed.party &&
+          parsed.ledger &&
+          parsed.tickets &&
+          Array.isArray(parsed.ledger.transactions)
+        ) {
+          state = {
+            ...defaults(),
+            ...parsed,
+            campaign: parsed.campaign || {},
+            results: parsed.results || null
+          };
         }
       } catch {
         notice("पुराना सेव डेटा पढ़ नहीं पाए; नया गेम शुरू हुआ।");
@@ -397,8 +492,12 @@ async function start() {
     }
 
     results = state.results;
-    if (!Array.isArray(seats) || seats.length !== 543 ||
-        seats.some(s => !Array.isArray(s.candidates) || s.candidates.length !== 3)) {
+
+    if (
+      !Array.isArray(seats) ||
+      seats.length !== 543 ||
+      seats.some(s => !Array.isArray(s.candidates) || s.candidates.length !== 3)
+    ) {
       throw new Error("सीट डेटा की जाँच असफल हुई।");
     }
 
@@ -406,7 +505,13 @@ async function start() {
     render();
   } catch (error) {
     notice(error.message);
-    app.innerHTML = `<div class="card"><h2>लोडिंग त्रुटि</h2><p>${escapeHTML(error.message)}</p><p>गेम चलाने के लिए repository की root directory में index.html और src/data/constituencies.json मौजूद होने चाहिए।</p></div>`;
+
+    app.innerHTML = `
+      <div class="card">
+        <h2>लोडिंग त्रुटि</h2>
+        <p>${escapeHTML(error.message)}</p>
+        <p>गेम चलाने के लिए repository की root directory में index.html और src/data/constituencies.json मौजूद होने चाहिए।</p>
+      </div>`;
   }
 }
 
