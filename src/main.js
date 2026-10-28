@@ -13,7 +13,7 @@ let seats = [];
 let page = "dashboard";
 let selectedSeat = "seat-001";
 let results = null;
-
+let pollingBoard = null;
 const defaults = () => ({
   party: {
     id: "party-player",
