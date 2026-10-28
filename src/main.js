@@ -14,6 +14,7 @@ let page = "dashboard";
 let selectedSeat = "seat-001";
 let results = null;
 let pollingBoard = null;
+let coalitionParties = [];
 const defaults = () => ({
   party: {
     id: "party-player",
