@@ -332,13 +332,23 @@ function runElection() {
       };
     }).sort((a, b) => b.score - a.score);
 
+   
+    const winningCandidate = seat.candidates.find(
+      candidate => candidate.id === candidateScores[0].id
+    );
+
     return {
       id: seat.id,
       name: seat.name,
       winnerName: candidateScores[0].name,
+      winnerId: candidateScores[0].id,
+      winnerParty: candidateScores[0].winnerIsPlayer
+        ? state.party.name
+        : winningCandidate?.party || "Unknown",
       winnerIsPlayer: candidateScores[0].winnerIsPlayer,
       margin: candidateScores[0].score - candidateScores[1].score
     };
+      
   });
 
   state.results = results;
