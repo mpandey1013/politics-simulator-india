@@ -219,8 +219,15 @@ export function createPollingBoard({
     const scores = getScores(seat);
 
     if (!scores.some(item => item.id === selectedCandidateId)) {
-      selectedCandidateId = scores[0]?.id || "";
-    }
+      
+if (!scores.some(item => item.id === selectedCandidateId)) {
+  const partyCandidate = scores.find(
+    candidate => candidate.party === selectedParty
+  );
+
+  selectedCandidateId = partyCandidate?.id || scores[0]?.id || "";
+}
+      
 
     const chosen = scores.find(
       item => item.id === selectedCandidateId
