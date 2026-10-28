@@ -562,6 +562,25 @@ app.addEventListener("click", event => {
     runElection();
   }
 
+  if (event.target.dataset.coalitionAction) {
+    const party = event.target.dataset.party;
+
+    if (event.target.dataset.coalitionAction === "add") {
+      if (!coalitionParties.includes(party)) {
+        coalitionParties.push(party);
+      }
+    }
+
+    if (event.target.dataset.coalitionAction === "remove") {
+      coalitionParties = coalitionParties.filter(
+        item => item !== party
+      );
+    }
+
+    renderGovernment();
+    return;
+          }
+  
   if (event.target.id === "formGovernment") {
     page = "government";
     renderGovernment();
