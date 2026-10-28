@@ -624,9 +624,10 @@ return;
     };
 
     save();
-    renderGovernment();
-    notice("सरकार का गठन सेव हो गया।");
-    return;
+page = "government";
+renderGovernment();
+notice("सरकार का गठन सेव हो गया।");
+return;
 }
   
   if (event.target.id === "formGovernment") {
