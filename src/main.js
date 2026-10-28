@@ -29,7 +29,10 @@ const defaults = () => ({
 
 let state = defaults();
 
+
 function save() {
+  state.coalitionParties = coalitionParties;
+
   localStorage.setItem(
     "politics-simulator-india-v1",
     JSON.stringify(state)
