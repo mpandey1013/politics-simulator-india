@@ -470,6 +470,11 @@ app.addEventListener("click", event => {
     runElection();
   }
 
+  if (event.target.id === "formGovernment") {
+    page = "government";
+    renderGovernment();
+  }
+  
   if (event.target.id === "resetResults") {
     results = null;
     state.results = null;
