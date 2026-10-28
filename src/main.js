@@ -580,8 +580,9 @@ app.addEventListener("click", event => {
       );
     }
 
-    renderGovernment();
-    return;
+    save();
+renderGovernment();
+return;
           }
   
   if (event.target.id === "formGovernment") {
