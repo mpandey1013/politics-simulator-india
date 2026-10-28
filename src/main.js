@@ -22,9 +22,11 @@ const defaults = () => ({
     ideology: "Unspecified"
   },
   ledger: createLedger(1000),
+
   tickets: {},
   campaign: {},
-  results: null
+  results: null,
+  government: null
 });
 
 let state = defaults();
