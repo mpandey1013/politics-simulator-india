@@ -96,6 +96,8 @@ if (page === "polling") {
   if (page === "tickets") renderTickets();
   if (page === "fund") renderFund();
   if (page === "results") renderResults();
+  if (page === "government") renderGovernment();
+if (page === "governmentDetails") renderGovernmentDetails();
 }
 
 function renderDashboard() {
