@@ -311,33 +311,60 @@ function renderGovernment() {
     partySeats[party] = (partySeats[party] || 0) + 1;
   });
 
-  const playerSeats = partySeats[state.party.name] || 0;
+  const playerParty = state.party.name;
+  const playerSeats = partySeats[playerParty] || 0;
+
+  const coalitionSeats = playerSeats +
+    coalitionParties.reduce(
+      (total, party) => total + (partySeats[party] || 0),
+      0
+    );
 
   const partyRows = Object.entries(partySeats)
     .sort((a, b) => b[1] - a[1])
-    .map(([party, count]) => `
-      <tr>
-        <td>${escapeHTML(party)}</td>
-        <td>${count}</td>
-      </tr>
-    `).join("");
+    .map(([party, count]) => {
+      const isPlayer = party === playerParty;
+      const selected = coalitionParties.includes(party);
+
+      let actionButton = "";
+
+      if (!isPlayer) {
+        actionButton = selected
+          ? `<button data-coalition-action="remove"
+               data-party="${escapeHTML(party)}">गठबंधन से हटाएँ</button>`
+          : `<button class="primary" data-coalition-action="add"
+               data-party="${escapeHTML(party)}">गठबंधन में जोड़ें</button>`;
+      }
+
+      return `
+        <tr>
+          <td>${escapeHTML(party)}${isPlayer ? " (आपकी पार्टी)" : ""}</td>
+          <td>${count}</td>
+          <td>${actionButton}</td>
+        </tr>
+      `;
+    }).join("");
 
   app.innerHTML = `
     <h1>🏛️ सरकार गठन</h1>
 
     <div class="grid">
-      ${metric("कुल सीटें", results.length)}
+      ${metric("कुल लोकसभा सीटें", results.length)}
       ${metric("बहुमत का आँकड़ा", majority)}
       ${metric("आपकी पार्टी की सीटें", playerSeats)}
+      ${metric("गठबंधन की कुल सीटें", coalitionSeats)}
     </div>
 
     <div class="card">
-      <h2>पार्टीवार चुनाव परिणाम</h2>
+      <h2>पार्टी चुनकर गठबंधन बनाएँ</h2>
+      <p>अपनी पार्टी के अलावा उन पार्टियों को चुनें जिनके साथ आप सरकार बनाना चाहते हैं।</p>
+
       <table>
         <thead>
           <tr>
             <th>पार्टी</th>
             <th>जीती हुई सीटें</th>
+            <th>कार्रवाई</th>
           </tr>
         </thead>
         <tbody>
@@ -347,13 +374,14 @@ function renderGovernment() {
     </div>
 
     <div class="card">
-      <h2>सरकार बनाने की स्थिति</h2>
-      <p>आपकी पार्टी के पास ${playerSeats} सीटें हैं। बहुमत के लिए ${majority} सीटें चाहिए।</p>
-      <p>अन्य पार्टियों से समर्थन लेकर गठबंधन बनाने की सुविधा अगला चरण है।</p>
-      <button data-go="results">वापस चुनाव परिणाम पर जाएँ</button>
+      <h2>${coalitionSeats >= majority
+        ? "बहुमत उपलब्ध है"
+        : "अभी बहुमत नहीं है"}</h2>
+      <p>गठबंधन के पास ${coalitionSeats} सीटें हैं। सरकार बनाने के लिए ${majority} सीटें चाहिए।</p>
+      <button data-go="results">चुनाव परिणाम पर वापस जाएँ</button>
     </div>
   `;
-}
+  }
 
 function allocateAllAutomatically() {
   const assigned = new Set(Object.values(state.tickets));
