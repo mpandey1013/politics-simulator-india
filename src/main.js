@@ -5,7 +5,7 @@ import {
   recordTransaction
 } from "./core/finance-ledger.js";
 import { recordCampaignExpense } from "./core/campaign-finance.js";
-
+import { createPollingBoard } from "./features/polling-board.js";
 const app = document.querySelector("#app");
 const statusBox = document.querySelector("#status");
 
