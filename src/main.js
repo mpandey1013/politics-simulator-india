@@ -67,7 +67,24 @@ function render() {
     app.innerHTML = '<div class="card">सीट डेटा उपलब्ध नहीं है।</div>';
     return;
   }
+ if (page !== "polling" && pollingBoard) {
+  pollingBoard.destroy();
+  pollingBoard = null;
+}
 
+if (page === "polling") {
+  if (!pollingBoard) {
+    pollingBoard = createPollingBoard({
+      seats,
+      root: app,
+      onNotice: notice
+    });
+  } else {
+    pollingBoard.render();
+  }
+
+  return;
+      }
   if (page === "dashboard") renderDashboard();
   if (page === "party") renderParty();
   if (page === "tickets") renderTickets();
