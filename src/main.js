@@ -382,8 +382,13 @@ function renderGovernment() {
       <h2>${coalitionSeats >= majority
         ? "बहुमत उपलब्ध है"
         : "अभी बहुमत नहीं है"}</h2>
+      
       <p>गठबंधन के पास ${coalitionSeats} सीटें हैं। सरकार बनाने के लिए ${majority} सीटें चाहिए।</p>
+      ${coalitionSeats >= majority && !state.government ? `
+        <button class="primary" id="confirmGovernment">सरकार बनाओ और सेव करो</button>
+      ` : ""}
       <button data-go="results">चुनाव परिणाम पर वापस जाएँ</button>
+      
     </div>
   `;
   }
