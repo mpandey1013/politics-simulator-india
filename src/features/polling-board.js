@@ -405,11 +405,19 @@ export function createPollingBoard({
       return;
     }
 
-    if (target.id === "pollParty") {
-      selectedParty = target.value;
-      render();
-      return;
-    }
+    
+if (target.id === "pollParty") {
+  selectedParty = target.value;
+
+  const partyCandidate = getSeat().candidates.find(
+    candidate => candidate.party === selectedParty
+  );
+
+  selectedCandidateId = partyCandidate?.id || "";
+  render();
+  return;
+}
+    
 
     if (target.id === "pollCandidate") {
       selectedCandidateId = target.value;
