@@ -379,10 +379,12 @@ function renderGovernment() {
     </div>
 
     <div class="card">
-      <h2>${coalitionSeats >= majority
-        ? "बहुमत उपलब्ध है"
-        : "अभी बहुमत नहीं है"}</h2>
-      
+      <h2>${state.government?.formed
+  ? "✅ सरकार का गठन पूरा हो चुका है"
+  : coalitionSeats >= majority
+    ? "बहुमत उपलब्ध है"
+    : "अभी बहुमत नहीं है"}</h2>
+    
       <p>गठबंधन के पास ${coalitionSeats} सीटें हैं। सरकार बनाने के लिए ${majority} सीटें चाहिए।</p>
       ${coalitionSeats >= majority && !state.government ? `
         <button class="primary" id="confirmGovernment">सरकार बनाओ और सेव करो</button>
