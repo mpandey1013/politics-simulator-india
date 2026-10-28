@@ -291,6 +291,69 @@ function renderResults() {
     </div>`;
 }
 
+function renderGovernment() {
+  if (!results) {
+    app.innerHTML = `
+      <h1>🏛️ सरकार गठन</h1>
+      <div class="card">
+        <p>पहले चुनाव सिमुलेशन पूरा करें।</p>
+        <button data-go="results">चुनाव परिणाम पर जाएँ</button>
+      </div>`;
+    return;
+  }
+
+  const majority = Math.floor(seats.length / 2) + 1;
+  const partySeats = {};
+
+  results.forEach(result => {
+    const party = result.winnerParty || "Unknown";
+    partySeats[party] = (partySeats[party] || 0) + 1;
+  });
+
+  const playerSeats = partySeats[state.party.name] || 0;
+
+  const partyRows = Object.entries(partySeats)
+    .sort((a, b) => b[1] - a[1])
+    .map(([party, count]) => `
+      <tr>
+        <td>${escapeHTML(party)}</td>
+        <td>${count}</td>
+      </tr>
+    `).join("");
+
+  app.innerHTML = `
+    <h1>🏛️ सरकार गठन</h1>
+
+    <div class="grid">
+      ${metric("कुल सीटें", results.length)}
+      ${metric("बहुमत का आँकड़ा", majority)}
+      ${metric("आपकी पार्टी की सीटें", playerSeats)}
+    </div>
+
+    <div class="card">
+      <h2>पार्टीवार चुनाव परिणाम</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>पार्टी</th>
+            <th>जीती हुई सीटें</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${partyRows}
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <h2>सरकार बनाने की स्थिति</h2>
+      <p>आपकी पार्टी के पास ${playerSeats} सीटें हैं। बहुमत के लिए ${majority} सीटें चाहिए।</p>
+      <p>अन्य पार्टियों से समर्थन लेकर गठबंधन बनाने की सुविधा अगला चरण है।</p>
+      <button data-go="results">वापस चुनाव परिणाम पर जाएँ</button>
+    </div>
+  `;
+}
+
 function allocateAllAutomatically() {
   const assigned = new Set(Object.values(state.tickets));
 
