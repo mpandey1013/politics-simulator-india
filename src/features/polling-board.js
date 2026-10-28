@@ -448,8 +448,6 @@ export function createPollingBoard({
 
   root.addEventListener("change", handleChange);
   
-root.addEventListener("change", handleChange);
-  
   root.addEventListener("click", handleClick);
 
   render();
