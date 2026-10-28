@@ -626,12 +626,17 @@ async function start() {
           parsed.tickets &&
           Array.isArray(parsed.ledger.transactions)
         ) {
+        
           state = {
             ...defaults(),
             ...parsed,
             campaign: parsed.campaign || {},
             results: parsed.results || null
           };
+
+          coalitionParties = Array.isArray(parsed.coalitionParties)
+            ? parsed.coalitionParties
+            : [];
         }
       } catch {
         notice("पुराना सेव डेटा पढ़ नहीं पाए; नया गेम शुरू हुआ।");
