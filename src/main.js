@@ -274,10 +274,11 @@ function renderResults() {
       ${metric("तुम्हारी पार्टी की सीटें", wins)}
       ${metric("बहुमत का आँकड़ा", majority)}
     </div>
-
+ 
     <div class="card">
       <h2>${wins >= majority ? "बहुमत का आँकड़ा पूरा" : "बहुमत नहीं मिला"}</h2>
       <p>यह परिणाम केवल इस प्रोटोटाइप के सिमुलेशन का है।</p>
+      <button class="primary" id="formGovernment">🏛️ सरकार गठन</button>
       <button id="resetResults">नतीजे हटाकर फिर तैयारी करो</button>
     </div>
 
