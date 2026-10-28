@@ -418,12 +418,18 @@ if (target.id === "pollParty") {
   return;
 }
     
+if (target.id === "pollCandidate") {
+  selectedCandidateId = target.value;
 
-    if (target.id === "pollCandidate") {
-      selectedCandidateId = target.value;
-      render();
-      return;
-    }
+  const selectedCandidate = getSeat().candidates.find(
+    candidate => candidate.id === selectedCandidateId
+  );
+
+  selectedParty = selectedCandidate?.party || "";
+  render();
+  return;
+}
+    
 
     if (target.id === "pollCampaign") {
       campaign = Number(target.value);
