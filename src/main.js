@@ -592,6 +592,41 @@ renderGovernment();
 return;
           }
   
+  if (event.target.id === "confirmGovernment") {
+    const majority = Math.floor(seats.length / 2) + 1;
+    const partySeats = {};
+
+    results.forEach(result => {
+      const party = result.winnerParty || "Unknown";
+      partySeats[party] = (partySeats[party] || 0) + 1;
+    });
+
+    const playerSeats = partySeats[state.party.name] || 0;
+    const coalitionSeats = playerSeats +
+      coalitionParties.reduce(
+        (total, party) => total + (partySeats[party] || 0),
+        0
+      );
+
+    if (coalitionSeats < majority) {
+      notice("सरकार बनाने के लिए बहुमत आवश्यक है।");
+      return;
+    }
+
+    state.government = {
+      formed: true,
+      party: state.party.name,
+      coalitionParties: [...coalitionParties],
+      seats: coalitionSeats,
+      majority: majority
+    };
+
+    save();
+    renderGovernment();
+    notice("सरकार का गठन सेव हो गया।");
+    return;
+}
+  
   if (event.target.id === "formGovernment") {
     page = "government";
     renderGovernment();
